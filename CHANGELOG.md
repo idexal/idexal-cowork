@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **Community & support files**: added `SUPPORT.md` (help channels, response expectations, sponsorship) and a root `.gitignore` for clean version control.
+- **GitHub publishing**: repository now lives at [github.com/idexal/idexal-cowork](https://github.com/idexal/idexal-cowork) with Release [`v0.5.52`](https://github.com/idexal/idexal-cowork/releases/tag/v0.5.52) and a portable dist asset.
+
+### Changed
+
+- **Repository references**: updated all stale `idexalcowork` links to `idexal-cowork` across `package.json` (homepage/repository/bugs), README badges, docs, issue templates, workflows, and adoption data.
+- **Funding**: corrected `.github/FUNDING.yml` sponsor handle to the maintainer account.
+
 ## [0.5.52] - 2026-08-27
 
 ### Added
