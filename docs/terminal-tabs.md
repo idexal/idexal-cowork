@@ -1,8 +1,8 @@
 # Terminal Tabs
 
-Terminal Tabs turn idexal CoWork into a real developer workbench instead of a chat app that occasionally runs shell commands. They give each workspace an interactive terminal dock inside the desktop app, backed by the operating system's native pseudoterminal layer and rendered with xterm.js.
+Terminal Tabs turn Idexal CoWork into a real developer workbench instead of a chat app that occasionally runs shell commands. They give each workspace an interactive terminal dock inside the desktop app, backed by the operating system's native pseudoterminal layer and rendered with xterm.js.
 
-This is one of the larger steps toward idexal CoWork as a GUI-first AI super app and everything app: coding, agent execution, browser testing, documents, spreadsheets, presentations, inbox, automations, devices, and now full terminal work can stay in one governed workspace.
+This is one of the larger steps toward Idexal CoWork as a GUI-first AI super app and everything app: coding, agent execution, browser testing, documents, spreadsheets, presentations, inbox, automations, devices, and now full terminal work can stay in one governed workspace.
 
 ## What users get
 

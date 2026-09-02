@@ -1,6 +1,6 @@
 # Execution Runtime Model
 
-This document describes the current execution concept for planning, step execution, follow-up turns, delegation, and verification guidance in idexal CoWork.
+This document describes the current execution concept for planning, step execution, follow-up turns, delegation, and verification guidance in Idexal CoWork.
 
 The model is built around four rules:
 

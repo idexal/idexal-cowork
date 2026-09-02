@@ -1,6 +1,6 @@
 # Windows npm Smoke-Test Checklist
 
-Use this checklist to validate the npm installation path (`npm install -g idexal-cowork`) on a clean Windows machine before release.
+Use this checklist to validate the npm installation path (`npm install -g Idexal CoWork`) on a clean Windows machine before release.
 
 ## Scope
 
@@ -14,15 +14,15 @@ Run in **Command Prompt** from `%USERPROFILE%`:
 
 ```bat
 cd /d %USERPROFILE%
-taskkill /F /IM "idexal CoWork.exe" /T 2>NUL
+taskkill /F /IM "Idexal CoWork.exe" /T 2>NUL
 taskkill /F /IM electron.exe /T 2>NUL
 taskkill /F /IM node.exe /T 2>NUL
 set npm_config_runtime=
 set npm_config_target=
 set npm_config_disturl=
 set npm_config_arch=
-rmdir /S /Q "%APPDATA%\npm\node_modules\idexal-cowork" 2>NUL
-del /Q "%APPDATA%\npm\idexal-cowork.cmd" 2>NUL
+rmdir /S /Q "%APPDATA%\npm\node_modules\Idexal CoWork" 2>NUL
+del /Q "%APPDATA%\npm\Idexal CoWork.cmd" 2>NUL
 del /Q "%APPDATA%\npm\coworkctl.cmd" 2>NUL
 del /Q "%APPDATA%\npm\coworkd.cmd" 2>NUL
 del /Q "%APPDATA%\npm\coworkd-node.cmd" 2>NUL
@@ -36,8 +36,8 @@ Pass criteria:
 
 ```bat
 cd /d %USERPROFILE%
-npm install -g idexal-cowork@latest --no-audit --no-fund
-npm ls -g idexal-cowork --depth=0
+npm install -g Idexal CoWork@latest --no-audit --no-fund
+npm ls -g Idexal CoWork --depth=0
 ```
 
 Pass criteria:
@@ -48,7 +48,7 @@ Pass criteria:
 
 ```bat
 cd /d %USERPROFILE%
-idexal-cowork
+Idexal CoWork
 ```
 
 Pass criteria:
@@ -81,9 +81,9 @@ Pass criteria:
 Close app, then relaunch:
 
 ```bat
-taskkill /F /IM "idexal CoWork.exe" /T 2>NUL
+taskkill /F /IM "Idexal CoWork.exe" /T 2>NUL
 cd /d %USERPROFILE%
-idexal-cowork
+Idexal CoWork
 ```
 
 Pass criteria:
@@ -94,9 +94,9 @@ Pass criteria:
 
 ```bat
 cd /d %USERPROFILE%
-npm uninstall -g idexal-cowork
-npm install -g idexal-cowork@latest --no-audit --no-fund
-idexal-cowork
+npm uninstall -g Idexal CoWork
+npm install -g Idexal CoWork@latest --no-audit --no-fund
+Idexal CoWork
 ```
 
 Pass criteria:
@@ -108,6 +108,6 @@ Pass criteria:
 Capture in release notes/PR comment:
 - Windows version + CPU architecture (x64/ARM64)
 - Node and npm versions (`node -v`, `npm -v`)
-- Installed `idexal-cowork` version
+- Installed `Idexal CoWork` version
 - Pass/fail per checklist section
 - Any startup log snippets for failures

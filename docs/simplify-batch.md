@@ -1,6 +1,6 @@
 # Universal `/simplify` and `/batch`
 
-idexal CoWork now ships two bundled, global skills as first-class slash commands:
+Idexal CoWork now ships two bundled, global skills as first-class slash commands:
 
 - `/simplify` for targeted quality improvements
 - `/batch` for parallelizable, repeatable migrations/transformations

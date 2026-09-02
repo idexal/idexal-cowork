@@ -35,7 +35,7 @@ A JSON manifest (`cowork.plugin.json`) that bundles related capabilities:
 
 | Scope | Source | Managed By |
 |-------|--------|------------|
-| **Bundled** | Ships with idexal CoWork in `resources/plugin-packs/` | idexal CoWork team |
+| **Bundled** | Ships with Idexal CoWork in `resources/plugin-packs/` | Idexal CoWork team |
 | **Personal** | User-created in `~/.cowork/extensions/` | Individual user |
 | **Organization** | Distributed by org admins | Organization admin |
 
@@ -164,7 +164,7 @@ It auto-refreshes every 30 seconds and provides at-a-glance awareness of your ac
 
 ## Bundled Plugin Packs
 
-idexal CoWork ships with 37 plugin packs covering common job functions, finance workflows, legal workflows, security review, and reusable message-box shortcuts.
+Idexal CoWork ships with 37 plugin packs covering common job functions, finance workflows, legal workflows, security review, and reusable message-box shortcuts.
 
 ### CoWork Shortcuts
 
@@ -240,7 +240,7 @@ See [Codex Security Scans](codex-security-scans.md) for scan modes, artifact lay
 
 ### Claude-for-Legal Packs
 
-idexal CoWork bundles the Claude-for-Legal practice packs from `resources/plugin-packs/*legal*/`. They expose upstream-style legal slash commands through the same plugin-pack alias system used by other packs.
+Idexal CoWork bundles the Claude-for-Legal practice packs from `resources/plugin-packs/*legal*/`. They expose upstream-style legal slash commands through the same plugin-pack alias system used by other packs.
 
 Bundled legal packs include:
 
@@ -967,7 +967,7 @@ The registry follows the same architecture as the Skill Registry:
 ### Default Registry URL
 
 ```
-https://raw.githubusercontent.com/idexal/idexal-cowork/main/registry
+https://raw.githubusercontent.com/idexal/Idexal CoWork/main/registry
 ```
 
 Override with the `PLUGIN_PACK_REGISTRY` environment variable.
@@ -1298,9 +1298,9 @@ Each person gets role-specific skills and proactive digital twins that work in t
 
 ## Competitive Advantages
 
-idexal CoWork plugin packs offer capabilities beyond typical AI assistant plugins:
+Idexal CoWork plugin packs offer capabilities beyond typical AI assistant plugins:
 
-| Feature | idexal CoWork | Typical AI Plugins |
+| Feature | Idexal CoWork | Typical AI Plugins |
 |---------|-----------|-------------------|
 | **Digital Twin integration** | Packs link to proactive personas that work in the background | Reactive only — waits for user prompts |
 | **Multi-model** | Skills work across supported account, API, gateway, cloud, local-model, and Mixture of Agents routes | Commonly tied to one provider |

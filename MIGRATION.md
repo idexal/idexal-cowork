@@ -1,10 +1,10 @@
-# Migrating to idexal CoWork
+# Migrating to Idexal CoWork
 
-This guide helps users transition from other AI assistant platforms or set up idexal CoWork alongside existing tools.
+This guide helps users transition from other AI assistant platforms or set up Idexal CoWork alongside existing tools.
 
 ## Overview
 
-idexal CoWork is a security-first, GUI-first local AI super app and everything app that runs on macOS and Windows. If you're coming from another multi-channel AI platform, CLI-first agent runner, or self-hosted assistant, this guide will help you move into one app for coding, email, documents, spreadsheets, presentations, browser work, agents, and automations.
+Idexal CoWork is a security-first, GUI-first local AI super app and everything app that runs on macOS and Windows. If you're coming from another multi-channel AI platform, CLI-first agent runner, or self-hosted assistant, this guide will help you move into one app for coding, email, documents, spreadsheets, presentations, browser work, agents, and automations.
 
 ---
 
@@ -15,8 +15,8 @@ idexal CoWork is a security-first, GUI-first local AI super app and everything a
 If you're already using messaging channels with another AI platform, you can reuse most of your existing setup:
 
 #### WhatsApp
-- **Same phone**: idexal CoWork uses Web WhatsApp (Baileys library), just like other platforms
-- **New QR scan**: You'll need to scan a new QR code in idexal CoWork Settings
+- **Same phone**: Idexal CoWork uses Web WhatsApp (Baileys library), just like other platforms
+- **New QR scan**: You'll need to scan a new QR code in Idexal CoWork Settings
 - **Note**: WhatsApp allows multiple linked devices, so you can run both platforms during transition
 
 #### Telegram
@@ -26,24 +26,24 @@ If you're already using messaging channels with another AI platform, you can reu
 
 #### Discord
 - **Same application**: You can reuse your Discord application and bot token
-- **Guild commands**: If using guild-specific commands, update the Guild IDs in idexal CoWork
+- **Guild commands**: If using guild-specific commands, update the Guild IDs in Idexal CoWork
 - **Note**: Only one client can connect with the same token at a time
 
 #### Slack
 - **Same app tokens**: You can reuse your Slack app's Bot Token and App-Level Token
-- **Socket Mode**: idexal CoWork uses Socket Mode, same as most other platforms
+- **Socket Mode**: Idexal CoWork uses Socket Mode, same as most other platforms
 - **Note**: Only one connection per token is allowed
 
 #### iMessage
 - **macOS only**: iMessage integration requires macOS and the `imsg` CLI tool
 - **Setup**: Install via `brew install steipete/tap/imsg`
-- **Unique to idexal CoWork**: Most platforms don't support iMessage
+- **Unique to Idexal CoWork**: Most platforms don't support iMessage
 
 ---
 
 ## What You'll Gain
 
-Moving to idexal CoWork provides several advantages:
+Moving to Idexal CoWork provides several advantages:
 
 ### Security Features
 
@@ -74,7 +74,7 @@ Moving to idexal CoWork provides several advantages:
 
 ### Architecture
 
-| Aspect | idexal CoWork | Typical CLI Platform |
+| Aspect | Idexal CoWork | Typical CLI Platform |
 |--------|-----------|---------------------|
 | **Form factor** | Desktop app (Electron) | CLI + daemon |
 | **Primary platform** | macOS + Windows | Cross-platform |
@@ -83,7 +83,7 @@ Moving to idexal CoWork provides several advantages:
 
 ### Security Model
 
-| Aspect | idexal CoWork |
+| Aspect | Idexal CoWork |
 |--------|-----------|
 | **Default mode** | Pairing (most restrictive) |
 | **Sandbox** | Workspace boundaries (VM planned) |
@@ -94,7 +94,7 @@ Moving to idexal CoWork provides several advantages:
 
 ## Setup Steps
 
-### 1. Install idexal CoWork
+### 1. Install Idexal CoWork
 
 ```bash
 git clone https://github.com/idexal/idexal-cowork.git
@@ -164,7 +164,7 @@ During transition, you may want to run both platforms:
 
 ### Can I import my skills/prompts from another platform?
 
-idexal CoWork uses a JSON-based skill format. If your existing platform exports skills, you may need to convert them. Skills are stored in:
+Idexal CoWork uses a JSON-based skill format. If your existing platform exports skills, you may need to convert them. Skills are stored in:
 ```
 macOS: ~/Library/Application Support/idexal/skills/
 Windows: %APPDATA%\idexal-cowork\skills\
@@ -172,15 +172,15 @@ Windows: %APPDATA%\idexal-cowork\skills\
 
 ### Do I need to re-pair users?
 
-Yes. idexal CoWork maintains its own pairing database. Users will need to pair again using the pairing code flow.
+Yes. Idexal CoWork maintains its own pairing database. Users will need to pair again using the pairing code flow.
 
 ### Can I use the same API keys?
 
-Yes. Your LLM provider API keys (Anthropic, OpenAI, etc.) work with any client. Just enter them in idexal CoWork Settings.
+Yes. Your LLM provider API keys (Anthropic, OpenAI, etc.) work with any client. Just enter them in Idexal CoWork Settings.
 
 ### Is my data migrated?
 
-No. Task history, conversations, and artifacts are stored locally per platform. You'll start fresh with idexal CoWork.
+No. Task history, conversations, and artifacts are stored locally per platform. You'll start fresh with Idexal CoWork.
 
 ---
 

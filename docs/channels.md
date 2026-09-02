@@ -1,6 +1,6 @@
 # Channel Integrations
 
-idexal CoWork supports messaging and communication channels across chat, community, email, and social surfaces. See the channel list below for the current built-in routes. All channels share these common features:
+Idexal CoWork supports messaging and communication channels across chat, community, email, and social surfaces. See the channel list below for the current built-in routes. All channels share these common features:
 
 - Security modes (pairing, allowlist, open)
 - Brute-force protection
@@ -17,7 +17,7 @@ idexal CoWork supports messaging and communication channels across chat, communi
 See [Gateway Message Lifecycle](gateway-message-lifecycle.md) for the shared routing, command, active-task, skill-slash, delivery, and scheduled-output behavior. For day-to-day usage examples, see [Using CoWork from WhatsApp and Other Channels](gateway-user-guide.md). For per-channel feature and best-practice guides, see [Channel User Guides](channel-user-guides.md) and the [dedicated channel guide index](channel-guides/).
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-12.webp" alt="Messaging channel setup" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-12.webp" alt="Messaging channel setup" width="700">
   <br><em>Channel settings support provider setup plus per-channel routing, prompts, and security behavior.</em>
 </p>
 
@@ -301,7 +301,7 @@ Bot Framework SDK with DM/channel mentions and adaptive cards.
 2. **Get Bot Credentials** — copy the Microsoft App ID, then create and copy a client secret under Certificates & secrets
 3. **Add Teams Channel** — in the Bot resource, go to Channels and enable Microsoft Teams
 4. **Set Up Webhook** (for local dev): `ngrok http 3978` — set messaging endpoint to `https://your-ngrok-url/api/messages`
-5. **Configure in idexal CoWork** — Settings > Teams tab, enter App ID, App Password, optional Tenant ID, webhook port (default: 3978)
+5. **Configure in Idexal CoWork** — Settings > Teams tab, enter App ID, App Password, optional Tenant ID, webhook port (default: 3978)
 
 ### Message Features
 
@@ -566,7 +566,7 @@ Configure in **Settings** > **Menu Bar**.
 
 ## Mobile Companions (iOS/Android)
 
-Access idexal CoWork from mobile devices via local network.
+Access Idexal CoWork from mobile devices via local network.
 
 ### Setup
 
@@ -587,4 +587,4 @@ Access idexal CoWork from mobile devices via local network.
 
 ## Comparison with Alternative Implementations
 
-See [Channel Comparison](channel-comparison.md) for how idexal CoWork channel integrations compare to alternative plugin-based implementations.
+See [Channel Comparison](channel-comparison.md) for how Idexal CoWork channel integrations compare to alternative plugin-based implementations.

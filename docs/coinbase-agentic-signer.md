@@ -1,13 +1,13 @@
 # Coinbase Agentic Signer Contract
 
-This document defines the HTTP contract expected by idexal CoWork when `wallet.provider = "coinbase_agentic"`.
+This document defines the HTTP contract expected by Idexal CoWork when `wallet.provider = "coinbase_agentic"`.
 
 Implementation reference:
 - `src/electron/infra/providers/coinbase-agentic-wallet-provider.ts`
 
 ## Purpose
 
-idexal CoWork delegates wallet operations and x402 signing to a remote signer service instead of storing private keys locally in the desktop app.
+Idexal CoWork delegates wallet operations and x402 signing to a remote signer service instead of storing private keys locally in the desktop app.
 
 Signer configuration is separate from task access. The task's [access profile](access-profiles.md)
 and wallet/payment policy must allow the operation before CoWork calls the
@@ -22,7 +22,7 @@ Configure in **Settings > Infrastructure > Wallet > Signer Endpoint**.
 Example:
 - `https://signer.example.com`
 
-idexal CoWork will call:
+Idexal CoWork will call:
 - `POST /wallet/status`
 - `POST /wallet/ensure`
 - `POST /x402/check`
@@ -91,7 +91,7 @@ Ensures the signer has a wallet/account provisioned for the request context.
 
 ### Response
 
-Any JSON object is accepted by idexal CoWork (result is not parsed deeply), but recommended:
+Any JSON object is accepted by Idexal CoWork (result is not parsed deeply), but recommended:
 
 ```json
 {
@@ -230,7 +230,7 @@ payment challenge and must be checked against the policy envelope before signing
 
 ## Error Handling
 
-- Return non-2xx for operational errors; idexal CoWork surfaces response text.
+- Return non-2xx for operational errors; Idexal CoWork surfaces response text.
 - Prefer JSON error body with stable codes:
 
 ```json
@@ -253,7 +253,7 @@ Suggested codes:
 
 ## Security Requirements (Recommended)
 
-1. Require authenticated requests from idexal CoWork clients:
+1. Require authenticated requests from Idexal CoWork clients:
    - mTLS, signed JWT, or short-lived bearer token.
 2. Enforce server-side policy independent of desktop settings:
    - host allowlist, per-request max, per-day budget, account scoping.
@@ -273,7 +273,7 @@ Suggested codes:
 5. Log and audit all signing/payment actions with correlation IDs.
 6. Add replay protection and strict request timeouts.
 
-## idexal CoWork Policy Interaction
+## Idexal CoWork Policy Interaction
 
 Desktop-side policy is enforced at two points:
 - Optional host allowlist (`payments.allowedHosts`)

@@ -1,6 +1,6 @@
 # Self-Hosting (Linux VPS / Headless)
 
-idexal CoWork supports **Linux headless/server deployments**. This is intended for:
+Idexal CoWork supports **Linux headless/server deployments**. This is intended for:
 
 - Packaged Linux server releases from GitHub Releases
 - VPS installs (systemd)
@@ -68,11 +68,11 @@ There is no requirement to have a macOS machine running.
 
 For production VPS installs, prefer the GitHub release tarball:
 
-- artifact name: `idexal-cowork-server-linux-x64-v<version>.tar.gz`
-- checksum: `idexal-cowork-server-linux-x64-v<version>.tar.gz.sha256`
+- artifact name: `Idexal CoWork-server-linux-x64-v<version>.tar.gz`
+- checksum: `Idexal CoWork-server-linux-x64-v<version>.tar.gz.sha256`
 - target: Linux x64 on glibc-based distributions
 - runtime: `node bin/coworkd-node.js`
-- install layout: extract to `/opt/idexal-cowork`, set `COWORK_USER_DATA_DIR=/var/lib/idexal-cowork`, and use `deploy/systemd/idexal-cowork-node.service`
+- install layout: extract to `/opt/Idexal CoWork`, set `COWORK_USER_DATA_DIR=/var/lib/Idexal CoWork`, and use `deploy/systemd/Idexal CoWork-node.service`
 
 The tarball includes built daemon output, the full `resources/` tree, bundled connector runtimes, systemd templates, and runtime `node_modules`. It does not launch the desktop UI and does not require Xvfb. Keep Node.js 24 installed on the server.
 
@@ -107,7 +107,7 @@ Expected limitations:
 
 ## Browser Automation (Playwright) on VPS
 
-idexal CoWork includes Playwright-based browser automation tools.
+Idexal CoWork includes Playwright-based browser automation tools.
 
 On minimal Linux images (and slim Docker images), Chromium may fail to launch until dependencies are installed.
 
@@ -129,8 +129,8 @@ For reverse proxies, keep the daemon bound to loopback/private networking where 
 
 All persistent state lives under the **user data directory** (DB + encrypted settings + cron store + message history):
 
-- Configure with `COWORK_USER_DATA_DIR=/var/lib/idexal-cowork` (recommended on VPS)
-- Or `--user-data-dir /var/lib/idexal-cowork`
+- Configure with `COWORK_USER_DATA_DIR=/var/lib/Idexal CoWork` (recommended on VPS)
+- Or `--user-data-dir /var/lib/Idexal CoWork`
 
 Back up that directory (or the Docker volume) to back up the instance.
 
@@ -140,7 +140,7 @@ To pin the daemon to a specific IANA timezone (e.g. for cron, timestamps, schedu
 
 - Set `COWORK_TZ` in the environment (e.g. `COWORK_TZ=America/New_York`, `COWORK_TZ=Europe/London`).
 - **Docker:** In `docker-compose.yml`, add `COWORK_TZ=America/New_York` under `environment`. The entrypoint sets `TZ` from `COWORK_TZ` before starting.
-- **Systemd:** In `/etc/idexal-cowork.env` (or your env file), add `COWORK_TZ=America/New_York`. The daemon applies it at startup.
+- **Systemd:** In `/etc/Idexal CoWork.env` (or your env file), add `COWORK_TZ=America/New_York`. The daemon applies it at startup.
 - Invalid IANA timezone values fall back to UTC with a warning.
 
 ## Common Questions (FAQ)

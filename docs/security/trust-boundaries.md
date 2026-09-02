@@ -1,6 +1,6 @@
 # Trust Boundaries
 
-Understanding the security boundaries in idexal CoWork helps you configure appropriate access controls.
+Understanding the security boundaries in Idexal CoWork helps you configure appropriate access controls.
 
 ## Workspace Boundary
 
@@ -191,7 +191,7 @@ Package-intelligence checks are additive, not the sole gate:
          |
          v
 +------------------------------------------+
-|         idexal CoWork Processing              |
+|         Idexal CoWork Processing              |
 +------------------------------------------+
 ```
 
@@ -222,7 +222,7 @@ Even after authentication, capabilities vary by context:
 
 ```
 +------------------------------------------+
-|           idexal CoWork                       |
+|           Idexal CoWork                       |
 +------------------------------------------+
          |
          | Workspace Network Permission

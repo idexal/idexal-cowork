@@ -61,7 +61,7 @@ async function main() {
   if (hasFlag(argv, '-h') || hasFlag(argv, '--help')) {
     // eslint-disable-next-line no-console
     console.log([
-      'idexal CoWork daemon (Node-only, headless)',
+      'Idexal CoWork daemon (Node-only, headless)',
       '',
       'Usage:',
       '  node bin/coworkd-node.js [daemonArgs...]',
@@ -88,7 +88,7 @@ async function main() {
   // Build daemon + connectors on source installs.
   if (!fs.existsSync(mainPath)) {
     // eslint-disable-next-line no-console
-    console.log('idexal CoWork: Building (daemon + connectors)...');
+    console.log('Idexal CoWork: Building (daemon + connectors)...');
     try {
       await run('npm', ['run', 'build:daemon'], { cwd: packageDir, stdio: 'inherit', shell: true });
       await run('npm', ['run', 'build:connectors'], { cwd: packageDir, stdio: 'inherit', shell: true });
@@ -105,7 +105,7 @@ async function main() {
   const ok = await probeBetterSqlite3(packageDir);
   if (!ok) {
     // eslint-disable-next-line no-console
-    console.log('idexal CoWork: Rebuilding native deps for Node (better-sqlite3)...');
+    console.log('Idexal CoWork: Rebuilding native deps for Node (better-sqlite3)...');
     try {
       await run('npm', ['rebuild', 'better-sqlite3'], { cwd: packageDir, stdio: 'inherit', shell: true });
     } catch (err) {

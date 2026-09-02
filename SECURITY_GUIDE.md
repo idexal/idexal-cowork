@@ -1,10 +1,10 @@
 # Security Guide for End Users
 
-This document summarizes the security model, permissions, and considerations for users who clone and run idexal CoWork on their machines. The maintained references are [Access Profiles](docs/access-profiles.md) and [Security Guide](docs/security-guide.md).
+This document summarizes the security model, permissions, and considerations for users who clone and run Idexal CoWork on their machines. The maintained references are [Access Profiles](docs/access-profiles.md) and [Security Guide](docs/security-guide.md).
 
 ## Overview
 
-idexal CoWork is an AI-powered task automation tool that can execute actions on your behalf. By design, it has capabilities that require careful consideration:
+Idexal CoWork is an AI-powered task automation tool that can execute actions on your behalf. By design, it has capabilities that require careful consideration:
 
 - Execute command tools when the active access profile exposes them
 - Read and write files
@@ -42,7 +42,7 @@ You can approve or deny each request individually. An approval cannot widen a fi
 
 ### Configurable Guardrails
 
-idexal CoWork includes configurable guardrails in **Settings > Guardrails** to limit what the agent can do:
+Idexal CoWork includes configurable guardrails in **Settings > Guardrails** to limit what the agent can do:
 
 | Guardrail | Description | Default |
 |-----------|-------------|---------|
@@ -140,7 +140,7 @@ The app includes Playwright for web automation:
 | Execute JavaScript | Within page context only |
 | Mode | Headless by default; visible workbench actions remain separately gated |
 
-**User agent**: `idexal CoWork Browser Automation`
+**User agent**: `Idexal CoWork Browser Automation`
 
 ---
 
@@ -179,7 +179,7 @@ The app connects to these services based on your configuration:
 
 ### No Telemetry
 
-idexal CoWork does **not**:
+Idexal CoWork does **not**:
 - Send usage analytics
 - Track user behavior
 - Phone home to any server
@@ -255,7 +255,7 @@ Each stored setting includes:
 - Channel message history (incoming/outgoing message content for configured channels)
 - **All encrypted settings** (API keys, preferences, configurations)
 
-Everything is stored **locally** on your machine. idexal CoWork does not upload your database or message history to any idexal CoWork servers.
+Everything is stored **locally** on your machine. Idexal CoWork does not upload your database or message history to any Idexal CoWork servers.
 
 ### API Key Security
 
@@ -387,7 +387,7 @@ git diff HEAD..origin/main
 
 ## Threat Model
 
-### What idexal CoWork Protects Against
+### What Idexal CoWork Protects Against
 
 | Threat | Protection |
 |--------|------------|
@@ -461,7 +461,7 @@ See [SECURITY.md](SECURITY.md) for full details.
 
 ## Advanced Security Framework (v0.3.8.7+)
 
-idexal CoWork includes a comprehensive security framework inspired by formal verification techniques.
+Idexal CoWork includes a comprehensive security framework inspired by formal verification techniques.
 
 ### Tool Groups & Risk Levels
 
@@ -589,7 +589,7 @@ Test files:
 
 ## Summary
 
-idexal CoWork is designed with security in mind:
+Idexal CoWork is designed with security in mind:
 
 | Aspect | Status |
 |--------|--------|

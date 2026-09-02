@@ -1,6 +1,6 @@
 # Chat Mode
 
-Chat mode is the direct conversational path in idexal CoWork.
+Chat mode is the direct conversational path in Idexal CoWork.
 
 It is intentionally different from task execution modes:
 
@@ -42,7 +42,7 @@ Use chat mode when you want a normal assistant conversation:
 - keep the same context
 - get a direct answer without task planning or tool use
 
-If you want idexal CoWork to execute work, create artifacts, or use tools, use one of the task modes instead.
+If you want Idexal CoWork to execute work, create artifacts, or use tools, use one of the task modes instead.
 
 If you attach a PDF and ask CoWork to summarize it, answer questions from it, extract clauses, compare sections, or transform it into another format, CoWork may leave direct chat for that turn and use read-only analysis so it can inspect the full document safely.
 

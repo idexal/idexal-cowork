@@ -1,10 +1,10 @@
-# Migrating to idexal CoWork
+# Migrating to Idexal CoWork
 
-This guide helps users transition from other AI assistant platforms or set up idexal CoWork alongside existing tools.
+This guide helps users transition from other AI assistant platforms or set up Idexal CoWork alongside existing tools.
 
 ## Overview
 
-idexal CoWork is a free, open-source, security-first, GUI-first, CLI-capable AI super app and everything app that runs on macOS and Windows. Its open multi-provider harness lets supported accounts, APIs, compatible gateways, cloud credentials, and local models share one runtime for coding, email, documents, spreadsheets, presentations, browser work, agents, automations, desktop review, and terminal task starts.
+Idexal CoWork is a free, open-source, security-first, GUI-first, CLI-capable AI super app and everything app that runs on macOS and Windows. Its open multi-provider harness lets supported accounts, APIs, compatible gateways, cloud credentials, and local models share one runtime for coding, email, documents, spreadsheets, presentations, browser work, agents, automations, desktop review, and terminal task starts.
 
 ---
 
@@ -13,22 +13,22 @@ idexal CoWork is a free, open-source, security-first, GUI-first, CLI-capable AI 
 If you're currently using OpenClaw, the migration is mostly an operating model shift:
 
 - OpenClaw is an open personal-agent ecosystem with a strong channel-forward operator model.
-- idexal CoWork emphasizes a GUI-first Everything Workbench, visible approvals and governance, artifact editing, and a shared desktop, CLI, and headless runtime.
+- Idexal CoWork emphasizes a GUI-first Everything Workbench, visible approvals and governance, artifact editing, and a shared desktop, CLI, and headless runtime.
 
-See also: [idexal CoWork vs OpenClaw](comparisons/openclaw.md)
+See also: [Idexal CoWork vs OpenClaw](comparisons/openclaw.md)
 
 ### Practical Migration Plan
 
 1. Keep OpenClaw running in parallel for a short validation window.
-2. Start idexal CoWork with one low-risk channel (for example, a private Telegram or Slack test channel).
-3. Enable strict security defaults in idexal CoWork first: Pairing mode for channels, the **Ask for
+2. Start Idexal CoWork with one low-risk channel (for example, a private Telegram or Slack test channel).
+3. Enable strict security defaults in Idexal CoWork first: Pairing mode for channels, the **Ask for
    approval** access profile for tasks, approval workflows, and guardrail budgets.
 4. Reconnect provider keys and channels one by one.
 5. Cut over production channels only after task quality and approval behavior match expectations.
 
 ### What Improves After Cutover
 
-| Area | What to expect in idexal CoWork |
+| Area | What to expect in Idexal CoWork |
 |---|---|
 | Operations | Desktop control plane plus headless runtime options |
 | Safety | Approval-gated destructive actions and configurable command blocking |
@@ -40,7 +40,7 @@ See also: [idexal CoWork vs OpenClaw](comparisons/openclaw.md)
 
 ## From Coding Agents and AI Workspaces
 
-You do not need to remove Claude Code, Codex, Cursor, OpenCode, ChatGPT, or Claude Cowork to start using idexal CoWork. A safer migration is to keep the specialist tool for the workflows where it is strongest, then move broader work into CoWork one lane at a time.
+You do not need to remove Claude Code, Codex, Cursor, OpenCode, ChatGPT, or Claude Cowork to start using Idexal CoWork. A safer migration is to keep the specialist tool for the workflows where it is strongest, then move broader work into CoWork one lane at a time.
 
 1. Connect one supported model route and run a low-risk task in a test workspace.
 2. Recreate only the skills, MCP servers, instructions, access profiles, and approvals needed for
@@ -49,7 +49,7 @@ You do not need to remove Claude Code, Codex, Cursor, OpenCode, ChatGPT, or Clau
 4. Move adjacent browser, inbox, document, channel, or automation work into CoWork when keeping it in one harness is useful.
 5. Keep both systems where a specialist workflow remains the better fit.
 
-See [Compare idexal CoWork](comparisons/index.md) for fit-based guides covering Claude Code, Codex, Cursor, OpenCode, ChatGPT, Claude Cowork, OpenClaw, and Hermes Agent.
+See [Compare Idexal CoWork](comparisons/index.md) for fit-based guides covering Claude Code, Codex, Cursor, OpenCode, ChatGPT, Claude Cowork, OpenClaw, and Hermes Agent.
 
 ### Migrating task access
 
@@ -76,8 +76,8 @@ edited resources should set `accessProfileId`. See [Access Profiles](access-prof
 If you're already using messaging channels with another AI platform, you can reuse most of your existing setup:
 
 #### WhatsApp
-- **Same phone**: idexal CoWork uses Web WhatsApp (Baileys library), just like other platforms
-- **New QR scan**: You'll need to scan a new QR code in idexal CoWork Settings
+- **Same phone**: Idexal CoWork uses Web WhatsApp (Baileys library), just like other platforms
+- **New QR scan**: You'll need to scan a new QR code in Idexal CoWork Settings
 - **Note**: WhatsApp allows multiple linked devices, so you can run both platforms during transition
 
 #### Telegram
@@ -87,24 +87,24 @@ If you're already using messaging channels with another AI platform, you can reu
 
 #### Discord
 - **Same application**: You can reuse your Discord application and bot token
-- **Guild commands**: If using guild-specific commands, update the Guild IDs in idexal CoWork
+- **Guild commands**: If using guild-specific commands, update the Guild IDs in Idexal CoWork
 - **Note**: Only one client can connect with the same token at a time
 
 #### Slack
 - **Same app tokens**: You can reuse your Slack app's Bot Token and App-Level Token
-- **Socket Mode**: idexal CoWork uses Socket Mode, same as most other platforms
+- **Socket Mode**: Idexal CoWork uses Socket Mode, same as most other platforms
 - **Note**: Only one connection per token is allowed
 
 #### iMessage
 - **macOS only**: iMessage integration requires macOS and the `imsg` CLI tool
 - **Setup**: Install via `brew install steipete/tap/imsg`
-- **Unique to idexal CoWork**: Most platforms don't support iMessage
+- **Unique to Idexal CoWork**: Most platforms don't support iMessage
 
 ---
 
 ## What You'll Gain
 
-Moving to idexal CoWork provides several advantages:
+Moving to Idexal CoWork provides several advantages:
 
 ### Security Features
 
@@ -136,7 +136,7 @@ Moving to idexal CoWork provides several advantages:
 
 ### Architecture
 
-| Aspect | idexal CoWork | Typical CLI Platform |
+| Aspect | Idexal CoWork | Typical CLI Platform |
 |--------|-----------|---------------------|
 | **Form factor** | Desktop app (Electron) | CLI + daemon |
 | **Primary platform** | macOS + Windows | Cross-platform |
@@ -145,7 +145,7 @@ Moving to idexal CoWork provides several advantages:
 
 ### Security Model
 
-| Aspect | idexal CoWork |
+| Aspect | Idexal CoWork |
 |--------|-----------|
 | **Default task access** | Ask for approval profile; channel pairing remains a separate channel-security setting |
 | **Sandbox** | Workspace boundaries (VM planned) |
@@ -156,11 +156,11 @@ Moving to idexal CoWork provides several advantages:
 
 ## Setup Steps
 
-### 1. Install idexal CoWork
+### 1. Install Idexal CoWork
 
 ```bash
-git clone https://github.com/idexal/idexal-cowork.git
-cd idexal-cowork
+git clone https://github.com/idexal/Idexal CoWork.git
+cd Idexal CoWork
 npm install
 npm run dev
 ```
@@ -230,7 +230,7 @@ During transition, you may want to run both platforms:
 
 ### Can I import my skills/prompts from another platform?
 
-idexal CoWork uses a JSON-based skill format. If your existing platform exports skills, you may need to convert them. Skills are stored in:
+Idexal CoWork uses a JSON-based skill format. If your existing platform exports skills, you may need to convert them. Skills are stored in:
 ```
 ~/Library/Application Support/idexal/skills/
 ```
@@ -241,7 +241,7 @@ To invoke an imported managed skill, mention it explicitly in the prompt by ID, 
 
 ### Do I need to re-pair users?
 
-Yes. idexal CoWork maintains its own pairing database. Users will need to pair again using the pairing code flow.
+Yes. Idexal CoWork maintains its own pairing database. Users will need to pair again using the pairing code flow.
 
 ### Can I use the same API keys?
 
@@ -249,13 +249,13 @@ Often, if the provider permits the key to be used with third-party clients and C
 
 ### Is my data migrated?
 
-No. Task history, conversations, and artifacts are stored locally per platform. You'll start fresh with idexal CoWork.
+No. Task history, conversations, and artifacts are stored locally per platform. You'll start fresh with Idexal CoWork.
 
 ---
 
 ## Getting Help
 
-- **Documentation**: See [Repository README](https://github.com/idexal/idexal-cowork/blob/main/README.md) for full feature documentation
+- **Documentation**: See [Repository README](https://github.com/idexal/Idexal CoWork/blob/main/README.md) for full feature documentation
 - **Security**: See [Security Guide](security-guide.md) for security best practices
-- **Issues**: Report bugs at [GitHub Issues](https://github.com/idexal/idexal-cowork/issues)
+- **Issues**: Report bugs at [GitHub Issues](https://github.com/idexal/Idexal CoWork/issues)
 - **Contributing**: See [Contributing](contributing.md) for contribution guidelines

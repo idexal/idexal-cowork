@@ -69,7 +69,7 @@ async function main() {
   if (hasFlag(argv, '-h') || hasFlag(argv, '--help')) {
     // eslint-disable-next-line no-console
     console.log([
-      'idexal CoWork daemon (headless)',
+      'Idexal CoWork daemon (headless)',
       '',
       'Usage:',
       '  node bin/coworkd.js [electronArgs...]',
@@ -96,7 +96,7 @@ async function main() {
   // If the app hasn't been built (source install), build the Electron main process and connectors.
   if (!fs.existsSync(mainPath)) {
     // eslint-disable-next-line no-console
-    console.log('idexal CoWork: Building (electron + connectors)...');
+    console.log('Idexal CoWork: Building (electron + connectors)...');
     try {
       await run('npm', ['run', 'build:electron'], { cwd: packageDir, stdio: 'inherit', shell: true });
       await run('npm', ['run', 'build:connectors'], { cwd: packageDir, stdio: 'inherit', shell: true });
@@ -113,7 +113,7 @@ async function main() {
   const ok = await probeBetterSqlite3ForElectron(electronPath, packageDir);
   if (!ok) {
     // eslint-disable-next-line no-console
-    console.log('idexal CoWork: Rebuilding native deps for Electron (better-sqlite3)...');
+    console.log('Idexal CoWork: Rebuilding native deps for Electron (better-sqlite3)...');
     try {
       await run('npx', ['electron-rebuild', '-f', '-w', 'better-sqlite3'], { cwd: packageDir, stdio: 'inherit', shell: true });
     } catch (err) {

@@ -1,4 +1,4 @@
-# OpenClaw v2026.3.22 Review for idexal CoWork
+# OpenClaw v2026.3.22 Review for Idexal CoWork
 
 Release URL: https://github.com/openclaw/openclaw/releases/tag/v2026.3.22
 
@@ -6,10 +6,10 @@ Release URL: https://github.com/openclaw/openclaw/releases/tag/v2026.3.22
 
 OpenClaw v2026.3.22 appears to focus on practical runtime improvements rather than a major product-direction shift. The most relevant themes are safer plugin/package installation flows, better plugin bundle support, browser automation improvements around existing sessions, broader provider/backend support, queue/retry reliability fixes, performance work, and security hardening in sensitive execution paths.
 
-## Potentially Useful for idexal CoWork
+## Potentially Useful for Idexal CoWork
 
 - **Marketplace-style install flows**
-  - Relevant to idexal CoWork extensibility, trust, and future marketplace plans.
+  - Relevant to Idexal CoWork extensibility, trust, and future marketplace plans.
   - Suggests a safer default than raw package installation for skills, plugins, and connector add-ons.
 
 - **Plugin bundles**
@@ -21,11 +21,11 @@ OpenClaw v2026.3.22 appears to focus on practical runtime improvements rather th
   - Improves real-world reliability for login-heavy workflows.
 
 - **Broader provider abstraction**
-  - The addition of more search, crawl, and model providers reinforces the value of keeping idexal CoWork connector/provider interfaces swappable.
+  - The addition of more search, crawl, and model providers reinforces the value of keeping Idexal CoWork connector/provider interfaces swappable.
   - Useful as an architectural pattern for future enterprise and reliability work.
 
 - **Remote/sandbox execution backends**
-  - Relevant if idexal CoWork expands beyond the local Mac into remote hosts, containers, or managed execution targets.
+  - Relevant if Idexal CoWork expands beyond the local Mac into remote hosts, containers, or managed execution targets.
   - Fits the current tool/runtime layer and long-term operator workflows.
 
 - **Queue, retry, and deadline fixes**
@@ -37,13 +37,13 @@ OpenClaw v2026.3.22 appears to focus on practical runtime improvements rather th
   - Especially relevant for Electron main-process startup and background operator overhead.
 
 - **Security hardening around execution surfaces**
-  - Highly relevant because idexal CoWork exposes shell, browser, AppleScript, scheduling, communications, and cloud actions.
+  - Highly relevant because Idexal CoWork exposes shell, browser, AppleScript, scheduling, communications, and cloud actions.
   - Reinforces the need for strict guardrails around privileged tools.
 
 ## Low Relevance or Not Applicable
 
 - **OpenClaw-specific marketplace branding and install mechanics**
-  - Useful as inspiration, but not something idexal CoWork should copy directly without its own trust model and packaging rules.
+  - Useful as inspiration, but not something Idexal CoWork should copy directly without its own trust model and packaging rules.
 
 - **Provider-specific additions as-is**
   - The exact providers are less important than the abstraction pattern. Some additions may not matter unless they map to clear product or enterprise needs.
@@ -52,12 +52,12 @@ OpenClaw v2026.3.22 appears to focus on practical runtime improvements rather th
   - The lessons are relevant, but the exact fixes may not transfer directly to Heartbeat v3 because the runtime model is different.
 
 - **Any release items focused mainly on OpenClaw ecosystem conventions**
-  - Helpful for comparison, but low priority unless they solve a concrete idexal CoWork problem.
+  - Helpful for comparison, but low priority unless they solve a concrete Idexal CoWork problem.
 
 ## Recommended Follow-ups
 
-1. Draft a short RFC for a **curated plugin/marketplace install path** and **bundle packaging model** for idexal CoWork.
+1. Draft a short RFC for a **curated plugin/marketplace install path** and **bundle packaging model** for Idexal CoWork.
 2. Prototype a **safe authenticated browser-profile mode** for browser automation and document the session/privacy model.
 3. Review **Heartbeat v3 retry, defer, compression, and deadline semantics** against the failure patterns highlighted by OpenClaw’s queue fixes.
-4. Evaluate whether idexal CoWork should add a **remote execution backend abstraction** for SSH or managed runners.
+4. Evaluate whether Idexal CoWork should add a **remote execution backend abstraction** for SSH or managed runners.
 5. Add a lightweight **security hardening checklist** for privileged execution surfaces before expanding plugin distribution.

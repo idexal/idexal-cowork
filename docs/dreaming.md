@@ -1,6 +1,6 @@
 # Dreaming
 
-Dreaming is idexal CoWork's background memory-curation phase.
+Dreaming is Idexal CoWork's background memory-curation phase.
 
 It is part of Workflow Intelligence, but it has a narrower job than Reflection:
 

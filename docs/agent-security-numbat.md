@@ -1,6 +1,6 @@
 # Agent Security with Numbat
 
-idexal CoWork can inspect live agent actions and endpoint agent artifacts with a
+Idexal CoWork can inspect live agent actions and endpoint agent artifacts with a
 pinned build of [Perplexity Numbat](https://github.com/perplexityai/numbat).
 The integration is disabled by default and is controlled by the organization
 admin policy.

@@ -1,6 +1,6 @@
 # Remote Access Guide
 
-idexal CoWork provides multiple options for remote access to your Control Plane, allowing you to manage tasks, monitor progress, and interact with agents from anywhere.
+Idexal CoWork provides multiple options for remote access to your Control Plane, allowing you to manage tasks, monitor progress, and interact with agents from anywhere.
 
 Remote access is now also the foundation for the desktop **Devices** tab. The same Control Plane connection can be saved as a managed remote device, letting you:
 
@@ -47,7 +47,7 @@ guardrails. The local client cannot use a remote connection to widen the target'
   by selecting a profile. Configure the required provider or connector on the target separately.
 
 The CLI equivalent is `cowork run "task" --remote --access-profile <id>`. See [Access Profiles](access-profiles.md#surfaces-and-inheritance)
-and [idexal CoWork CLI](cli.md#access-profiles).
+and [Idexal CoWork CLI](cli.md#access-profiles).
 
 ## Finding the Remote Address
 

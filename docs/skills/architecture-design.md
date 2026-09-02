@@ -1,6 +1,6 @@
 # Architecture Design Skill
 
-`architecture-design` is a bundled idexal CoWork skill for orchestrating concept architecture workflows across local Rhino, Blender, and ComfyUI connectors.
+`architecture-design` is a bundled Idexal CoWork skill for orchestrating concept architecture workflows across local Rhino, Blender, and ComfyUI connectors.
 
 It is designed for:
 

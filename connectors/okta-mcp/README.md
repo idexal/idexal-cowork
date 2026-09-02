@@ -1,6 +1,6 @@
 # Okta MCP Connector (MVP)
 
-This connector exposes Okta Users API endpoints to idexal CoWork through MCP tools.
+This connector exposes Okta Users API endpoints to Idexal CoWork through MCP tools.
 
 ## Requirements
 

@@ -286,7 +286,7 @@ To add a persona for any job function:
 
 1. Create a JSON file following the `PersonaTemplate` schema.
 2. Place it in `resources/persona-templates/`.
-3. Restart idexal CoWork.
+3. Restart Idexal CoWork.
 
 ### Template Shape
 

@@ -2,18 +2,18 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="idexal logo+icon/icon origin.png">
     <source media="(prefers-color-scheme: light)" srcset="idexal logo+icon/icon origin.png">
-    <img src="idexal logo+icon/icon origin.png" alt="idexal CoWork" width="600">
+    <img src="idexal logo+icon/icon origin.png" alt="Idexal CoWork" width="600">
   </picture>
 </p>
 
 <p align="center">
-  <strong>idexal CoWork — the free, open-source AI super app and everything app for getting real work done.</strong><br>
+  <strong>Idexal CoWork — the free, open-source AI super app and everything app for getting real work done.</strong><br>
   Code, email, research, browser work, documents, spreadsheets, decks, agents, channels, and automations stay in one GUI-first, CLI-capable workspace. Its open multi-provider harness lets you bring supported provider accounts, API keys, compatible gateways, cloud credentials, or local models while keeping the same tools, memory, approvals, artifacts, and workflows.
 </p>
 
 <p align="center">
   <strong>One app for the work. Your choice of AI.</strong><br>
-  idexal CoWork is MIT-licensed. Model eligibility, limits, and usage charges remain with each provider.
+  Idexal CoWork is MIT-licensed. Model eligibility, limits, and usage charges remain with each provider.
 </p>
 
 <p align="center">
@@ -60,12 +60,12 @@ Generated 2026-08-31T09:41:36.401Z. These are public GitHub/npm adoption signals
 <!-- COWORK_PUBLIC_ADOPTION_STATS_END -->
 
 <p align="center">
-  <img src="resources/branding/images/idexal-cowork-1.webp" alt="idexal CoWork home interface" width="700">
+  <img src="resources/branding/images/idexal-cowork-1.webp" alt="Idexal CoWork home interface" width="700">
 </p>
 
-### Why idexal CoWork?
+### Why Idexal CoWork?
 
-- **AI super app for real work** — idexal CoWork keeps coding, email, research, browser testing, documents, spreadsheets, presentations, PDFs, channels, devices, automations, memory, providers, and approvals in one governed workspace.
+- **AI super app for real work** — Idexal CoWork keeps coding, email, research, browser testing, documents, spreadsheets, presentations, PDFs, channels, devices, automations, memory, providers, and approvals in one governed workspace.
 - **Open multi-provider harness** — Connect supported provider accounts, API keys, compatible gateways, cloud credentials, or local models, then keep the same CoWork tools, skills, memory, agents, approvals, artifacts, and workflows as model routes change. CoWork is free; provider charges and terms still apply. [Models & Access](docs/providers.md)
 - **GUI-first, CLI-capable agent operations** — Agents Hub, Mission Control, task timelines, visual boards, teams, devices, and automations remain the main operator console, while the `cowork` CLI gives terminal users the same local runtime for quick prompts and one-shot tasks.
 - **First-class `cowork` CLI** — Type `cowork` for an interactive terminal UI or `cowork run "task"` for a local one-shot run. Normal local CLI use shares desktop provider/settings state and does not require a Control Plane token; `--remote` is the explicit token-gated path. [CoWork CLI](docs/cli.md)
@@ -107,7 +107,7 @@ Stable workflow entry points for the newest high-impact capabilities.
 - **React/Next.js implementation guidance** — bundled `react-best-practices` skill for React workspace changes, Next.js feature work, reviews, refactors, data-fetching improvements, bundle-size checks, and rendering-performance fixes. [Learn more](docs/skills/react-best-practices.md)
 - **High-agency frontend design** — bundled `taste-skill` for stricter anti-slop frontend work with stronger layout variance, typography, motion, and implementation rules.
 
-See [Everyday Agent](docs/everyday-agent.md), [Workflow Intelligence](docs/workflow-intelligence.md), [Dreaming](docs/dreaming.md), [Core Automation](docs/core-automation.md), [I Gave idexal CoWork Workflow Intelligence, And Now It Learns From Reviewable Work | Full Guide](docs/continual-learning-in-cowork.md), [Features](docs/features.md), [Heartbeat v3](docs/heartbeat-v3.md), [Providers](docs/providers.md), and [Plugin Packs](docs/plugin-packs.md) for current runtime details.
+See [Everyday Agent](docs/everyday-agent.md), [Workflow Intelligence](docs/workflow-intelligence.md), [Dreaming](docs/dreaming.md), [Core Automation](docs/core-automation.md), [I Gave Idexal CoWork Workflow Intelligence, And Now It Learns From Reviewable Work | Full Guide](docs/continual-learning-in-cowork.md), [Features](docs/features.md), [Heartbeat v3](docs/heartbeat-v3.md), [Providers](docs/providers.md), and [Plugin Packs](docs/plugin-packs.md) for current runtime details.
 
 ### Latest Release
 
@@ -123,34 +123,34 @@ Download the latest release from [GitHub Releases](https://github.com/idexal/ide
 
 | Platform | Download | Install |
 |----------|----------|---------|
-| **macOS 13 Ventura or later** | `.dmg` | Drag idexal CoWork into Applications |
+| **macOS 13 Ventura or later** | `.dmg` | Drag Idexal CoWork into Applications |
 | **Windows** | `.exe` (NSIS installer) | Run the installer and follow the prompts |
 
-> **macOS 12 Monterey:** `0.5.51` is the final compatible idexal CoWork release. The `0.5.52` app, installer, and automatic updater require macOS 13 or later. npm users who must remain on Monterey can run `npm install -g idexal-cowork@0.5.51`; this does not remove their existing CoWork data.
+> **macOS 12 Monterey:** `0.5.51` is the final compatible Idexal CoWork release. The `0.5.52` app, installer, and automatic updater require macOS 13 or later. npm users who must remain on Monterey can run `npm install -g idexal-cowork@0.5.51`; this does not remove their existing CoWork data.
 
 #### macOS unsigned app workaround
 
-This Gatekeeper warning is different from the macOS 13 system requirement. On a supported Mac, an unsigned idexal CoWork DMG may still need a one-time Gatekeeper override:
+This Gatekeeper warning is different from the macOS 13 system requirement. On a supported Mac, an unsigned Idexal CoWork DMG may still need a one-time Gatekeeper override:
 
-1. Open the downloaded `.dmg` and drag **idexal CoWork** into **Applications**.
+1. Open the downloaded `.dmg` and drag **Idexal CoWork** into **Applications**.
 
-   <img src="screenshots/macos-install/01-drag-to-applications.png" alt="idexal CoWork DMG showing the app icon being dragged into Applications" width="480">
+   <img src="screenshots/macos-install/01-drag-to-applications.png" alt="Idexal CoWork DMG showing the app icon being dragged into Applications" width="480">
 
-2. Open **idexal CoWork** from Applications. If macOS says `"idexal CoWork" Not Opened`, click **Done**.
+2. Open **Idexal CoWork** from Applications. If macOS says `"Idexal CoWork" Not Opened`, click **Done**.
 
-   <img src="screenshots/macos-install/02-not-opened-warning.png" alt="macOS warning saying idexal CoWork was not opened because Apple could not verify it" width="260">
+   <img src="screenshots/macos-install/02-not-opened-warning.png" alt="macOS warning saying Idexal CoWork was not opened because Apple could not verify it" width="260">
 
-3. Open **System Settings > Privacy & Security**, scroll to **Security**, and click **Open Anyway** next to `"idexal CoWork" was blocked to protect your Mac`.
+3. Open **System Settings > Privacy & Security**, scroll to **Security**, and click **Open Anyway** next to `"Idexal CoWork" was blocked to protect your Mac`.
 
-   <img src="screenshots/macos-install/03-privacy-security-open-anyway.png" alt="macOS Privacy and Security settings with the idexal CoWork Open Anyway button highlighted" width="480">
+   <img src="screenshots/macos-install/03-privacy-security-open-anyway.png" alt="macOS Privacy and Security settings with the Idexal CoWork Open Anyway button highlighted" width="480">
 
 4. In the confirmation dialog, click **Open Anyway**.
 
-   <img src="screenshots/macos-install/04-confirm-open-anyway.png" alt="macOS confirmation dialog asking whether to open idexal CoWork anyway" width="260">
+   <img src="screenshots/macos-install/04-confirm-open-anyway.png" alt="macOS confirmation dialog asking whether to open Idexal CoWork anyway" width="260">
 
-5. On first startup, macOS may ask for access to the `idexal-cowork Safe Storage` keychain item. Enter your Mac login password and click **Always Allow** so idexal CoWork can store local credentials securely.
+5. On first startup, macOS may ask for access to the `idexal-cowork Safe Storage` keychain item. Enter your Mac login password and click **Always Allow** so Idexal CoWork can store local credentials securely.
 
-   <img src="screenshots/macos-install/05-keychain-safe-storage.png" alt="macOS keychain prompt asking to allow idexal CoWork safe storage access" width="480">
+   <img src="screenshots/macos-install/05-keychain-safe-storage.png" alt="macOS keychain prompt asking to allow Idexal CoWork safe storage access" width="480">
 
 Release maintainers can create this unsigned DMG/ZIP with `npm run package:mac:unsigned`.
 
@@ -227,7 +227,7 @@ Chronicle is an opt-in desktop-only recent-screen context lane for vague on-scre
 
 ### Research Vaults (`llm-wiki`)
 
-idexal CoWork includes `llm-wiki` as a bundled, first-class research-vault workflow inspired by Andrej Karpathy's LLM Wiki idea: keep a `/raw` corpus, build durable linked notes on top, and make the result easy for agents to traverse later.
+Idexal CoWork includes `llm-wiki` as a bundled, first-class research-vault workflow inspired by Andrej Karpathy's LLM Wiki idea: keep a `/raw` corpus, build durable linked notes on top, and make the result easy for agents to traverse later.
 
 You can launch it from the GUI with a normal prompt such as `Build a persistent Obsidian-friendly research vault for GRPO papers`, from the welcome/onboarding starter cards, or with `/llm-wiki` when you want explicit slash syntax.
 
@@ -280,7 +280,7 @@ Long-running tasks now have clearer operator handoffs and stronger recovery defa
 
 ### Feature Inventory
 
-The top of this README is intentionally opinionated about what matters first. The broader surface area is still part of idexal CoWork:
+The top of this README is intentionally opinionated about what matters first. The broader surface area is still part of Idexal CoWork:
 
 | Area | Current coverage |
 |------|------------------|
@@ -305,7 +305,7 @@ Centralized orchestration and monitoring cockpit with clear separation between H
 
 ### Devices
 
-The Devices tab turns idexal CoWork into a multi-machine control surface. Save and reconnect remote CoWork nodes, inspect device summaries (activity, apps, storage, alerts, resource signals), launch tasks against a selected machine, browse that machine's remote workspaces, and attach files directly from the remote filesystem before dispatching a task. [Learn more](docs/remote-access.md)
+The Devices tab turns Idexal CoWork into a multi-machine control surface. Save and reconnect remote CoWork nodes, inspect device summaries (activity, apps, storage, alerts, resource signals), launch tasks against a selected machine, browse that machine's remote workspaces, and attach files directly from the remote filesystem before dispatching a task. [Learn more](docs/remote-access.md)
 
 ### Automations
 
@@ -334,7 +334,7 @@ Everyday Agent turns personal priorities into a reviewable operating plan: goals
 
 ### Zero-Human Company Ops
 
-idexal CoWork can be configured as a founder-operated autonomous company shell: venture workspace kit context, a dedicated `Settings > Companies` control surface, company-linked operator agents, automation profiles, strategic planner issue generation, and Mission Control ops monitoring. Create the company in `Companies`, activate operator personas such as `Company Planner` and `Founder Office Operator`, then attach automation where needed and monitor the company loop from Mission Control. [Learn more](docs/zero-human-company.md) | [Core Automation](docs/core-automation.md)
+Idexal CoWork can be configured as a founder-operated autonomous company shell: venture workspace kit context, a dedicated `Settings > Companies` control surface, company-linked operator agents, automation profiles, strategic planner issue generation, and Mission Control ops monitoring. Create the company in `Companies`, activate operator personas such as `Company Planner` and `Founder Office Operator`, then attach automation where needed and monitor the company loop from Mission Control. [Learn more](docs/zero-human-company.md) | [Core Automation](docs/core-automation.md)
 
 <p align="center">
   <img src="resources/branding/images/idexal-cowork-2.webp" alt="Company operations dashboard" width="700">
@@ -465,7 +465,7 @@ Access from **Settings** > **Customize**. [Learn more](docs/plugin-packs.md)
 
 ### Best-Fit Workflows
 
-idexal CoWork ships purpose-built packs and Tier-1 connectors for three operational lanes where governed AI delivery has the clearest ROI:
+Idexal CoWork ships purpose-built packs and Tier-1 connectors for three operational lanes where governed AI delivery has the clearest ROI:
 
 | Lane | Pack | Connectors |
 |------|------|------------|
@@ -473,7 +473,7 @@ idexal CoWork ships purpose-built packs and Tier-1 connectors for three operatio
 | **IT Ops** | DevOps Pack | ServiceNow, Jira, Linear |
 | **Sales Ops** | Sales CRM Pack | HubSpot, Salesforce |
 
-These are the workflows where approval gates, local data control, and measurable outcome delivery pay off most — and where idexal CoWork is a vendor-swap-friendly alternative to point solutions or BPO tooling. [Learn more](docs/best-fit-workflows.md)
+These are the workflows where approval gates, local data control, and measurable outcome delivery pay off most — and where Idexal CoWork is a vendor-swap-friendly alternative to point solutions or BPO tooling. [Learn more](docs/best-fit-workflows.md)
 
 ### Extensibility
 
@@ -498,7 +498,7 @@ Persistent memory with privacy protection, FTS5 search, LLM compression, and a c
 
 The workspace kit separates workspace-wide files such as `AGENTS.md`, `USER.md`, `MEMORY.md`, `TOOLS.md`, `SOUL.md`, `IDENTITY.md`, `RULES.md`, `VIBES.md`, and `LORE.md` from project-scoped files such as `.cowork/projects/<projectId>/CONTEXT.md` and `.cowork/projects/<projectId>/ACCESS.md`. Special files get dedicated lifecycle handling: `BOOTSTRAP.md` is a one-time onboarding checklist tracked through `.cowork/workspace-state.json`, while `HEARTBEAT.md` is reserved for recurring Heartbeat v3 checklist work instead of general task context.
 
-Every tracked file follows a shared parser/linter model with freshness windows, secret detection, missing-file status, and revision snapshots stored under `.cowork/**/.history/`. Workspace kit health is surfaced in the app and can be checked locally with `npm run kit:lint` for human-readable output or JSON export. **Import your ChatGPT history** to eliminate the cold-start problem — idexal CoWork knows you from day one. Imported history stays local in SQLite and uses privacy filtering; selected sensitive settings/fields use OS keychain/AES-backed encryption, but the main SQLite file is not whole-file encrypted. **Structured memory observations** add inspectable local metadata, progressive recall tools, Memory Hub privacy controls, deterministic rebuild/backfill, and soft-delete suppression on top of archive memory. **Memory Write Governance** can stage durable memory writes in `pending_memory_writes`, atomically claim approvals as `applying`, and block sensitive external-memory payloads before they are stored in the approval queue. **Durable Runtime Context** stores sanitized active-task messages and source-linked summary DAG nodes when enabled, is erased by Clear memory, and keeps `context_grep` active-task scoped unless the user explicitly asks for another task. **Optional Supermemory integration** adds an external provider lane with `supermemory_profile`, `supermemory_search`, `supermemory_remember`, and `supermemory_forget`, plus optional prompt-time profile injection and background mirroring of non-private local memory captures. **Proactive session compaction** automatically generates comprehensive structured summaries when context reaches 90% capacity, and checkpoint capture preserves exact supporting spans so recall quality survives compaction. [Learn more](docs/features.md#persistent-memory-system) | [Structured Memory](docs/memory-observations.md) | [Durable Runtime Context](docs/durable-runtime-context.md) | [Supermemory](docs/supermemory.md) | [Context Compaction](docs/context-compaction.md)
+Every tracked file follows a shared parser/linter model with freshness windows, secret detection, missing-file status, and revision snapshots stored under `.cowork/**/.history/`. Workspace kit health is surfaced in the app and can be checked locally with `npm run kit:lint` for human-readable output or JSON export. **Import your ChatGPT history** to eliminate the cold-start problem — Idexal CoWork knows you from day one. Imported history stays local in SQLite and uses privacy filtering; selected sensitive settings/fields use OS keychain/AES-backed encryption, but the main SQLite file is not whole-file encrypted. **Structured memory observations** add inspectable local metadata, progressive recall tools, Memory Hub privacy controls, deterministic rebuild/backfill, and soft-delete suppression on top of archive memory. **Memory Write Governance** can stage durable memory writes in `pending_memory_writes`, atomically claim approvals as `applying`, and block sensitive external-memory payloads before they are stored in the approval queue. **Durable Runtime Context** stores sanitized active-task messages and source-linked summary DAG nodes when enabled, is erased by Clear memory, and keeps `context_grep` active-task scoped unless the user explicitly asks for another task. **Optional Supermemory integration** adds an external provider lane with `supermemory_profile`, `supermemory_search`, `supermemory_remember`, and `supermemory_forget`, plus optional prompt-time profile injection and background mirroring of non-private local memory captures. **Proactive session compaction** automatically generates comprehensive structured summaries when context reaches 90% capacity, and checkpoint capture preserves exact supporting spans so recall quality survives compaction. [Learn more](docs/features.md#persistent-memory-system) | [Structured Memory](docs/memory-observations.md) | [Durable Runtime Context](docs/durable-runtime-context.md) | [Supermemory](docs/supermemory.md) | [Context Compaction](docs/context-compaction.md)
 
 ## Architecture
 
@@ -576,7 +576,7 @@ See [CHANGELOG.md](CHANGELOG.md) for the full history of completed features.
 | Guide | Description |
 |-------|-------------|
 | [Getting Started](docs/getting-started.md) | First-time setup and usage |
-| [Beginner's Guide](docs/cowork-school.md) | Practical guide to what idexal CoWork is for and which workflows to try first |
+| [Beginner's Guide](docs/cowork-school.md) | Practical guide to what Idexal CoWork is for and which workflows to try first |
 | [Release Notes 0.5.52](docs/release-notes-0.5.52.md) | OpenRouter images, OpenCode/SearXNG/Atlas providers, Electron 44, and macOS support changes |
 | [Composer Mentions](docs/composer-mentions.md) | `@` autocomplete for agents, configured integrations, files, rich integration chips, and `@Inbox` routing |
 | [Message Box Shortcuts](docs/message-box-shortcuts.md) | `/` picker for deterministic app commands and skill-backed workflow shortcuts |
@@ -633,7 +633,7 @@ See [CHANGELOG.md](CHANGELOG.md) for the full history of completed features.
 | [Zero-Human Company Ops](docs/zero-human-company.md) | Founder-directed company planning, operators, and Mission Control ops workflows |
 | [Plugin Packs](docs/plugin-packs.md) | Plugin platform, Customize panel, and Plugin Store |
 | [Skill Store & External Skills](docs/skill-store-and-external-skills.md) | ClawHub support, external skill imports, and managed-skill install flows |
-| [Best-Fit Workflows](docs/best-fit-workflows.md) | Support Ops, IT Ops, and Sales Ops — where idexal CoWork delivers the strongest ROI |
+| [Best-Fit Workflows](docs/best-fit-workflows.md) | Support Ops, IT Ops, and Sales Ops — where Idexal CoWork delivers the strongest ROI |
 | [Admin Policies](docs/admin-policies.md) | Enterprise admin policies and organization pack management |
 | [Digital Twins](docs/digital-twins.md) | Optional role-based persona presets and cognitive offload without core-runtime ownership |
 | [Digital Twins Guide](docs/digital-twin-personas-guide.md) | Comprehensive guide with scenarios and expanded job areas |
@@ -676,5 +676,5 @@ MIT License. See [LICENSE](LICENSE).
 
 ---
 
-<sub>"Cowork" is an Anthropic product name. idexal CoWork is an independent open-source project by [Idexal](https://idexal.com) and is not affiliated with, endorsed by, or sponsored by Anthropic. If requested by the rights holder, we will update naming/branding.</sub>
+<sub>"Cowork" is an Anthropic product name. Idexal CoWork is an independent open-source project by [Idexal](https://idexal.com) and is not affiliated with, endorsed by, or sponsored by Anthropic. If requested by the rights holder, we will update naming/branding.</sub>
 osai-verify: b359fb38a6b6ca5e28d0

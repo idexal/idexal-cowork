@@ -1,6 +1,6 @@
 # Relationship-Agent UAT Checklist
 
-Use this checklist to validate that idexal CoWork behaves as a personal relationship agent, not only a task executor.
+Use this checklist to validate that Idexal CoWork behaves as a personal relationship agent, not only a task executor.
 
 ## Preconditions
 

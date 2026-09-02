@@ -1,6 +1,6 @@
 # Everyday Agent
 
-Everyday Agent is an opt-in control, consent, trust, and observability layer over existing idexal CoWork execution systems. It does not introduce a separate executor. Work still runs through Managed Agents, task timelines, Browser Workbench, Inbox Agent, Mission Control, Routines, Channels, Devices, memory, and the permission system.
+Everyday Agent is an opt-in control, consent, trust, and observability layer over existing Idexal CoWork execution systems. It does not introduce a separate executor. Work still runs through Managed Agents, task timelines, Browser Workbench, Inbox Agent, Mission Control, Routines, Channels, Devices, memory, and the permission system.
 
 Everyday Agent capability bundles and trust patterns operate beneath the task's
 [access profile](access-profiles.md). Consent, a trusted pattern, or a high-trust
@@ -22,12 +22,12 @@ Open **Everyday Agent** from the sidebar. The surface shows:
 - Local clear-data controls for receipts, previews, cached connector summaries, and browser-profile metadata.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-7.webp" alt="Everyday Agent plan" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-7.webp" alt="Everyday Agent plan" width="700">
   <br><em>Everyday Agent keeps active goals, live plan items, and priority queues visible.</em>
 </p>
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-13.webp" alt="Everyday Agent settings" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-13.webp" alt="Everyday Agent settings" width="700">
   <br><em>Capability settings make consent, connector scope, and automation lanes explicit.</em>
 </p>
 

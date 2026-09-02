@@ -1,6 +1,6 @@
 # Kami Skill
 
-`kami` is a bundled idexal CoWork skill for typesetting polished editorial documents with the Kami design system.
+`kami` is a bundled Idexal CoWork skill for typesetting polished editorial documents with the Kami design system.
 
 It is designed for:
 

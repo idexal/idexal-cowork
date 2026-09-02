@@ -10,7 +10,7 @@ Access from **Settings > System & Security > Admin Policies** (requires Power de
 
 ### Policy File
 
-Policies are stored as JSON in the idexal CoWork user data directory:
+Policies are stored as JSON in the Idexal CoWork user data directory:
 
 ```text
 <active CoWork user-data directory>/policies.json
@@ -220,7 +220,7 @@ Organization admins can distribute plugin packs to all users by placing them in 
 1. Create a directory for org plugins (e.g., `/opt/company/cowork-plugins/`)
 2. Place plugin packs as subdirectories, each with a `cowork.plugin.json`
 3. Set the path in Admin Policies > Organization > Organization Plugin Directory
-4. Restart idexal CoWork
+4. Restart Idexal CoWork
 
 ### Directory Structure
 
@@ -246,7 +246,7 @@ Organization admins can distribute plugin packs to all users by placing them in 
 
 ### Default Org Directory
 
-If no custom `orgPluginDir` is configured, idexal CoWork checks `~/.cowork/org-plugins/`. Create this directory to use it as the default org plugin location.
+If no custom `orgPluginDir` is configured, Idexal CoWork checks `~/.cowork/org-plugins/`. Create this directory to use it as the default org plugin location.
 
 ---
 
@@ -490,7 +490,7 @@ Enforcement:
 ### Org plugins not loading
 - Verify the org plugin directory path exists and contains valid packs
 - Each subdirectory must have a `cowork.plugin.json` at its root
-- Restart idexal CoWork after changing the org directory path
+- Restart Idexal CoWork after changing the org directory path
 
 ### "Installation disabled by admin policy"
 - Custom pack creation, git install, or URL install has been disabled

@@ -4,7 +4,7 @@ Release `0.5.42` is a Windows installer hotfix for `0.5.41` with composer routin
 
 ## Added
 
-- **Linux server release package**: GitHub releases can now include `idexal-cowork-server-linux-x64-v<version>.tar.gz` plus a `.sha256` checksum for VPS/systemd deployments. The package runs `coworkd-node`, includes built daemon assets, full resources, connector runtimes, runtime dependencies, and is smoke-tested through the Control Plane `/health` endpoint. See [Linux VPS](vps-linux.md).
+- **Linux server release package**: GitHub releases can now include `Idexal CoWork-server-linux-x64-v<version>.tar.gz` plus a `.sha256` checksum for VPS/systemd deployments. The package runs `coworkd-node`, includes built daemon assets, full resources, connector runtimes, runtime dependencies, and is smoke-tested through the Control Plane `/health` endpoint. See [Linux VPS](vps-linux.md).
 - **Task-sourced scheduled automations**: task view now includes `... > Add automation...`, opening a task-prefilled modal that saves a real cron scheduled task through the existing scheduler API. Saved jobs include the source task title, task ID, and `cowork://tasks/<taskId>` deeplink. See [Task Automations](task-automations.md).
 - **React/Next.js implementation guidance**: added the bundled `react-best-practices` skill for React workspace changes, Next.js feature work, reviews, refactors, data-fetching improvements, bundle-size checks, and rendering-performance fixes. See [React Best Practices Skill](skills/react-best-practices.md).
 - **Composer mentions**: typing `@` in the message box now opens a grouped menu for Agents, configured Integrations, and Files. Integration selections insert rich icon+name chips, render the same way in sent user messages and restored sessions, and pass `integrationMentions` metadata as soft runtime guidance. See [Composer Mentions](composer-mentions.md).
@@ -15,7 +15,7 @@ Release `0.5.42` is a Windows installer hotfix for `0.5.41` with composer routin
 
 ## Fixed
 
-- **Windows installer architecture**: the Windows release artifact is now built as an x64 app package, so standard Windows PCs install `idexal CoWork.exe` correctly and desktop shortcuts point to a runnable executable.
+- **Windows installer architecture**: the Windows release artifact is now built as an x64 app package, so standard Windows PCs install `Idexal CoWork.exe` correctly and desktop shortcuts point to a runnable executable.
 - **Release packaging guardrail**: added an explicit `package:win:x64` packaging command so Windows release artifacts are not accidentally built with the host Mac architecture.
 - **Composer deletion stability**: fixed duplicate `@` rendering and the React `removeChild` crash when deleting mention text or chips.
 - **Shortcut command safety**: `/clear` now clears the current task view without deleting history or switching workspace context; `/schedule` keeps deterministic schedule-handler precedence even when another task is selected.

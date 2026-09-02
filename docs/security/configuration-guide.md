@@ -1,6 +1,6 @@
 # Security Configuration Guide
 
-This guide covers how to configure security settings in idexal CoWork.
+This guide covers how to configure security settings in Idexal CoWork.
 
 ## Channel Security Modes
 
@@ -261,7 +261,7 @@ Rate limits are automatic and not configurable:
 
 All messages and actions are logged automatically:
 - Location: `~/Library/Application Support/idexal/`
-- Database: `idexal-cowork.db`
+- Database: `Idexal CoWork.db`
 - Tables: `audit_log`, `channel_messages`
 
 ## Verification Checklist

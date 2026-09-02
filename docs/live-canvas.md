@@ -1,6 +1,6 @@
 # Live Canvas
 
-Live Canvas is an agent-driven visual workspace that allows idexal CoWork agents to create, display, and interact with dynamic HTML/CSS/JavaScript content in real-time.
+Live Canvas is an agent-driven visual workspace that allows Idexal CoWork agents to create, display, and interact with dynamic HTML/CSS/JavaScript content in real-time.
 
 ## Overview
 

@@ -3,7 +3,7 @@
 Task automations turn an existing task into scheduled or triggered follow-up work without leaving the task view. By default, they continue the same conversation thread so future runs keep the context that was already built up.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-6.webp" alt="Automations dashboard" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-6.webp" alt="Automations dashboard" width="700">
   <br><em>Task-sourced prompt automations and their compiled scheduled work remain visible in the advanced Automations settings.</em>
 </p>
 

@@ -12,7 +12,7 @@ cannot widen command-tool, filesystem, network, domain, or sandbox access.
 Access from **Settings** > **Digital Twins** or **Mission Control** > **Add Digital Twin**. For company-ops workflows, you can also open Digital Twins from **Settings** > **Companies** to create operators in company context. Digital twins can also be activated through [Plugin Packs](plugin-packs.md) when a pack links directly to a persona template.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-14.webp" alt="Digital twin persona templates" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-14.webp" alt="Digital twin persona templates" width="700">
   <br><em>Persona templates provide role-specific defaults, tools, and managed-agent setup paths.</em>
 </p>
 
@@ -304,7 +304,7 @@ Each twin learns over time through the existing playbook and relationship memory
 
 ## Channel Integration
 
-Because idexal CoWork supports multiple messaging and communication channels, twins can be reached from the surfaces you configure:
+Because Idexal CoWork supports multiple messaging and communication channels, twins can be reached from the surfaces you configure:
 
 | Channel | Example |
 |---------|---------|
@@ -342,7 +342,7 @@ Templates are JSON files in `resources/persona-templates/`. To add a custom temp
 
 1. Create a JSON file following the `PersonaTemplate` schema
 2. Place it in the persona templates directory
-3. Restart idexal CoWork — the template appears in the gallery
+3. Restart Idexal CoWork — the template appears in the gallery
 
 ---
 

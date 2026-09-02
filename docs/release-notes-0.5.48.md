@@ -1,6 +1,6 @@
 # Release Notes 0.5.48
 
-Release `0.5.48` expands idexal CoWork remote/private-tool access, adds a side conversation workflow for active tasks, and hardens long-running runtime surfaces that matter for release stability.
+Release `0.5.48` expands Idexal CoWork remote/private-tool access, adds a side conversation workflow for active tasks, and hardens long-running runtime surfaces that matter for release stability.
 
 ## Highlights
 

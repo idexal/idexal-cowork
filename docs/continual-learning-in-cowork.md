@@ -1,4 +1,4 @@
-# I Gave idexal CoWork Workflow Intelligence, And Now It Learns From Reviewable Work | Full Guide
+# I Gave Idexal CoWork Workflow Intelligence, And Now It Learns From Reviewable Work | Full Guide
 
 Most people hear "continual learning" and immediately think:
 
@@ -6,13 +6,13 @@ the model updates its weights.
 
 That is the wrong mental model for a production agent operating system.
 
-What we actually built in idexal CoWork is a core runtime that learns from traces, distills memory, clusters recurring failures, generates evals, proposes experiments, and only promotes changes after a gate.
+What we actually built in Idexal CoWork is a core runtime that learns from traces, distills memory, clusters recurring failures, generates evals, proposes experiments, and only promotes changes after a gate.
 
 In other words:
 
 we did not build a vague "self-improving AI" story.
 
-We gave idexal CoWork Workflow Intelligence: a governed loop that turns memory, heartbeat signals, reflection, Dreaming, and user-reviewed suggestions into durable learning.
+We gave Idexal CoWork Workflow Intelligence: a governed loop that turns memory, heartbeat signals, reflection, Dreaming, and user-reviewed suggestions into durable learning.
 
 That loop now runs through the always-on core:
 
@@ -22,19 +22,19 @@ That loop now runs through the always-on core:
 - `Dreaming` as background memory curation
 - reviewable `Suggestions` as the user-facing output
 
-And that is what lets idexal CoWork improve without turning the whole product into an opaque autopilot.
+And that is what lets Idexal CoWork improve without turning the whole product into an opaque autopilot.
 
-For idexal CoWork, continual learning happens across three layers:
+For Idexal CoWork, continual learning happens across three layers:
 
 - the `model` layer
 - the `harness` layer
 - the `context` layer
 
-The important shift is that idexal CoWork does not treat all three layers the same way.
+The important shift is that Idexal CoWork does not treat all three layers the same way.
 
 ## The Short Version
 
-idexal CoWork is deliberately conservative at the model layer and aggressive at the harness and context layers.
+Idexal CoWork is deliberately conservative at the model layer and aggressive at the harness and context layers.
 
 That means:
 
@@ -43,7 +43,7 @@ That means:
 - we **do** turn those traces into memory candidates, failure clusters, eval cases, gated experiments, promoted learnings, and better-ranked suggestions
 - we keep that loop visible in Mission Control instead of hiding it behind vague “the agent gets smarter” language
 
-In practice, idexal CoWork's continual-learning story is:
+In practice, Idexal CoWork's continual-learning story is:
 
 `trace -> memory candidates -> distillation -> failure mining -> evals -> experiments -> gated promotion`
 
@@ -62,7 +62,7 @@ This is the classic definition of continual learning:
 - adapters or LoRAs
 - model-specific post-training
 
-idexal CoWork supports multiple provider and local-model routes. Its continual-learning runtime does not depend on one model vendor or on hidden weight mutation to improve over time.
+Idexal CoWork supports multiple provider and local-model routes. Its continual-learning runtime does not depend on one model vendor or on hidden weight mutation to improve over time.
 
 That is intentional.
 
@@ -73,15 +73,15 @@ Weight updates are powerful, but they also create the hardest operational proble
 - slow feedback cycles
 - weak tenant isolation
 
-So idexal CoWork treats model learning as optional and external. You can swap providers, change models, or run local models, but the core product does not promise “we secretly retrain the model for you.”
+So Idexal CoWork treats model learning as optional and external. You can swap providers, change models, or run local models, but the core product does not promise “we secretly retrain the model for you.”
 
-Instead, idexal CoWork puts most of its learning investment in the layers you can inspect and govern.
+Instead, Idexal CoWork puts most of its learning investment in the layers you can inspect and govern.
 
 ### 2. Harness Learning
 
 Harness learning is how the runtime itself improves.
 
-In idexal CoWork, that means improving the operating system around the model:
+In Idexal CoWork, that means improving the operating system around the model:
 
 - automation policy
 - workflow-intelligence settings
@@ -105,15 +105,15 @@ Everything else is a surrounding surface:
 - Devices are routing
 - Digital Twins are optional persona presets
 
-That hard boundary matters because it gives idexal CoWork one narrow place where learning is allowed to accumulate and improve the system.
+That hard boundary matters because it gives Idexal CoWork one narrow place where learning is allowed to accumulate and improve the system.
 
 ### 3. Context Learning
 
 Context learning is the most practical layer for production agents.
 
-This is where idexal CoWork updates the durable knowledge around the runtime rather than the model weights themselves.
+This is where Idexal CoWork updates the durable knowledge around the runtime rather than the model weights themselves.
 
-In idexal CoWork, context learning includes:
+In Idexal CoWork, context learning includes:
 
 - memory candidates extracted from traces
 - hot-path memory capture
@@ -129,11 +129,11 @@ This is the layer where the runtime becomes more useful over time without needin
 
 ## Traces Are The Core Primitive
 
-The attached continual-learning paper makes one point that maps directly to idexal CoWork:
+The attached continual-learning paper makes one point that maps directly to Idexal CoWork:
 
 traces are the core.
 
-That is exactly how idexal CoWork is designed.
+That is exactly how Idexal CoWork is designed.
 
 A trace is not just a final answer. It is the execution path:
 
@@ -147,13 +147,13 @@ A trace is not just a final answer. It is the execution path:
 - what approval posture applied
 - what outcome the operator actually got
 
-idexal CoWork turns those traces into structured runtime assets instead of leaving them as dead logs.
+Idexal CoWork turns those traces into structured runtime assets instead of leaving them as dead logs.
 
 That is the difference between “history” and “learning.”
 
 ---
 
-## How idexal CoWork Learns In Practice
+## How Idexal CoWork Learns In Practice
 
 ### 1. Core traces are captured at the automation-profile level
 
@@ -171,7 +171,7 @@ Digital Twins stay opt-in and visible, but they do not own Heartbeat, Workflow I
 
 ### 2. Memory is updated on both the hot path and the offline path
 
-idexal CoWork uses both styles of context learning:
+Idexal CoWork uses both styles of context learning:
 
 - **hot path**: useful memory can be captured directly from a fresh trace
 - **offline path**: accepted memory candidates can be merged and distilled later across many traces
@@ -189,7 +189,7 @@ This matters because not every insight should be written immediately, and not ev
 
 A lot of agent systems “learn” only from success stories.
 
-idexal CoWork treats failures as first-class learning input.
+Idexal CoWork treats failures as first-class learning input.
 
 The `CoreLearningPipelineService` takes a trace and runs it through:
 
@@ -211,9 +211,9 @@ A failure becomes:
 
 That means repeated failures become increasingly expensive to ignore.
 
-### 4. idexal CoWork does not auto-mutate itself without a gate
+### 4. Idexal CoWork does not auto-mutate itself without a gate
 
-This is where idexal CoWork differs from a lot of “self-improving agent” narratives.
+This is where Idexal CoWork differs from a lot of “self-improving agent” narratives.
 
 We do allow the runtime to propose improvement. We do not let it silently rewrite itself everywhere.
 
@@ -236,7 +236,7 @@ This is the right shape for a production runtime. It lets the system improve, bu
 
 Continual learning is not useful if every automated task stalls on permissions.
 
-idexal CoWork solves that by giving core-created tasks a real autonomy policy rather than just disabling user input.
+Idexal CoWork solves that by giving core-created tasks a real autonomy policy rather than just disabling user input.
 
 The core automation runtime now builds a stronger task config through `buildCoreAutomationAgentConfig(...)`.
 
@@ -259,7 +259,7 @@ So the system can compound on routine work without degenerating into unrestricte
 
 A learning system that nobody can inspect is not a production feature. It is just a background claim.
 
-idexal CoWork exposes the learning loop in Mission Control through the `Core Harness` surfaces:
+Idexal CoWork exposes the learning loop in Mission Control through the `Core Harness` surfaces:
 
 - traces
 - failure clusters
@@ -288,7 +288,7 @@ The paper’s model/harness/context framing is useful, but there is one more pro
 
 if everything owns learning, nothing stays legible.
 
-That is why idexal CoWork made the hard cut:
+That is why Idexal CoWork made the hard cut:
 
 - `Workflow Intelligence` is the core runtime: Memory, Heartbeat, internal Reflection, Dreaming, and reviewable Suggestions
 - Mission Control observes and configures that runtime
@@ -304,9 +304,9 @@ Without that split, you get feature sprawl instead of a learning architecture.
 
 ---
 
-## What idexal CoWork Is Actually Optimizing For
+## What Idexal CoWork Is Actually Optimizing For
 
-idexal CoWork is not trying to be a magical black box that “becomes conscious” over time.
+Idexal CoWork is not trying to be a magical black box that “becomes conscious” over time.
 
 It is trying to do something much more useful:
 
@@ -326,9 +326,9 @@ It is also much easier to trust.
 
 ---
 
-## The idexal CoWork Position In One Sentence
+## The Idexal CoWork Position In One Sentence
 
-idexal CoWork treats continual learning as a trace-native operating-system problem, not just a model-training problem.
+Idexal CoWork treats continual learning as a trace-native operating-system problem, not just a model-training problem.
 
 The model can change.
 The provider can change.
@@ -336,7 +336,7 @@ The persona can change.
 
 But the system still improves because the core runtime compounds from traces into memory, evals, experiments, and promoted learnings.
 
-That is the real learning loop in idexal CoWork.
+That is the real learning loop in Idexal CoWork.
 
 ---
 

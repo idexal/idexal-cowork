@@ -1,6 +1,6 @@
 # Linear MCP Connector (MVP)
 
-This connector exposes Linear GraphQL APIs to idexal CoWork through MCP tools.
+This connector exposes Linear GraphQL APIs to Idexal CoWork through MCP tools.
 
 ## Requirements
 

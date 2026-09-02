@@ -1,6 +1,6 @@
 # Inbox Agent
 
-Inbox Agent is idexal CoWork's local-first, agent-assisted email workspace. It is designed to be more than a mailbox viewer: it keeps recent mail cached locally, syncs in the background, classifies work into action lanes, lets you reply or forward like a normal email client, and turns important threads into tasks, automations, Mission Control issues, and relationship memory.
+Inbox Agent is Idexal CoWork's local-first, agent-assisted email workspace. It is designed to be more than a mailbox viewer: it keeps recent mail cached locally, syncs in the background, classifies work into action lanes, lets you reply or forward like a normal email client, and turns important threads into tasks, automations, Mission Control issues, and relationship memory.
 
 The current product shape is:
 
@@ -17,7 +17,7 @@ does not grant command tools, broader filesystem access, or unrestricted
 external sending.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-5.webp" alt="Inbox Agent workspace" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-5.webp" alt="Inbox Agent workspace" width="700">
   <br><em>Inbox Agent keeps mailbox triage, thread evidence, drafts, and next actions in one workspace.</em>
 </p>
 

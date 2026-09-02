@@ -98,7 +98,7 @@ Submitting the card sends a follow-up message to the same task; blank fields are
 
 ## CoWork Shortcuts Pack
 
-idexal CoWork ships a bundled **CoWork Shortcuts** plugin pack at:
+Idexal CoWork ships a bundled **CoWork Shortcuts** plugin pack at:
 
 ```text
 resources/plugin-packs/cowork-shortcuts/cowork.plugin.json

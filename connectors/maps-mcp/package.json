@@ -1,7 +1,7 @@
 {
   "name": "@idexal/maps-mcp",
   "version": "0.1.0",
-  "description": "Maps and nearby places MCP connector for idexal CoWork.",
+  "description": "Maps and nearby places MCP connector for Idexal CoWork.",
   "private": true,
   "main": "dist/index.js",
   "scripts": {

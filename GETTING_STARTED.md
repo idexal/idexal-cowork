@@ -1,4 +1,4 @@
-# Getting Started with idexal CoWork
+# Getting Started with Idexal CoWork
 
 ## Quick Start
 
@@ -47,7 +47,7 @@ This will:
 
 1. **Select a Workspace**
    - Click "Select Folder"
-   - Choose a folder you want idexal CoWork to work in
+   - Choose a folder you want Idexal CoWork to work in
    - This will be your workspace (e.g., `~/Documents/test-workspace`)
 
 2. **Initialize the Workspace Kit (Optional, Recommended)**
@@ -55,7 +55,7 @@ This will:
    - Under **Workspace Kit**, click **Initialize**
    - This creates a `.cowork/` directory in your workspace for durable context, prompt injection, and project scaffolding
    - The root kit can include shared workspace files such as `AGENTS.md`, `USER.md`, `MEMORY.md`, `TOOLS.md`, `IDENTITY.md`, `RULES.md`, `SOUL.md`, `VIBES.md`, and `LORE.md`
-   - `BOOTSTRAP.md` is a one-time onboarding checklist; once you complete onboarding, removing it marks onboarding complete and idexal CoWork tracks that state in `.cowork/workspace-state.json`
+   - `BOOTSTRAP.md` is a one-time onboarding checklist; once you complete onboarding, removing it marks onboarding complete and Idexal CoWork tracks that state in `.cowork/workspace-state.json`
    - `HEARTBEAT.md` is reserved for recurring heartbeat-only checks rather than general task context
    - Project-specific context lives under `.cowork/projects/<projectId>/`, where `CONTEXT.md` captures project notes and `ACCESS.md` captures project access boundaries
    - Changes to tracked kit files keep revision snapshots under `.cowork/**/.history/`

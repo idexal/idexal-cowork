@@ -1,6 +1,6 @@
 # Long-Document Analysis
 
-idexal CoWork has a bounded, read-only review path for directly referenced long
+Idexal CoWork has a bounded, read-only review path for directly referenced long
 documents. It is intended for requests such as manuscript review, continuity
 checking, contradiction detection, chapter-transition review, and full-document
 summarization where one model prompt would not reliably cover the source.

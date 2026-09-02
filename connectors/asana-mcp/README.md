@@ -1,6 +1,6 @@
 # Asana MCP Connector (MVP)
 
-This connector exposes Asana APIs to idexal CoWork through MCP tools.
+This connector exposes Asana APIs to Idexal CoWork through MCP tools.
 
 ## Requirements
 

@@ -2,7 +2,7 @@
 
 This folder contains connector templates and reference implementations.
 
-Connectors are MCP servers that expose enterprise APIs (Salesforce, Jira, etc.) to idexal CoWork via tools. They are designed to run outside the desktop app so they can be deployed locally or as a managed service.
+Connectors are MCP servers that expose enterprise APIs (Salesforce, Jira, etc.) to Idexal CoWork via tools. They are designed to run outside the desktop app so they can be deployed locally or as a managed service.
 
 Templates:
 - `connectors/templates/mcp-connector`

@@ -1,6 +1,6 @@
 # Supermemory Integration
 
-idexal CoWork can use [Supermemory](https://supermemory.ai/) as an external memory layer alongside its built-in local memory runtime.
+Idexal CoWork can use [Supermemory](https://supermemory.ai/) as an external memory layer alongside its built-in local memory runtime.
 
 This integration is intentionally modeled after the Hermes-style provider shape:
 

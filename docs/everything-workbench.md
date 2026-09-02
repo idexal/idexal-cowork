@@ -1,6 +1,6 @@
 # Everything Workbench
 
-idexal CoWork is the free, open-source, GUI-first, CLI-capable local AI super app and everything app for everyday work. It is meant to cover more than office-style files: coding, terminal work, email, research, web design, documents, spreadsheets, decks, PDFs, agent spawning and management, automations, inbox work, channels, devices, skills, and long-running tasks all live in one governed workspace. The desktop app is the primary review and workbench surface; `cowork` adds a terminal entrypoint for starting local tasks against the same runtime.
+Idexal CoWork is the free, open-source, GUI-first, CLI-capable local AI super app and everything app for everyday work. It is meant to cover more than office-style files: coding, terminal work, email, research, web design, documents, spreadsheets, decks, PDFs, agent spawning and management, automations, inbox work, channels, devices, skills, and long-running tasks all live in one governed workspace. The desktop app is the primary review and workbench surface; `cowork` adds a terminal entrypoint for starting local tasks against the same runtime.
 
 An open multi-provider harness sits underneath the workbench. Supported provider accounts, APIs, compatible gateways, cloud credentials, and local models can use the same artifact loop, tools, memory, policies, approvals, agents, and task history. CoWork itself is free and MIT-licensed; provider eligibility, limits, and charges remain separate.
 
@@ -14,7 +14,7 @@ not a second access mode.
 
 ## Broader Positioning
 
-Use idexal CoWork as the app where personal agentic work starts and stays:
+Use Idexal CoWork as the app where personal agentic work starts and stays:
 
 - code, review repositories, run local project tasks, and keep real terminal tabs beside the agent
 - create reusable agents, spawn parallel work, and monitor agent runs from visual surfaces
@@ -57,7 +57,7 @@ This keeps the agent next to the work product. A spreadsheet can be selected and
 
 ## Positioning Boundary
 
-Use idexal CoWork as the default app for everyday generated knowledge work:
+Use Idexal CoWork as the default app for everyday generated knowledge work:
 
 - draft and revise reports, memos, summaries, one-pagers, and DOCX files
 - create and adjust spreadsheets, CSVs, tables, and lightweight workbook outputs

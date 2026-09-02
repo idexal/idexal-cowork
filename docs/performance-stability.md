@@ -1,6 +1,6 @@
 # Performance & Stability Enhancements
 
-This document covers performance optimizations and stability fixes applied to idexal CoWork to address resource issues observed during multitask runs (collaborative team reviews, parallel agent execution).
+This document covers performance optimizations and stability fixes applied to Idexal CoWork to address resource issues observed during multitask runs (collaborative team reviews, parallel agent execution).
 
 Large single-task histories use a separate bounded paging, virtualization, remote transport, checkpoint/resume, and profiling contract. See [Long-Session Timeline Performance](long-session-performance.md).
 

@@ -1,6 +1,6 @@
-# Uninstall idexal CoWork
+# Uninstall Idexal CoWork
 
-There are two ways to uninstall idexal CoWork depending on whether you want to keep local data.
+There are two ways to uninstall Idexal CoWork depending on whether you want to keep local data.
 
 ## Option 1: Uninstall app/binaries only (keep database)
 
@@ -9,14 +9,14 @@ This removes installed application files and CLI/package artifacts while keeping
 ### macOS app (manual drag-installed build)
 
 ```bash
-pkill -f '/Applications/idexal CoWork.app' || true
-rm -rf "/Applications/idexal CoWork.app"
+pkill -f '/Applications/Idexal CoWork.app' || true
+rm -rf "/Applications/Idexal CoWork.app"
 ```
 
 ### npm global package install
 
 ```bash
-npm uninstall -g idexal-cowork
+npm uninstall -g Idexal CoWork
 ```
 
 ### Local install in a folder
@@ -28,17 +28,17 @@ rm -rf ~/cowork-run
 ### Source/development clone
 
 ```bash
-rm -rf /path/to/idexal-cowork
+rm -rf /path/to/Idexal CoWork
 ```
 
 ### Packaged Linux server release
 
 ```bash
-sudo systemctl stop idexal-cowork-node
-sudo systemctl disable idexal-cowork-node
-sudo rm -f /etc/systemd/system/idexal-cowork-node.service
+sudo systemctl stop Idexal CoWork-node
+sudo systemctl disable Idexal CoWork-node
+sudo rm -f /etc/systemd/system/Idexal CoWork-node.service
 sudo systemctl daemon-reload
-sudo rm -rf /opt/idexal-cowork
+sudo rm -rf /opt/Idexal CoWork
 ```
 
 ### VPS/headless Docker install
@@ -51,10 +51,10 @@ docker compose down
 ### VPS/headless systemd install
 
 ```bash
-sudo systemctl stop idexal-cowork idexal-cowork-node
-sudo systemctl disable idexal-cowork idexal-cowork-node
-sudo rm -f /etc/systemd/system/idexal-cowork.service
-sudo rm -f /etc/systemd/system/idexal-cowork-node.service
+sudo systemctl stop Idexal CoWork Idexal CoWork-node
+sudo systemctl disable Idexal CoWork Idexal CoWork-node
+sudo rm -f /etc/systemd/system/Idexal CoWork.service
+sudo rm -f /etc/systemd/system/Idexal CoWork-node.service
 sudo systemctl daemon-reload
 ```
 
@@ -66,7 +66,7 @@ Choose the one used by your install:
 - Linux desktop/Electron: `~/.config/idexal/`
 - Linux daemon/headless fallback: `~/.cowork/`
 - Node daemon custom path: value passed in `COWORK_USER_DATA_DIR` or `--user-data-dir`
-- Packaged/systemd example paths: `/var/lib/idexal-cowork`, `/srv/cowork/workspace`, and any custom path in `/etc/idexal-cowork.env`
+- Packaged/systemd example paths: `/var/lib/Idexal CoWork`, `/srv/cowork/workspace`, and any custom path in `/etc/Idexal CoWork.env`
 - Docker example paths: named volume `cowork_data`, named volume `cowork_workspace`, and any host bind mount in `/workspace`
 
 ## Option 2: Full uninstall + data deletion (database included) — irrecoverable
@@ -78,8 +78,8 @@ Use this only when you are sure you want to destroy local state.
 ### Delete all user-data locations
 
 ```bash
-rm -rf ~/Library/Application\ Support/idexal-cowork
-rm -rf ~/.config/idexal-cowork
+rm -rf ~/Library/Application\ Support/Idexal CoWork
+rm -rf ~/.config/Idexal CoWork
 rm -rf ~/.cowork
 ```
 
@@ -100,7 +100,7 @@ docker compose rm -f
 ### Fully remove systemd/headless example data
 
 ```bash
-sudo rm -rf /var/lib/idexal-cowork
+sudo rm -rf /var/lib/Idexal CoWork
 sudo rm -rf /srv/cowork/workspace
 ```
 

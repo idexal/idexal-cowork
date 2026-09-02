@@ -1,6 +1,6 @@
 # Node-Only Daemon
 
-Goal: run idexal CoWork on Linux servers (VPS/headless) as a Node.js daemon with no desktop window and no Xvfb.
+Goal: run Idexal CoWork on Linux servers (VPS/headless) as a Node.js daemon with no desktop window and no Xvfb.
 
 This is an alternative to the Linux “headless Electron” mode. It’s designed for:
 
@@ -29,11 +29,11 @@ For production VPS installs, use the GitHub release tarball documented in [Linux
 
 ```bash
 version=<version>
-curl -LO "https://github.com/idexal/idexal-cowork/releases/download/v${version}/idexal-cowork-server-linux-x64-v${version}.tar.gz"
-curl -LO "https://github.com/idexal/idexal-cowork/releases/download/v${version}/idexal-cowork-server-linux-x64-v${version}.tar.gz.sha256"
-sha256sum --check "idexal-cowork-server-linux-x64-v${version}.tar.gz.sha256"
-sudo mkdir -p /opt/idexal-cowork
-sudo tar -xzf "idexal-cowork-server-linux-x64-v${version}.tar.gz" -C /opt/idexal-cowork --strip-components=1
+curl -LO "https://github.com/idexal/Idexal CoWork/releases/download/v${version}/Idexal CoWork-server-linux-x64-v${version}.tar.gz"
+curl -LO "https://github.com/idexal/Idexal CoWork/releases/download/v${version}/Idexal CoWork-server-linux-x64-v${version}.tar.gz.sha256"
+sha256sum --check "Idexal CoWork-server-linux-x64-v${version}.tar.gz.sha256"
+sudo mkdir -p /opt/Idexal CoWork
+sudo tar -xzf "Idexal CoWork-server-linux-x64-v${version}.tar.gz" -C /opt/Idexal CoWork --strip-components=1
 ```
 
 The package includes built daemon assets, runtime dependencies, resources, connectors, and systemd templates.

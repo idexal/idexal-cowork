@@ -1,17 +1,17 @@
 ---
-title: Compare idexal CoWork
-description: Fit-based comparisons between idexal CoWork and leading coding agents, AI workspaces, and open agent runtimes.
+title: Compare Idexal CoWork
+description: Fit-based comparisons between Idexal CoWork and leading coding agents, AI workspaces, and open agent runtimes.
 ---
 
-# Compare idexal CoWork
+# Compare Idexal CoWork
 
-idexal CoWork is a free, open-source AI super app with a multi-provider agent harness. It combines coding, documents, research, browser and desktop work, communication, agents, and automation while letting you choose among supported account, API, gateway, cloud, and local-model routes.
+Idexal CoWork is a free, open-source AI super app with a multi-provider agent harness. It combines coding, documents, research, browser and desktop work, communication, agents, and automation while letting you choose among supported account, API, gateway, cloud, and local-model routes.
 
 The products below are not interchangeable. Some are exceptional coding specialists; others are broad hosted assistants or open agent runtimes. These pages explain fit and tradeoffs, not winners and losers.
 
 ## At a Glance
 
-| Product | Best known for | Choose it when | Consider idexal CoWork when |
+| Product | Best known for | Choose it when | Consider Idexal CoWork when |
 |---|---|---|---|
 | [Claude Code](claude-code.md) | Claude-native terminal coding | You want Anthropic's focused coding workflow | You want broader work surfaces or multiple model routes in one harness |
 | [Codex](codex.md) | OpenAI-native coding agents | You want tight OpenAI integration and cloud delegation | You want provider choice plus non-coding work in the same runtime |
@@ -22,7 +22,7 @@ The products below are not interchangeable. Some are exceptional coding speciali
 | [OpenClaw](openclaw.md) | Open personal-agent ecosystem | You want a channel-forward operator runtime | You want a GUI-first control plane with visible governance |
 | [Hermes Agent](hermes.md) | Open agent runtime and provider integrations | You want its runtime, CLI, and community conventions | You want an integrated desktop super app and visual operations |
 
-## The idexal CoWork Difference
+## The Idexal CoWork Difference
 
 - **Super app first:** one workspace for code, knowledge work, documents, communication, automation, and everyday tasks.
 - **Open harness underneath:** supported model sources share tools, memory, approvals, agents, automations, and task history.
@@ -30,8 +30,8 @@ The products below are not interchangeable. Some are exceptional coding speciali
 - **Access choice:** use eligible account connections, provider APIs, gateways, cloud routes, or local models where supported.
 - **Local control:** run the desktop app or headless daemon, keep operational state local by default, and decide which configured services receive requests.
 
-idexal CoWork itself is free and open source. Model providers, gateways, connected services, and account plans may charge separately and apply their own eligibility and usage rules.
+Idexal CoWork itself is free and open source. Model providers, gateways, connected services, and account plans may charge separately and apply their own eligibility and usage rules.
 
 ## Comparison Method
 
-Each page uses public product documentation, states the practical fit, and avoids unsupported claims about price, privacy, or feature parity. Evidence links and verification dates live in [`evidence.yml`](evidence.yml). idexal CoWork is not affiliated with the products compared here.
+Each page uses public product documentation, states the practical fit, and avoids unsupported claims about price, privacy, or feature parity. Evidence links and verification dates live in [`evidence.yml`](evidence.yml). Idexal CoWork is not affiliated with the products compared here.

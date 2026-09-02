@@ -2,9 +2,9 @@
 
 ## Production-Ready Implementation
 
-idexal CoWork is a **security-first, GUI-first local AI super app and everything app** with multi-channel messaging support, visual agent management, comprehensive guardrails, and extensive test coverage.
+Idexal CoWork is a **security-first, GUI-first local AI super app and everything app** with multi-channel messaging support, visual agent management, comprehensive guardrails, and extensive test coverage.
 
-### What idexal CoWork Is
+### What Idexal CoWork Is
 
 - **Personal AI Super App**: Code, email, research, create documents, work with spreadsheets and decks, test web pages, automate work, and manage agents from one app
 - **GUI-first Agent Management**: Create reusable agents, spawn many runs, inspect timelines, assign work, and monitor teams through Agents Hub, Mission Control, task boards, and approval dialogs
@@ -551,7 +551,7 @@ Expected behavior:
 
 ## Summary
 
-**idexal CoWork is a production-ready, security-first, GUI-first local AI super app and everything app:**
+**Idexal CoWork is a production-ready, security-first, GUI-first local AI super app and everything app:**
 
 ### Core Strengths
 - **Security**: 4,932 automated tests across 390 test files, configurable guardrails, approval workflows, brute-force protection

@@ -1,6 +1,6 @@
 # ACP / acpx Integration Guide
 
-How to integrate an OpenClaw + acpx-style coding agent stack into idexal CoWork.
+How to integrate an OpenClaw + acpx-style coding agent stack into Idexal CoWork.
 
 ## Status Update
 
@@ -26,7 +26,7 @@ Cowork now supports more than ACP discovery-only plumbing:
 - Orchestrators talk to coding agents (Codex, Pi, Gemini, and similar tools) over a **structured protocol** instead of PTY scraping
 - acpx provides: persistent sessions, prompt queueing, typed output (thinking, tool calls, diffs), crash reconnect, and a single command surface for multiple agents
 
-**idexal CoWork** already has:
+**Idexal CoWork** already has:
 
 - Full **ACP server** on the Control Plane (`acp.discover`, `acp.task.create`, `acp.agent.register`, etc.)
 - Coding agents invoked via **bash + PTY** (`run_command` wrapping `codex exec`, `claude`, etc.)

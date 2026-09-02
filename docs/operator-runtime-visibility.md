@@ -1,6 +1,6 @@
 # Operator Runtime Visibility
 
-Operator Runtime Visibility is the productized surface for the learning-loop, recall, command-tool, terminal, and router work that now ships in idexal CoWork. The goal is not to add a second learning system. It is to make the existing memory, Dreaming, playbook, skill-promotion, command-tool, terminal, and routing subsystems visible after every task, while keeping idexal CoWork centered on its core surfaces: desktop control plane, channels, inbox, devices, and governed automation.
+Operator Runtime Visibility is the productized surface for the learning-loop, recall, command-tool, terminal, and router work that now ships in Idexal CoWork. The goal is not to add a second learning system. It is to make the existing memory, Dreaming, playbook, skill-promotion, command-tool, terminal, and routing subsystems visible after every task, while keeping Idexal CoWork centered on its core surfaces: desktop control plane, channels, inbox, devices, and governed automation.
 
 ## What users see
 
@@ -79,11 +79,11 @@ Skill execution is now visible without obscuring the original task:
 
 This is important for trust. Operators can tell what they asked for, what skills CoWork layered on top, and why.
 
-## What stays core to idexal CoWork
+## What stays core to Idexal CoWork
 
 Operator Runtime Visibility is an observability and operator-experience upgrade, not a replacement for the existing product identity.
 
-idexal CoWork still centers on:
+Idexal CoWork still centers on:
 
 - desktop control plane (including **computer use**: governed `screenshot`/`click`/`type_text` sessions with platform helpers and **Esc** abort — see [Computer use](computer-use.md))
 - channels and inbox

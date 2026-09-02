@@ -1,6 +1,6 @@
-# idexal CoWork CLI
+# Idexal CoWork CLI
 
-idexal CoWork is now both a desktop app and a terminal agent surface. The desktop GUI remains the primary operator console for agents, artifacts, approvals, automations, Mission Control, and settings. The `cowork` command adds a fast local command-line entrypoint for starting work without opening a separate Control Plane session.
+Idexal CoWork is now both a desktop app and a terminal agent surface. The desktop GUI remains the primary operator console for agents, artifacts, approvals, automations, Mission Control, and settings. The `cowork` command adds a fast local command-line entrypoint for starting work without opening a separate Control Plane session.
 
 ## What `cowork` Runs
 
@@ -25,7 +25,7 @@ Use `--remote` only when you intentionally want the CLI to call a running remote
 Install globally from npm:
 
 ```bash
-npm install -g idexal-cowork
+npm install -g Idexal CoWork
 cowork
 ```
 
@@ -120,7 +120,7 @@ read-only unavailable profile and may pause for user action. A later approval ca
 profile. See [Access Profiles](access-profiles.md) for the full field reference and migration
 contract.
 
-`approve` and `reject` use a local desktop handoff by default. The CLI sends the response to the already-running idexal CoWork app through the app's single-instance bridge, so the live task runtime can wake and continue without Control Plane. If no desktop app is running, open idexal CoWork and retry, or use `cowork approve <approvalId> --remote` / `cowork reject <approvalId> --remote` against a running Control Plane target.
+`approve` and `reject` use a local desktop handoff by default. The CLI sends the response to the already-running Idexal CoWork app through the app's single-instance bridge, so the live task runtime can wake and continue without Control Plane. If no desktop app is running, open Idexal CoWork and retry, or use `cowork approve <approvalId> --remote` / `cowork reject <approvalId> --remote` against a running Control Plane target.
 
 ### Local Management Commands
 

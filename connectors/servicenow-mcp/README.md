@@ -1,6 +1,6 @@
 # ServiceNow MCP Connector (MVP)
 
-This connector exposes ServiceNow Table API endpoints to idexal CoWork through MCP tools.
+This connector exposes ServiceNow Table API endpoints to Idexal CoWork through MCP tools.
 
 ## Requirements
 

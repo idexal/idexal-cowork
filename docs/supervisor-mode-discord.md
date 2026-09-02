@@ -1,6 +1,6 @@
 # Supervisor Mode on Discord
 
-idexal CoWork can run a strict Discord-native supervisor loop between two CoWork agents plus a human operator.
+Idexal CoWork can run a strict Discord-native supervisor loop between two CoWork agents plus a human operator.
 
 ## What It Does
 

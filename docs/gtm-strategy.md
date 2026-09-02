@@ -1,10 +1,10 @@
-# idexal CoWork Positioning and Go-to-Market Strategy
+# Idexal CoWork Positioning and Go-to-Market Strategy
 
 Last reviewed: 2026-08-27
 
 ## Canonical Positioning
 
-**idexal CoWork is the free, open-source AI super app for real work.** It brings coding,
+**Idexal CoWork is the free, open-source AI super app for real work.** It brings coding,
 research, browser work, inbox, documents, spreadsheets, presentations, channels,
 automations, and agents into one GUI-first, CLI-capable workspace.
 
@@ -19,14 +19,14 @@ Short line:
 
 Supporting line:
 
-> Bring the AI access you already have. idexal CoWork is free; provider eligibility, limits,
+> Bring the AI access you already have. Idexal CoWork is free; provider eligibility, limits,
 > and usage charges remain with each provider.
 
 ## Message Architecture
 
 | Layer | Approved message | What it explains |
 | --- | --- | --- |
-| Category | Free, open-source AI super app / everything app | What idexal CoWork is |
+| Category | Free, open-source AI super app / everything app | What Idexal CoWork is |
 | User benefit | One workspace for real work across code, browser, inbox, files, artifacts, and automation | Why it matters |
 | Differentiator | Open, multi-provider, and MIT-licensed | Why CoWork is structurally different |
 | Technical engine | One agent harness across supported model routes | How model flexibility works |
@@ -43,7 +43,7 @@ supported accounts · APIs · gateways · cloud credentials · local models
                    open multi-provider agent harness
                  tools · memory · agents · policy · routing
                                   ↓
-                         idexal CoWork super app
+                         Idexal CoWork super app
           code · browser · inbox · docs · data · automation · channels
 ```
 
@@ -124,7 +124,7 @@ Comparison content must be fit-based:
 
 | Topic | Approved wording | Do not claim |
 | --- | --- | --- |
-| Price | “idexal CoWork is free and MIT-licensed. Provider usage may cost money.” | “All AI is free.” |
+| Price | “Idexal CoWork is free and MIT-licensed. Provider usage may cost money.” | “All AI is free.” |
 | Breadth | “Dozens of model routes and compatible endpoints.” | “Every LLM” or “all models.” |
 | Accounts | “Supported account-based and subscription routes.” | “Any subscription.” |
 | Lock-in | “Reduce model-provider lock-in.” | “No lock-in.” |
@@ -185,7 +185,7 @@ positioning to current summaries and the next release entry only.
 The positioning is working when a new user can answer three questions after the first
 screen:
 
-1. What is idexal CoWork? — A free, open-source AI super app for real work.
+1. What is Idexal CoWork? — A free, open-source AI super app for real work.
 2. Why is it different? — One open harness across supported model routes.
 3. What can I use with it? — Supported accounts, APIs, gateways, cloud credentials, and
    local models, with provider terms and charges remaining separate.

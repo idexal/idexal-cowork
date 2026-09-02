@@ -1,6 +1,6 @@
 # Claude-for-Legal Workflows
 
-idexal CoWork bundles Claude-for-Legal plugin packs as normal plugin-pack skills and slash commands. They keep the upstream workflow names, but run through CoWork's composer, task timeline, [access profile](access-profiles.md), approval model, and workspace-local file rules.
+Idexal CoWork bundles Claude-for-Legal plugin packs as normal plugin-pack skills and slash commands. They keep the upstream workflow names, but run through CoWork's composer, task timeline, [access profile](access-profiles.md), approval model, and workspace-local file rules.
 
 Legal skills do not create a special permission lane. The task profile remains
 the ceiling for local files, command tools, network, connectors, and exports;

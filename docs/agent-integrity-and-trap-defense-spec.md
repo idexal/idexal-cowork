@@ -1,10 +1,10 @@
 # Agent Integrity and Trap Defense — Product Spec
 
-This document turns the "AI Agent Traps" threat model into a concrete idexal CoWork product and engineering spec. It is intended to guide future development across ingestion, memory, permissions, delegation, and operator UX.
+This document turns the "AI Agent Traps" threat model into a concrete Idexal CoWork product and engineering spec. It is intended to guide future development across ingestion, memory, permissions, delegation, and operator UX.
 
 ## 1. Problem Statement
 
-idexal CoWork is increasingly capable in the exact areas the report highlights as high risk:
+Idexal CoWork is increasingly capable in the exact areas the report highlights as high risk:
 
 - external web ingestion via `web_fetch`, browser tools, and scraping
 - imported documents, email, and connector content
@@ -13,7 +13,7 @@ idexal CoWork is increasingly capable in the exact areas the report highlights a
 - multi-agent delegation and remote orchestration
 - human approval flows for high-impact actions
 
-Today, idexal CoWork already has meaningful defenses:
+Today, Idexal CoWork already has meaningful defenses:
 
 - prompt-injection hardening and non-blocking detection in [docs/security/security-model.md](security/security-model.md) and [src/electron/agent/security/input-sanitizer.ts](../src/electron/agent/security/input-sanitizer.ts)
 - output monitoring in [src/electron/agent/security/output-filter.ts](../src/electron/agent/security/output-filter.ts)
@@ -29,7 +29,7 @@ The core gap is that the current model is still mostly:
 - non-blocking by default
 - localized to single inputs or outputs
 
-The report’s threat model is broader. It includes hidden content, semantic biasing, poisoned memory, malicious sub-agent spawning, correlated multi-agent failures, and approval fatigue. idexal CoWork needs a productized "agent integrity" layer that persists trust state across the full runtime, not only at a single parsing step.
+The report’s threat model is broader. It includes hidden content, semantic biasing, poisoned memory, malicious sub-agent spawning, correlated multi-agent failures, and approval fatigue. Idexal CoWork needs a productized "agent integrity" layer that persists trust state across the full runtime, not only at a single parsing step.
 
 ## 2. Goals
 
@@ -66,9 +66,9 @@ This spec does not initially cover:
 - code execution sandbox internals beyond policy integration
 - malware scanning for arbitrary binaries
 
-## 5. Threat Model Mapped to idexal CoWork
+## 5. Threat Model Mapped to Idexal CoWork
 
-| Trap class from report | idexal CoWork exposure | Primary failure mode |
+| Trap class from report | Idexal CoWork exposure | Primary failure mode |
 |---|---|---|
 | Content injection | `web_fetch`, `browser_get_content`, scraping, documents, OCR, email | Hidden or machine-only instructions enter context |
 | Semantic manipulation | research, summarization, drafting, ranking, triage | Agent adopts attacker framing or false confidence |
@@ -358,7 +358,7 @@ Add a dedicated user-facing surface under Security or Mission Control.
 
 ## 8.8 Benchmarking and Red Teaming
 
-idexal CoWork should treat this as an eval problem, not only a runtime problem.
+Idexal CoWork should treat this as an eval problem, not only a runtime problem.
 
 ### Requirements
 

@@ -1,6 +1,6 @@
 # Evolving Agent Intelligence
 
-idexal CoWork has a layered memory runtime, a full personality engine, 15+ channels, and a playbook system that auto-captures what worked. The **Evolving Agent Intelligence** layer connects these systems so the agent visibly improves over time — reducing correction overhead, aligning to communication preferences, and surfacing quantifiable ROI metrics.
+Idexal CoWork has a layered memory runtime, a full personality engine, 15+ channels, and a playbook system that auto-captures what worked. The **Evolving Agent Intelligence** layer connects these systems so the agent visibly improves over time — reducing correction overhead, aligning to communication preferences, and surfacing quantifiable ROI metrics.
 
 All improvements are opt-in (admin-toggleable), rate-limited, and governed by the existing guardrail system. No changes to the security or local-first architecture.
 
@@ -21,7 +21,7 @@ The learning loop is now visible as part of the task and operator experience, no
 - Persistent shell sessions preserve cwd, env deltas, and aliases per task/workspace for longer operator workflows
 - Provider routing and fallback decisions are surfaced so automatic model changes are legible in real time
 
-This layer is additive: it makes the learning loop easier to understand and trust while preserving idexal CoWork's core surfaces of desktop control, channels, inbox, devices, and governed automation.
+This layer is additive: it makes the learning loop easier to understand and trust while preserving Idexal CoWork's core surfaces of desktop control, channels, inbox, devices, and governed automation.
 
 One concrete expression of this philosophy is `llm-wiki`: instead of letting research disappear into transient chat, CoWork can maintain a durable workspace-local knowledge base with raw-source preservation, linked notes, and deterministic vault-health analysis. See [LLM Wiki](llm-wiki.md).
 
@@ -278,7 +278,7 @@ const channelDirective = ChannelPersonaAdapter.adaptForChannel(
 
 ### Problem
 
-idexal CoWork tracks basic relationship stats (tasks completed, days together) but has no concept of measuring agent *improvement over time*. For enterprise buyers, quantifiable ROI is the difference between a tool and a strategic investment.
+Idexal CoWork tracks basic relationship stats (tasks completed, days together) but has no concept of measuring agent *improvement over time*. For enterprise buyers, quantifiable ROI is the difference between a tool and a strategic investment.
 
 ### Solution
 
@@ -466,7 +466,7 @@ Feedback is routed to `UserProfileService.ingestUserFeedback()` and (via daemon)
 
 ## Governance Summary
 
-All improvements respect idexal CoWork's security-first positioning:
+All improvements respect Idexal CoWork's security-first positioning:
 
 | Improvement | Guardrail flag | Default | Rate limit | Audit trail |
 |-------------|---------------|---------|------------|-------------|

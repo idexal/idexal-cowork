@@ -1,6 +1,6 @@
 # Release Notes 0.5.49
 
-Release `0.5.49` expands idexal CoWork with a local CLI runner, Browser Use Cloud browser automation, bundled Codex Security workflows, automation outcome reporting, richer usage insights, and a broad security/reliability hardening pass.
+Release `0.5.49` expands Idexal CoWork with a local CLI runner, Browser Use Cloud browser automation, bundled Codex Security workflows, automation outcome reporting, richer usage insights, and a broad security/reliability hardening pass.
 
 ## Highlights
 
@@ -44,7 +44,7 @@ Release `0.5.49` expands idexal CoWork with a local CLI runner, Browser Use Clou
 ## Documentation
 
 - Added and refreshed docs for CLI usage, Browser Use Cloud, Codex Security scans, plugin packs, setup, troubleshooting, security, development, Linux/VPS notes, project status, and public adoption reporting.
-- Refreshed README positioning to describe idexal CoWork as GUI-first and CLI-capable.
+- Refreshed README positioning to describe Idexal CoWork as GUI-first and CLI-capable.
 - Updated adoption stats reports and README rendering to use Markdown output.
 
 ## Release Readiness

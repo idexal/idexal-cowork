@@ -1,6 +1,6 @@
 # Security Best Practices
 
-Recommended security practices for idexal CoWork deployments.
+Recommended security practices for Idexal CoWork deployments.
 
 ## Initial Setup
 
@@ -13,7 +13,7 @@ Always start with pairing mode for external channels:
 
 ### 2. Use Dedicated Bot Accounts
 
-Create separate bot accounts for idexal CoWork:
+Create separate bot accounts for Idexal CoWork:
 - Don't use personal accounts
 - Easier to audit and revoke
 - Limits blast radius if compromised
@@ -68,7 +68,7 @@ Periodically review:
 - Remove users who no longer need access
 - Rotate pairing codes if shared widely
 
-### 4. Keep idexal CoWork Updated
+### 4. Keep Idexal CoWork Updated
 
 Install updates promptly:
 - Security fixes
@@ -243,7 +243,7 @@ If you find a security issue:
 
 ### Q: Is my data sent to external servers?
 
-Only to the configured LLM provider (Anthropic/AWS Bedrock). No data is sent to idexal CoWork servers.
+Only to the configured LLM provider (Anthropic/AWS Bedrock). No data is sent to Idexal CoWork servers.
 
 ### Q: Are my API keys stored securely?
 

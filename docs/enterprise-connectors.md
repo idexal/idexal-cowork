@@ -1,9 +1,9 @@
 # Enterprise Connectors
 
-This document describes the current shipped MCP connector surface in idexal CoWork. The goal is to expose enterprise and local creative integrations through a consistent MCP interface while keeping the app decoupled from connector implementation details and avoiding overlap with stronger native integrations.
+This document describes the current shipped MCP connector surface in Idexal CoWork. The goal is to expose enterprise and local creative integrations through a consistent MCP interface while keeping the app decoupled from connector implementation details and avoiding overlap with stronger native integrations.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-11.webp" alt="Connector catalog" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-11.webp" alt="Connector catalog" width="700">
   <br><em>The connector catalog exposes CRM, support, productivity, analytics, and payment integrations through one setup surface.</em>
 </p>
 

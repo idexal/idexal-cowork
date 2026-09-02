@@ -1,6 +1,6 @@
 # Core Automation
 
-idexal CoWork now treats always-on automation as a strict core runtime, not a blended product story.
+Idexal CoWork now treats always-on automation as a strict core runtime, not a blended product story.
 
 ## Core Boundary
 
@@ -34,7 +34,7 @@ Task view can also create a task-sourced routine with `... > Add automation...`.
 Use main-sidebar **Automations → Activity** for structured workflow run and step evidence. `Settings > Automations > Routines` remains the primary observability surface for task-sourced and prompt-based automations. When a routine compiles to a cron job, `Settings > Automations > Scheduled Tasks` also shows aggregate run health, the latest result, delivery status, recent run history, and links to generated sessions or continued threads so lower-level scheduled work can be audited without digging through the general task list.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-6.webp" alt="Automations control center" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-6.webp" alt="Automations control center" width="700">
   <br><em>The advanced Settings surface separates prompt-based routines, scheduled work, triggered work, and core automation controls; structured flows live in the main Automations tab.</em>
 </p>
 

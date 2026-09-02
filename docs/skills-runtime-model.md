@@ -1,6 +1,6 @@
 # Skills Runtime Model
 
-idexal CoWork now uses an additive skill model. Skills can still be selected proactively from the task text, but they no longer replace the task itself.
+Idexal CoWork now uses an additive skill model. Skills can still be selected proactively from the task text, but they no longer replace the task itself.
 
 This redesign exists to enforce one core invariant:
 

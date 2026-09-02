@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="idexal logo+icon/icon origin.png" alt="idexal CoWork" width="140">
+  <img src="idexal logo+icon/icon origin.png" alt="Idexal CoWork" width="140">
 </p>
 
-# 💬 Support — idexal CoWork
+# 💬 Support — Idexal CoWork
 
-Thank you for using **idexal CoWork** — the free, open-source AI super app. Here's how to get help, and how to help us keep it free for everyone.
+Thank you for using **Idexal CoWork** — the free, open-source AI super app. Here's how to get help, and how to help us keep it free for everyone.
 
 ---
 
@@ -23,7 +23,7 @@ Thank you for using **idexal CoWork** — the free, open-source AI super app. He
 
 ## ⏱️ Response expectations
 
-idexal CoWork is maintained by a small open-source team led by [Zakariae Lahbabi](https://zakariaelahbabi.com). We triage issues as fast as we can — typically within a few days. There is no paid SLA; please be kind and patient. 💙
+Idexal CoWork is maintained by a small open-source team led by [Zakariae Lahbabi](https://zakariaelahbabi.com). We triage issues as fast as we can — typically within a few days. There is no paid SLA; please be kind and patient. 💙
 
 ## 🤝 Contribute (the best kind of support!)
 

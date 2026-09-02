@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: idexal CoWork
+  name: Idexal CoWork
   text: The free, open-source AI super app for real work
   tagline: One app for the work. Your choice of AI. Bring supported provider accounts, APIs, gateways, cloud credentials, or local models into one GUI-first, CLI-capable workspace for coding, research, browser work, inbox, documents, data, channels, automations, and agents.
   actions:
@@ -157,11 +157,11 @@ hero:
       link: /zero-human-company
     - theme: alt
       text: GitHub
-      link: https://github.com/idexal/idexal-cowork
+      link: https://github.com/idexal/Idexal CoWork
 
 features:
   - title: AI Super App / Everything App
-    details: idexal CoWork keeps coding, email, research, documents, spreadsheets, presentations, browser work, PDFs, memory, skills, approvals, channels, devices, and automations in one governed workspace.
+    details: Idexal CoWork keeps coding, email, research, documents, spreadsheets, presentations, browser work, PDFs, memory, skills, approvals, channels, devices, and automations in one governed workspace.
   - title: Open Multi-Provider Harness
     details: Bring supported provider accounts, API keys, compatible gateways, cloud credentials, or local models. CoWork keeps the surrounding tools, skills, memory, agents, approvals, artifacts, and workflows consistent as model routes change. CoWork is free; provider charges and terms remain separate.
   - title: GUI-First Agent Management

@@ -1,6 +1,6 @@
 # X Mention Triggers
 
-Use X mentions to create idexal CoWork tasks from allowlisted accounts with a configurable command prefix (default: `do:`).
+Use X mentions to create Idexal CoWork tasks from allowlisted accounts with a configurable command prefix (default: `do:`).
 
 ## What Ships
 

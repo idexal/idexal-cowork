@@ -13,7 +13,7 @@ and workspace settings. Planner, Heartbeat, and dispatch policies can narrow
 or defer work, but they cannot widen the profile or revive an unavailable one.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-8.webp" alt="Mission Control board" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-8.webp" alt="Mission Control board" width="700">
   <br><em>Mission Control brings global runtime queue state, assigned board work, live feed, and review state into one operations view.</em>
 </p>
 

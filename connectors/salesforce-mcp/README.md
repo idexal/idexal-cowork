@@ -1,6 +1,6 @@
 # Salesforce MCP Connector (MVP)
 
-This connector exposes Salesforce APIs to idexal CoWork through MCP tools.
+This connector exposes Salesforce APIs to Idexal CoWork through MCP tools.
 
 ## Requirements
 

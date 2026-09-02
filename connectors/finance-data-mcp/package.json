@@ -1,7 +1,7 @@
 {
   "name": "@idexal/finance-data-mcp",
   "version": "0.1.0",
-  "description": "Shared read-only finance data MCP connector presets for idexal CoWork.",
+  "description": "Shared read-only finance data MCP connector presets for Idexal CoWork.",
   "private": true,
   "main": "dist/index.js",
   "scripts": {

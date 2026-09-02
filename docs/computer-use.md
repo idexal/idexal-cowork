@@ -53,7 +53,7 @@ Two system permissions gate computer use:
 
 1. Open **Settings → Tools → Computer use**.
 2. Use the shortcuts into **System Settings** to enable **Accessibility** and **Screen Recording** for the computer-use helper binary shown in settings.
-3. After changing **Screen Recording**, **quit and restart idexal CoWork** if capture still fails—macOS sometimes caches the old state until restart.
+3. After changing **Screen Recording**, **quit and restart Idexal CoWork** if capture still fails—macOS sometimes caches the old state until restart.
 
 If a tool returns an error mentioning screen capture timeout or permission, re-check Screen Recording for this app and restart.
 
@@ -142,7 +142,7 @@ For how this fits the wider tool-risk model, see [Security guide → Computer us
 | Clicks or keys do nothing | macOS: Accessibility trust for the helper path shown in settings. Windows: target app is not elevated/protected and no other app is stealing focus. |
 | Agent uses shell or browser instead of desktop | Task may not read as native GUI; rephrase with explicit app/window/dialog language, or ensure built-in `computer_use` is enabled. |
 | Agent asks for a screenshot when the task is really “what is this on screen?” | This may be a Chronicle case rather than a computer-use case; enable Chronicle and test `screen_context_resolve` with a clear on-screen prompt first. |
-| Permission bootstrap repeats | macOS: re-check that both Accessibility and Screen Recording are granted to the helper binary, not just to idexal CoWork or Terminal. |
+| Permission bootstrap repeats | macOS: re-check that both Accessibility and Screen Recording are granted to the helper binary, not just to Idexal CoWork or Terminal. |
 | Session feels “stuck” | Use **Esc** to abort the computer-use session, then cancel or adjust the task. |
 
 ## Implementation map (for contributors)

@@ -1,6 +1,6 @@
 # Automation Studio
 
-Automation Studio is idexal CoWork's visual builder and deterministic runtime for structured flows. Open it from **Automations** in the main sidebar. It is a main-screen product surface, not a Settings page.
+Automation Studio is Idexal CoWork's visual builder and deterministic runtime for structured flows. Open it from **Automations** in the main sidebar. It is a main-screen product surface, not a Settings page.
 
 Advanced and compatibility controls remain under **Settings → Automations**. Those pages expose legacy prompt-based Routines, the task queue, Scheduled Tasks, Webhooks, Event Triggers, Workflow Intelligence, and Daily Briefing. They are useful when inspecting a compiled backend or managing older automations, but they are not the place to author a structured flow.
 
@@ -307,7 +307,7 @@ npm run dev
 
 If it still fails, capture a fresh run with `npm run dev:log`, then inspect `logs/dev-latest.log` for handler registration, preload, renderer, or process-exit errors.
 
-If the dev launcher reports an existing idexal CoWork process, or Electron exits before `did_finish_load` or `app_shell_ready`, another process may already hold the single-instance lock for the same user-data directory. Quit the existing app and retry. The macOS launcher checks this before rebranding the development Electron bundle because modifying and relaunching that bundle while it is active can abort before JavaScript starts. Deleting `dist` does not terminate a process that was started from an older build.
+If the dev launcher reports an existing Idexal CoWork process, or Electron exits before `did_finish_load` or `app_shell_ready`, another process may already hold the single-instance lock for the same user-data directory. Quit the existing app and retry. The macOS launcher checks this before rebranding the development Electron bundle because modifying and relaunching that bundle while it is active can abort before JavaScript starts. Deleting `dist` does not terminate a process that was started from an older build.
 
 ### The page is misaligned or will not scroll
 

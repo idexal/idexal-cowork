@@ -1,6 +1,6 @@
 # Resend MCP Connector (MVP)
 
-This connector exposes Resend email APIs to idexal CoWork through MCP tools.
+This connector exposes Resend email APIs to Idexal CoWork through MCP tools.
 
 ## Requirements
 

@@ -1,7 +1,7 @@
 {
   "name": "@idexal/comfyui-mcp",
   "version": "0.1.0",
-  "description": "ComfyUI workflow MCP connector for idexal CoWork.",
+  "description": "ComfyUI workflow MCP connector for Idexal CoWork.",
   "private": true,
   "type": "commonjs",
   "main": "dist/index.js",

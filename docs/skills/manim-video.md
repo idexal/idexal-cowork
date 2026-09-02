@@ -1,6 +1,6 @@
 # Manim Video Skill
 
-`manim-video` is a bundled idexal CoWork skill for planning, scaffolding, and optionally rendering technical explainer videos with Manim Community Edition.
+`manim-video` is a bundled Idexal CoWork skill for planning, scaffolding, and optionally rendering technical explainer videos with Manim Community Edition.
 
 It is designed for:
 

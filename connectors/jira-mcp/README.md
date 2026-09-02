@@ -1,6 +1,6 @@
 # Jira MCP Connector (MVP)
 
-This connector exposes Jira Cloud APIs to idexal CoWork through MCP tools.
+This connector exposes Jira Cloud APIs to Idexal CoWork through MCP tools.
 
 ## Requirements
 

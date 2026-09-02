@@ -1,6 +1,6 @@
 # Workflow Intelligence
 
-Workflow Intelligence is the user-facing concept for idexal CoWork's always-on learning and next-action system.
+Workflow Intelligence is the user-facing concept for Idexal CoWork's always-on learning and next-action system.
 
 It replaces the older product framing around `Subconscious` with a clearer model:
 

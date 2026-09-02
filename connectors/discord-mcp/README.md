@@ -1,6 +1,6 @@
 # Discord MCP Connector
 
-This connector exposes Discord Bot APIs to idexal CoWork through MCP tools.
+This connector exposes Discord Bot APIs to Idexal CoWork through MCP tools.
 
 ## Requirements
 

@@ -1,6 +1,6 @@
 # LLM Wiki
 
-idexal CoWork ships `llm-wiki` as a bundled, first-class research-vault workflow.
+Idexal CoWork ships `llm-wiki` as a bundled, first-class research-vault workflow.
 
 It is inspired by **Andrej Karpathy's LLM Wiki / raw-folder knowledgebase concept**: keep raw source material, build durable linked notes on top of it, and make the result easy for both humans and agents to navigate.
 
@@ -72,7 +72,7 @@ Examples:
 
 ```text
 Build a persistent Obsidian-friendly research vault for GRPO papers
-Create a research vault about idexal CoWork competitors
+Create a research vault about Idexal CoWork competitors
 Audit my research vault for stale pages and broken links
 Use the research vault in this workspace to answer a question
 Build a persistent Obsidian-friendly research vault in this workspace. If I have not given the topic yet, ask me for it first.
@@ -99,7 +99,7 @@ Notes:
 Examples:
 
 ```text
-/llm-wiki research idexal CoWork competitors
+/llm-wiki research Idexal CoWork competitors
 /llm-wiki transformer RL papers --mode ingest --path research/wiki/rl
 /llm-wiki --mode init --path research/wiki
 /llm-wiki --mode lint --path "Research Vault"

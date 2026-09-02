@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest an idea for idexal CoWork
+about: Suggest an idea for Idexal CoWork
 title: '[FEATURE] '
 labels: enhancement
 assignees: ''

@@ -15,8 +15,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/idexal/idexal-cowork.git
-cd idexal-cowork
+git clone https://github.com/idexal/Idexal CoWork.git
+cd Idexal CoWork
 
 # Install dependencies
 npm install
@@ -30,12 +30,12 @@ npm run build:cli      # compile the standalone cowork CLI
 npm run package        # package desktop installers (.dmg on macOS, .exe on Windows)
 ```
 
-If a globally installed `idexal-cowork` command is linked to this source checkout, its runtime dependency repair preserves the checkout's development dependencies. Packaged npm installs continue to omit development-only packages.
+If a globally installed `Idexal CoWork` command is linked to this source checkout, its runtime dependency repair preserves the checkout's development dependencies. Packaged npm installs continue to omit development-only packages.
 
 Once complete, the packaged app will be in the `release/` folder:
 - **`*.dmg`** — macOS installer image
 - **`*.exe`** — Windows NSIS installer
-- **`mac-*/idexal CoWork.app`** — unpacked macOS app bundle
+- **`mac-*/Idexal CoWork.app`** — unpacked macOS app bundle
 - **`win-*/`** — unpacked Windows app directory
 
 ## Linux Server Release Package
@@ -47,7 +47,7 @@ npm run package:linux:server
 npm run package:linux:server:smoke
 ```
 
-This must run on Linux x64 so native runtime modules match the target. The package script builds the daemon and connectors, stages runtime dependencies, installs the Electron binary compatibility dependency, copies the full `resources/` tree, derives the connector list from `build:connectors`, writes `release/idexal-cowork-server-linux-x64-v<version>.tar.gz`, and writes a matching `.sha256` file.
+This must run on Linux x64 so native runtime modules match the target. The package script builds the daemon and connectors, stages runtime dependencies, installs the Electron binary compatibility dependency, copies the full `resources/` tree, derives the connector list from `build:connectors`, writes `release/Idexal CoWork-server-linux-x64-v<version>.tar.gz`, and writes a matching `.sha256` file.
 
 The smoke test extracts the tarball, verifies required files/resources/dependencies, checks `better-sqlite3`, confirms the Electron binary exists, starts `coworkd-node` on a temporary Control Plane port, and checks `/health`.
 
@@ -140,7 +140,7 @@ npm run dev:log
 
 ## macOS Dev Electron Bundle
 
-On macOS, `npm run dev` brands the local `node_modules/electron/dist/Electron.app` display name and icon as idexal CoWork by default. The branding script preserves `CFBundleName=Electron` and `CFBundleIdentifier=com.github.Electron` so development safeStorage continues to use the Electron identity.
+On macOS, `npm run dev` brands the local `node_modules/electron/dist/Electron.app` display name and icon as Idexal CoWork by default. The branding script preserves `CFBundleName=Electron` and `CFBundleIdentifier=com.github.Electron` so development safeStorage continues to use the Electron identity.
 
 Use these overrides only when you explicitly need them:
 
@@ -677,7 +677,7 @@ npx vitest run \
   src/renderer/utils/__tests__/task-event-compat.test.ts
 ```
 
-For sidebar virtualization and `@chenglou/pretext` measurement work in the `idexal/idexal-cowork` repo, run:
+For sidebar virtualization and `@chenglou/pretext` measurement work in the `idexal/Idexal CoWork` repo, run:
 
 ```bash
 npx vitest run \

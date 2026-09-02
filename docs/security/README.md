@@ -1,6 +1,6 @@
-# idexal CoWork Security Documentation
+# Idexal CoWork Security Documentation
 
-This documentation covers the security architecture of idexal CoWork, an AI-powered task automation platform.
+This documentation covers the security architecture of Idexal CoWork, an AI-powered task automation platform.
 
 ## Contents
 
@@ -14,7 +14,7 @@ This documentation covers the security architecture of idexal CoWork, an AI-powe
 
 ## Quick Start
 
-idexal CoWork is designed with security in mind. By default:
+Idexal CoWork is designed with security in mind. By default:
 
 - **Pairing mode** is enabled for all channels - users must enter a pairing code to connect
 - **Access profiles** provide the task-level choice between Ask for approval, Approve for me, Full access, and validated custom profiles

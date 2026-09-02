@@ -1,6 +1,6 @@
 # Zero-Human Company Operations
 
-idexal CoWork can be configured as a founder-operated autonomous company shell: a small team of persistent AI operators that continuously review goals, generate work, execute tasks, and surface outcomes through Mission Control.
+Idexal CoWork can be configured as a founder-operated autonomous company shell: a small team of persistent AI operators that continuously review goals, generate work, execute tasks, and surface outcomes through Mission Control.
 
 This is not a claim that the product removes human judgment from all business operations. The design target is "human-directed, agent-operated" execution:
 
@@ -16,7 +16,7 @@ setting can reduce interruption only inside that ceiling; choose **Full access**
 explicitly when a trusted operator genuinely needs it.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-2.webp" alt="Company operations dashboard" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-2.webp" alt="Company operations dashboard" width="700">
   <br><em>Company workspaces track goals, operator agents, and autonomous operating loops.</em>
 </p>
 
@@ -24,7 +24,7 @@ explicitly when a trusted operator genuinely needs it.
 
 ## What This Feature Is
 
-The zero-human-company workflow is a composition of existing idexal CoWork subsystems:
+The zero-human-company workflow is a composition of existing Idexal CoWork subsystems:
 
 - `Workspace Kit` provides durable company context in `.cowork/`
 - `Settings > Companies` provides the control surface for creating companies, editing the company graph, and linking operators
@@ -89,7 +89,7 @@ It periodically examines company goals, projects, and open issues, then:
 
 ### 4. Execution Layer
 
-Planner-created work does not use a special runtime. It flows through the same task runtime as the rest of idexal CoWork:
+Planner-created work does not use a special runtime. It flows through the same task runtime as the rest of Idexal CoWork:
 
 - planning
 - execution
@@ -126,7 +126,7 @@ Mission Control exposes the operating loop through:
 
 Digital twins are the main way to instantiate company operators as persona presets. The ZHC workflow uses the same activation flow as any other twin, but swaps in venture/operator personas and company-aware prompts.
 
-When a twin is created from company context, idexal CoWork now persists the company assignment on the resulting `AgentRole`. That lets the product consistently show:
+When a twin is created from company context, Idexal CoWork now persists the company assignment on the resulting `AgentRole`. That lets the product consistently show:
 
 - which operators belong to which company
 - company-scoped operator sections in `Settings > Digital Twins`

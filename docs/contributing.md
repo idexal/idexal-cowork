@@ -1,6 +1,6 @@
-# Contributing to idexal CoWork
+# Contributing to Idexal CoWork
 
-Thank you for your interest in contributing to idexal CoWork! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to Idexal CoWork! This document provides guidelines and instructions for contributing.
 
 ## Table of Contents
 
@@ -38,8 +38,8 @@ Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to keep our com
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/idexal-cowork.git
-cd idexal-cowork
+git clone https://github.com/YOUR_USERNAME/Idexal CoWork.git
+cd Idexal CoWork
 
 # Install dependencies and set up native modules
 npm run setup
@@ -65,7 +65,7 @@ npm run dev
 
 ## Releasing (Maintainers Only)
 
-idexal CoWork is published to npm for easy global installation. To release a new version:
+Idexal CoWork is published to npm for easy global installation. To release a new version:
 
 ### Release Workflow
 
@@ -254,7 +254,7 @@ docs(readme): update installation instructions for M1 Macs
 ## Questions?
 
 Feel free to:
-- Open a [Discussion](https://github.com/idexal/idexal-cowork/discussions) for questions
+- Open a [Discussion](https://github.com/idexal/Idexal CoWork/discussions) for questions
 - Tag maintainers in issues for guidance
 
-Thank you for contributing to idexal CoWork!
+Thank you for contributing to Idexal CoWork!

@@ -1,7 +1,7 @@
 {
   "name": "@idexal/blender-mcp",
   "version": "0.1.0",
-  "description": "Blender scene, material, and render MCP connector for idexal CoWork.",
+  "description": "Blender scene, material, and render MCP connector for Idexal CoWork.",
   "private": true,
   "type": "commonjs",
   "main": "dist/index.js",

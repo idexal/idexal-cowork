@@ -1,6 +1,6 @@
 # Managed Agents
 
-Managed Agents adds a first-class, GUI-first managed resource model to CoWork without replacing the existing task runtime or the new terminal entrypoint. It is one of the core reasons idexal CoWork is positioned as a personal AI super app and everything app: users can create reusable agents, spawn work from templates or prompts, inspect configuration, run tests, and monitor execution from visual surfaces, while `cowork` remains available for terminal-native task starts.
+Managed Agents adds a first-class, GUI-first managed resource model to CoWork without replacing the existing task runtime or the new terminal entrypoint. It is one of the core reasons Idexal CoWork is positioned as a personal AI super app and everything app: users can create reusable agents, spawn work from templates or prompts, inspect configuration, run tests, and monitor execution from visual surfaces, while `cowork` remains available for terminal-native task starts.
 
 V1 introduces three control-plane resources:
 
@@ -11,7 +11,7 @@ V1 introduces three control-plane resources:
 The implementation is local-first and additive. Managed resources are exposed through the control plane and Agents Hub, while existing `Task`, `AgentTeamRun`, `task_events`, and `session_runtime_v2` remain the execution primitives underneath.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-3.webp" alt="Agents Hub" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-3.webp" alt="Agents Hub" width="700">
   <br><em>Agents Hub is the main surface for reusable managed agents, templates, and starter prompts.</em>
 </p>
 

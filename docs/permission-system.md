@@ -1,6 +1,6 @@
 # Permission System
 
-idexal CoWork uses a layered permission engine instead of a single risk-only approval gate.
+Idexal CoWork uses a layered permission engine instead of a single risk-only approval gate.
 The current model separates coarse capability gates from export-sensitive approvals so ordinary
 network reads, raw outbound requests, and provenance-aware prompts can be handled differently
 without flattening everything into one approval bucket.

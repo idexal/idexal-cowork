@@ -1,6 +1,6 @@
 # Access Profiles
 
-Access profiles are idexal CoWork's canonical way to decide what an agent may do.
+Access profiles are Idexal CoWork's canonical way to decide what an agent may do.
 They package the execution sandbox, approval behavior, reviewer behavior, network
 posture, and optional filesystem/domain boundaries into one named policy that is
 carried with the task.
@@ -291,7 +291,7 @@ npm run build:react
 - [Security Model](security/security-model.md) — defense layers and hard boundaries
 - [Security Configuration](security/configuration-guide.md) — operator settings
 - [Security Guide](security-guide.md) — practical safe-operation guidance
-- [idexal CoWork CLI](cli.md) — local and remote profile selection
+- [Idexal CoWork CLI](cli.md) — local and remote profile selection
 - [Managed Agents](managed-agents.md) — managed environment inheritance
 - [Task Automations](task-automations.md) — unattended profile behavior
 - [Terminal Tabs](terminal-tabs.md) — interactive command sessions

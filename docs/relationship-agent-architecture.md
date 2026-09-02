@@ -1,7 +1,7 @@
 # Relationship Agent Architecture
 
 ## 1) Product Goal
-idexal CoWork should behave as a persistent personal agent that can:
+Idexal CoWork should behave as a persistent personal agent that can:
 
 - Talk naturally with the user, not only execute tasks.
 - Understand user intent per message and choose the right operating mode.

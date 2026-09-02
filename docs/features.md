@@ -5,7 +5,7 @@
 Messaging channels share unified operations, plus per-channel, per-chat, and per-topic specialization for workspace, agent role, guidance, tool policy, and shared-memory opt-in. See [Channel Integrations](channels.md) for the current supported list and setup details, [Channel User Guides](channel-user-guides.md) for per-channel features and best practices, [Dedicated Channel Guides](channel-guides/) for separate channel pages, [Using CoWork from WhatsApp and Other Channels](gateway-user-guide.md) for end-user workflows, and [Gateway Message Lifecycle](gateway-message-lifecycle.md) for remote command routing, active-task behavior, delivery, and scheduled outputs.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-12.webp" alt="Messaging channel settings" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-12.webp" alt="Messaging channel settings" width="700">
   <br><em>Channels can be configured with provider setup, routing, specialization, and security controls.</em>
 </p>
 
@@ -36,10 +36,10 @@ Messaging channels share unified operations, plus per-channel, per-chat, and per
 - **Profiles & Portability**: Separate app profiles isolate their own database, credentials, channels, skills, and sessions. Profiles can be exported/imported as bundles for migration or cloning.
 
 - **Ideas Panel**: Curated launch panel accessible from the sidebar above Sessions. Pre-written prompts organized by category let you start common workflows in one click. See [Ideas Panel: Supported Capabilities](ideas-capabilities.md) for the full list of tools each prompt uses and their graceful fallbacks.
-- **GUI-first, CLI-capable AI Super App, Everything App, and Personal Agentic OS**: idexal CoWork is a free, open-source, local-first super app for everyday AI work: coding, email, web design, research, documents, spreadsheets, presentations, automations, channels, devices, terminal tasks, and long-running work in one governed workspace.
-- **Open Multi-Provider Harness**: Supported provider accounts, APIs, compatible gateways, cloud credentials, and local models can use the same CoWork tools, skills, memory, agents, approvals, artifacts, and workflows. CoWork itself is free and MIT-licensed; provider eligibility, limits, and charges remain separate. See [Model Providers](providers.md) and [Compare idexal CoWork](comparisons/index.md).
+- **GUI-first, CLI-capable AI Super App, Everything App, and Personal Agentic OS**: Idexal CoWork is a free, open-source, local-first super app for everyday AI work: coding, email, web design, research, documents, spreadsheets, presentations, automations, channels, devices, terminal tasks, and long-running work in one governed workspace.
+- **Open Multi-Provider Harness**: Supported provider accounts, APIs, compatible gateways, cloud credentials, and local models can use the same CoWork tools, skills, memory, agents, approvals, artifacts, and workflows. CoWork itself is free and MIT-licensed; provider eligibility, limits, and charges remain separate. See [Model Providers](providers.md) and [Compare Idexal CoWork](comparisons/index.md).
 - **GUI-first Agent Management**: Agents Hub, Mission Control, task timelines, visual boards, Teams, Devices, and Automations let users create reusable agents, spawn many parallel or specialized agents, inspect delegated runs, assign work, review approvals, and monitor outcomes through the desktop operator console.
-- **CoWork CLI**: `cowork` opens an interactive terminal UI for local agent work, and `cowork run "task"` starts one-shot local tasks using the same local profile, providers, workspaces, skills, and MCP configuration as the desktop app. Normal local CLI use does not require a Control Plane token; `--remote` is the explicit remote client path. See [idexal CoWork CLI](cli.md).
+- **CoWork CLI**: `cowork` opens an interactive terminal UI for local agent work, and `cowork run "task"` starts one-shot local tasks using the same local profile, providers, workspaces, skills, and MCP configuration as the desktop app. Normal local CLI use does not require a Control Plane token; `--remote` is the explicit remote client path. See [Idexal CoWork CLI](cli.md).
 - **Governed Access Profiles**: The main composer offers Codex-style **Ask for approval**, **Approve for me**, **Full access**, and **Custom** profiles. A profile carries sandbox, approval, reviewer, network, filesystem, and domain policy across desktop, CLI, remote, managed, automation, and child-task surfaces. Command tools are derived from the selected profile; there is no separate new-task shell toggle. See [Access Profiles](access-profiles.md).
 - **Everything Workbench**: Generated documents, spreadsheets, presentations, web pages, PDFs, and previews share one artifact model: compact output card, sidebar open, fullscreen artifact workspace, follow-up composer, and refresh after the agent completes requested edits. This makes CoWork the default place to create, inspect, and revise everyday Word/Excel/PowerPoint-style work while keeping external app actions available for advanced native workflows. See [Everything Workbench](everything-workbench.md).
 - **Terminal Tabs**: CoWork now includes real xterm.js + node-pty terminal tabs inside the workspace, with native macOS login-shell behavior, Windows `cmd.exe` through ConPTY/winpty, keyboard shortcuts, Tab completion, Ctrl+C, interactive prompts, resizing, closeable tabs, and cwd-only prompts. This is a major super-app step because direct CLI work, repository work, agents, artifacts, browser testing, approvals, channels, and automations can stay in one governed workspace. See [Terminal Tabs](terminal-tabs.md).
@@ -65,7 +65,7 @@ Messaging channels share unified operations, plus per-channel, per-chat, and per
 - **Additive Skill Runtime**: Skills can still be proactively shortlisted from task semantics, but they now apply as additive context and scoped runtime directives. They never replace the original task prompt. See [Skills Runtime Model](skills-runtime-model.md).
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-3.webp" alt="Agents Hub" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-3.webp" alt="Agents Hub" width="700">
   <br><em>Agents Hub turns reusable agent definitions into a first-class product surface.</em>
 </p>
 
@@ -118,7 +118,7 @@ Messaging channels share unified operations, plus per-channel, per-chat, and per
 - **Context Summarization**: Automatic context compression surfaced in the task timeline
 - **Structured Input Requests**: In plan-mode flows, the agent can pause with 1-3 short multiple-choice questions instead of asking ambiguous free-text follow-ups
 - **Parallel Tool Timeline**: Concurrent read-only tool bursts are grouped into lane-based timeline cards instead of flooding the event feed; screenshot-heavy refinement loops stay more compact in summary mode
-- **Renderer Performance**: In the `idexal/idexal-cowork` repo, the renderer uses `@chenglou/pretext` for text-heavy sidebar/timeline measurement, with flattened visible sidebar rows and post-render height reconciliation for expanded timeline cards
+- **Renderer Performance**: In the `idexal/Idexal CoWork` repo, the renderer uses `@chenglou/pretext` for text-heavy sidebar/timeline measurement, with flattened visible sidebar rows and post-render height reconciliation for expanded timeline cards
 - **Adaptive Runtime Recovery**: Main interactive tasks no longer receive implicit strategy turn caps. They use explicit-only window caps, bounded follow-up recovery, retry-aware turn guidance, and lifetime/emergency safety-stop escalation instead of default hard-window failure
 - **Session Snapshot Resume**: SessionRuntime prefers `session_runtime_v2` checkpoint and event payloads, falls back to legacy `conversationHistory` payloads or event-derived history, and rewrites legacy resumes to V2 on the next checkpoint
 - **Workspace Rule Manager**: Settings can list and remove workspace-local permission rules directly, and approval prompts can persist new workspace or profile rules with explicit reasons and scope previews.
@@ -214,7 +214,7 @@ See the full workflow guide in [Inbox Agent](inbox-agent.md) and the retrieval/I
 
 ### Managed Devices & Remote Operations
 
-idexal CoWork now includes a dedicated Devices tab for running and observing work across multiple machines.
+Idexal CoWork now includes a dedicated Devices tab for running and observing work across multiple machines.
 
 - **Local + remote device inventory**: track the current machine alongside saved remote devices in one view
 - **Connection-aware remote cards**: direct, SSH-tunneled, and Tailscale-backed devices expose connection state, last-seen time, active runs, storage summary, app summary, and attention state
@@ -239,7 +239,7 @@ Every activation is immutable. Saving a later draft cannot change the starter, a
 Advanced and compatibility features remain grouped under `Settings > Automations`:
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-6.webp" alt="Automations control center" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-6.webp" alt="Automations control center" width="700">
   <br><em>Automations separate core runtime settings, scheduled tasks, webhooks, triggers, and briefing workflows.</em>
 </p>
 
@@ -268,7 +268,7 @@ Task view can also create a task-sourced routine from the selected task with `..
 
 ### Routines
 
-`Routines` are the compatibility shell for saved automation in idexal CoWork. Use main-sidebar Automation Studio for a structured multi-step graph; use **Settings → Automations → Routines** for prompt-based instructions and lower-level policy/target configuration.
+`Routines` are the compatibility shell for saved automation in Idexal CoWork. Use main-sidebar Automation Studio for a structured multi-step graph; use **Settings → Automations → Routines** for prompt-based instructions and lower-level policy/target configuration.
 
 Each routine can carry:
 
@@ -299,7 +299,7 @@ Current product stance:
 
 ### Zero-Human Company Ops
 
-idexal CoWork can also be configured as a founder-directed autonomous company shell by composing several existing systems into one operating loop:
+Idexal CoWork can also be configured as a founder-directed autonomous company shell by composing several existing systems into one operating loop:
 
 - **Venture operator workspace kit**: initializes `.cowork/` with `COMPANY.md`, `OPERATIONS.md`, `KPIS.md`, `PRIORITIES.md`, and `HEARTBEAT.md`
 - **Companies control surface**: `Settings > Companies` centralizes company creation, company-graph editing, linked operators, and direct handoff into Digital Twins or Mission Control
@@ -322,7 +322,7 @@ See [Zero-Human Company Operations](zero-human-company.md) for architecture, set
 
 ### Workflow Intelligence
 
-`Workflow Intelligence` is the primary always-on cognition layer in idexal CoWork:
+`Workflow Intelligence` is the primary always-on cognition layer in Idexal CoWork:
 
 - **Memory as source of truth**: reflection outputs become memory candidates such as preferences, workflow patterns, open loops, corrections, recurring tasks, and ignored noise
 - **Heartbeat as scheduler**: Heartbeat decides when accumulated signals justify reflection
@@ -501,7 +501,7 @@ Access from **Settings** > **Customize**. See [Plugin Packs](plugin-packs.md) fo
 
 ## Skill Store & External Skills
 
-idexal CoWork supports external skill installation through the desktop GUI, not just bundled skills or CoWork-native packs.
+Idexal CoWork supports external skill installation through the desktop GUI, not just bundled skills or CoWork-native packs.
 
 - **CoWork Registry tab**: Browse curated skills distributed through CoWork’s own registry flow
 - **ClawHub tab**: Search ClawHub directly from the app, view live skill stats, and install from result cards
@@ -603,12 +603,12 @@ Configure in **Settings** > **Memory Hub**.
 
 ## ChatGPT History Import
 
-Import your full ChatGPT conversation history into idexal CoWork's memory system. Instead of starting from scratch, the agent immediately understands your preferences, past projects, communication style, and context from hundreds or thousands of previous conversations.
+Import your full ChatGPT conversation history into Idexal CoWork's memory system. Instead of starting from scratch, the agent immediately understands your preferences, past projects, communication style, and context from hundreds or thousands of previous conversations.
 
 ### How It Works
 
 1. **Export from ChatGPT**: Go to [ChatGPT Settings > Data Controls > Export Data](https://chat.openai.com/#settings/DataControls). OpenAI emails you a `.zip` file containing `conversations.json`.
-2. **Import in idexal CoWork**: Go to **Settings > Memory Hub > Import ChatGPT History** and select the exported `.zip` or `conversations.json` file.
+2. **Import in Idexal CoWork**: Go to **Settings > Memory Hub > Import ChatGPT History** and select the exported `.zip` or `conversations.json` file.
 3. **Processing**: Conversations are parsed, deduplicated, and stored as memory entries with full-text search indexing. User messages are captured as context; assistant responses are summarized for token efficiency.
 
 ### What Gets Imported
@@ -630,13 +630,13 @@ Import your full ChatGPT conversation history into idexal CoWork's memory system
 
 ### Why This Matters
 
-Most AI assistants start with zero context about you. Every new tool means re-explaining your preferences, projects, and constraints. ChatGPT history import eliminates this cold-start problem — idexal CoWork learns from your existing AI conversations so it can be useful from the first task.
+Most AI assistants start with zero context about you. Every new tool means re-explaining your preferences, projects, and constraints. ChatGPT history import eliminates this cold-start problem — Idexal CoWork learns from your existing AI conversations so it can be useful from the first task.
 
 ---
 
 ## Durable Learning Stack
 
-idexal CoWork still keeps a multi-layered learning stack under the reflective loop. These services improve recall, personalization, and future evidence quality across sessions.
+Idexal CoWork still keeps a multi-layered learning stack under the reflective loop. These services improve recall, personalization, and future evidence quality across sessions.
 
 | Layer | Service | What It Learns |
 |-------|---------|----------------|
@@ -683,7 +683,7 @@ See [Evolving Agent Intelligence](evolving-agent-intelligence.md) and [Behavior 
 
 ## Operator Runtime Visibility
 
-idexal CoWork now exposes the learning loop as a visible operator surface instead of leaving it buried inside background services.
+Idexal CoWork now exposes the learning loop as a visible operator surface instead of leaving it buried inside background services.
 
 | Surface | What users see |
 |---------|----------------|
@@ -693,7 +693,7 @@ idexal CoWork now exposes the learning loop as a visible operator surface instea
 | **Model routing visibility** | Live active provider/model, routing reason, fallback chain, and retry/fallback state in the task UI and settings surfaces. |
 | **Applied skills visibility** | The task header keeps the canonical request visible and shows applied skills separately, including trigger/reason metadata from runtime events. |
 
-This layer is intentionally additive. It makes learning and routing legible while preserving the desktop control plane, channels, inbox, devices, and governed automation that define idexal CoWork.
+This layer is intentionally additive. It makes learning and routing legible while preserving the desktop control plane, channels, inbox, devices, and governed automation that define Idexal CoWork.
 
 See [Operator Runtime Visibility](operator-runtime-visibility.md) for the cross-surface implementation summary and [Skills Runtime Model](skills-runtime-model.md) for the skill-specific runtime contract.
 
@@ -773,8 +773,8 @@ updated: 2026-03-14
 ### Special handling
 
 - `BOOTSTRAP.md` is onboarding-only context, not a durable memory file
-- When `BOOTSTRAP.md` is first present, idexal CoWork records `bootstrapSeededAt` in `.cowork/workspace-state.json`
-- When `BOOTSTRAP.md` is later removed, idexal CoWork records `onboardingCompletedAt` and does not recreate it during missing-only init flows
+- When `BOOTSTRAP.md` is first present, Idexal CoWork records `bootstrapSeededAt` in `.cowork/workspace-state.json`
+- When `BOOTSTRAP.md` is later removed, Idexal CoWork records `onboardingCompletedAt` and does not recreate it during missing-only init flows
 - `HEARTBEAT.md` is reserved for recurring Heartbeat v3 checklist work and is intentionally separate from general task/session context
 
 ### Health, linting, and revisions
@@ -830,7 +830,7 @@ Configure in **Mission Control** > **Teams**.
 Centralized agent orchestration and monitoring dashboard. Access from **Settings** > **Mission Control**. The surface now separates Heartbeat-enabled agents, the global runtime queue, and workspace-scoped Mission Board work so users can tell whether an item is monitoring, waiting to execute, or tracked on the board.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-8.webp" alt="Mission Control board" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-8.webp" alt="Mission Control board" width="700">
   <br><em>Mission Control shows global runtime queue state, scoped board work, agent status, and operational review.</em>
 </p>
 
@@ -1098,7 +1098,7 @@ Access from the **File Hub** panel in the sidebar.
 
 ## Web Access
 
-Serve idexal CoWork as a web application accessible from any browser on the network.
+Serve Idexal CoWork as a web application accessible from any browser on the network.
 
 | Feature | Description |
 |---------|-------------|
@@ -1216,7 +1216,7 @@ Three-tier web interaction stack — from lightweight HTTP fetching to visible i
 
 ### In-App Browser Workbench
 
-Interactive browser-use tasks open inside idexal CoWork by default. When a user asks the agent to go to a site and test, use, click through, or inspect it as a normal user, `browser_navigate` opens a visible browser workbench in the resizable right sidebar. Browser V2 controls the same webview the user can see through a main-process session manager and CDP-backed actions, using a persistent per-workspace browser profile that is isolated from system Chrome.
+Interactive browser-use tasks open inside Idexal CoWork by default. When a user asks the agent to go to a site and test, use, click through, or inspect it as a normal user, `browser_navigate` opens a visible browser workbench in the resizable right sidebar. Browser V2 controls the same webview the user can see through a main-process session manager and CDP-backed actions, using a persistent per-workspace browser profile that is isolated from system Chrome.
 
 The browser workbench supports:
 
@@ -1350,7 +1350,7 @@ See [Chrome Remote Debugging](https://developer.chrome.com/docs/devtools/remote-
 
 ### Comparison with ClawHub Agent Browser
 
-| Capability | ClawHub Agent Browser | idexal CoWork Browser |
+| Capability | ClawHub Agent Browser | Idexal CoWork Browser |
 |---|---|---|
 | **Architecture** | External Rust CLI, commands via Bash shell | Browser V2 session manager with visible Electron-workbench default plus Playwright/external-CDP adapters |
 | **Performance** | CLI process spawn per command + JSON serialization | Persistent browser session, CDP-backed workbench actions, fallback adapters only when needed |
@@ -1374,7 +1374,7 @@ See [Chrome Remote Debugging](https://developer.chrome.com/docs/devtools/remote-
 | **Multi-browser** | Playwright only | Chromium, Chrome, Brave |
 | **Integration** | Loose (CLI → Bash → agent) | Tight (session manager, visible workbench, IPC, daemon logging, artifact registry, diagnostics drawer) |
 
-**Key advantage:** idexal CoWork's Browser V2 approach keeps normal website testing in the visible app surface while using a shared session manager for automation, diagnostics, guardrails, and fallback adapters. The tiered architecture also means the agent does not launch or control a browser when a simple HTTP fetch is enough.
+**Key advantage:** Idexal CoWork's Browser V2 approach keeps normal website testing in the visible app surface while using a shared session manager for automation, diagnostics, guardrails, and fallback adapters. The tiered architecture also means the agent does not launch or control a browser when a simple HTTP fetch is enough.
 
 ---
 
@@ -1465,7 +1465,7 @@ See [Remote Access](remote-access.md) for details.
 **47 pre-built connectors** for enterprise integrations and local creative workflows. Install from **Settings > Connectors > Browse Registry**.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-11.webp" alt="Connector catalog" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-11.webp" alt="Connector catalog" width="700">
   <br><em>The connector catalog keeps MCP-backed integrations discoverable and configurable.</em>
 </p>
 
@@ -1719,11 +1719,11 @@ Run multiple tasks concurrently with configurable limits (1-10, default: 3). Tas
 
 ## Web Browser Mode (Planned)
 
-Access idexal CoWork from any web browser — no Electron desktop app required.
+Access Idexal CoWork from any web browser — no Electron desktop app required.
 
 | Aspect | Details |
 |--------|---------|
-| **How** | `idexal-cowork --serve --port 3000` starts a Node.js server exposing the full React UI over HTTP/WebSocket |
+| **How** | `Idexal CoWork --serve --port 3000` starts a Node.js server exposing the full React UI over HTTP/WebSocket |
 | **Approach** | Reuses all existing main-process logic (agent, tools, database, gateways). IPC calls are mapped to HTTP/WebSocket endpoints |
 | **Desktop features** | System tray, desktop screenshots, and AppleScript degrade gracefully. File dialogs use browser-native pickers |
 | **Security** | Challenge-response authentication (extends existing control plane auth). HTTPS recommended for production |

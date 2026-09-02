@@ -1,6 +1,6 @@
 # Skills Quality Spec
 
-This document defines mandatory quality standards for bundled idexal CoWork skills.
+This document defines mandatory quality standards for bundled Idexal CoWork skills.
 
 ## Scope
 

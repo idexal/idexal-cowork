@@ -1,7 +1,7 @@
 {
   "name": "@idexal/rhino-mcp",
   "version": "0.1.0",
-  "description": "Rhino architectural modeling MCP connector for idexal CoWork.",
+  "description": "Rhino architectural modeling MCP connector for Idexal CoWork.",
   "private": true,
   "type": "commonjs",
   "main": "dist/index.js",

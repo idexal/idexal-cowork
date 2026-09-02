@@ -1,6 +1,6 @@
 # Knowledge Graph System
 
-idexal CoWork includes a built-in knowledge graph that provides structured entity and relationship memory for the agent. Unlike flat-text memory, the knowledge graph stores typed entities, directed relationships, timestamped observations, and optional temporal validity windows in a normalized SQLite schema with full-text search.
+Idexal CoWork includes a built-in knowledge graph that provides structured entity and relationship memory for the agent. Unlike flat-text memory, the knowledge graph stores typed entities, directed relationships, timestamped observations, and optional temporal validity windows in a normalized SQLite schema with full-text search.
 
 Graph extraction, search, and memory promotion run beneath the task's [access
 profile](access-profiles.md). A graph result is context, not a permission
@@ -185,7 +185,7 @@ These auto-extracted entities appear with `confidence=0.85` and decay over time 
 
 ## Comparison with ClawHub Ontology
 
-| Capability | ClawHub Ontology | idexal CoWork Knowledge Graph |
+| Capability | ClawHub Ontology | Idexal CoWork Knowledge Graph |
 |------------|-----------------|--------------------------|
 | **Storage** | Flat JSON file | SQLite with 4 normalized tables |
 | **Search** | Linear scan | FTS5 full-text search with BM25 ranking |

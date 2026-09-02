@@ -1,27 +1,27 @@
 ---
-title: "idexal CoWork: A Beginner's Guide"
-description: A practical guide to idexal CoWork as a free, open-source AI super app and multi-provider agent harness, including setup and first workflows.
+title: "Idexal CoWork: A Beginner's Guide"
+description: A practical guide to Idexal CoWork as a free, open-source AI super app and multi-provider agent harness, including setup and first workflows.
 ---
 
-# idexal CoWork: A Beginner's Guide
+# Idexal CoWork: A Beginner's Guide
 
 The free, open-source AI super app for real work: one local-first workspace for tasks, tools, artifacts, agents, and automation across supported model routes.
 
 ## Why this guide exists
 
-The first question people ask after installing idexal CoWork is simple:
+The first question people ask after installing Idexal CoWork is simple:
 
 > What should I actually do with it?
 
-That is a fair question. idexal CoWork can look like a lot at first because it is not just a chatbot, a coding assistant, or an automation tool. It is a runtime that can combine all three. This guide is here to make the first hour feel obvious.
+That is a fair question. Idexal CoWork can look like a lot at first because it is not just a chatbot, a coding assistant, or an automation tool. It is a runtime that can combine all three. This guide is here to make the first hour feel obvious.
 
-The goal is not to teach every setting. It is to help you understand what idexal CoWork is good at, what it should not be trusted with blindly, and which workflows are worth trying first.
+The goal is not to teach every setting. It is to help you understand what Idexal CoWork is good at, what it should not be trusted with blindly, and which workflows are worth trying first.
 
 ## The basics
 
-### What is idexal CoWork?
+### What is Idexal CoWork?
 
-idexal CoWork is a free, open-source, local-first AI super app and personal agentic operating system for real work.
+Idexal CoWork is a free, open-source, local-first AI super app and personal agentic operating system for real work.
 
 In practice, that means:
 
@@ -32,13 +32,13 @@ In practice, that means:
 - it keeps approvals, guardrails, encrypted settings, and workspace boundaries in the product instead of expecting you to bolt them on later
 - it lets supported provider accounts, APIs, compatible gateways, cloud credentials, and local models use the same surrounding tools, skills, memory, agents, approvals, and artifacts
 
-If ChatGPT feels like “ask a smart model a question,” idexal CoWork is closer to “give an operator a job, tools, memory, and rules.”
+If ChatGPT feels like “ask a smart model a question,” Idexal CoWork is closer to “give an operator a job, tools, memory, and rules.”
 
 ### How is it different from ChatGPT, Claude, or Codex?
 
 The difference is not just the model. It is the operating model and who controls the harness around it.
 
-Chat-first tools are great when you want an answer, a draft, or a quick burst of reasoning. idexal CoWork is better when you want the system to stay with the work.
+Chat-first tools are great when you want an answer, a draft, or a quick burst of reasoning. Idexal CoWork is better when you want the system to stay with the work.
 
 It can:
 
@@ -48,13 +48,13 @@ It can:
 - keep long-running operational loops alive through automations instead of waiting for the next prompt
 - separate profiles, companies, devices, skills, and policies so one setup does not leak into another
 
-In short: idexal CoWork keeps the broader work surface and governance layer consistent while you choose among supported model routes. CoWork itself is free and MIT-licensed; model providers and connected services can apply separate eligibility, limits, and charges.
+In short: Idexal CoWork keeps the broader work surface and governance layer consistent while you choose among supported model routes. CoWork itself is free and MIT-licensed; model providers and connected services can apply separate eligibility, limits, and charges.
 
-For product-by-product tradeoffs, see [Compare idexal CoWork](comparisons/index.md).
+For product-by-product tradeoffs, see [Compare Idexal CoWork](comparisons/index.md).
 
 ### What can it access?
 
-By default, idexal CoWork is only as capable as the permissions and connections you give it.
+By default, Idexal CoWork is only as capable as the permissions and connections you give it.
 
 Depending on your setup, it can work with:
 
@@ -71,7 +71,7 @@ That does not all turn on at once. You choose what to enable.
 
 ### What are its boundaries?
 
-idexal CoWork is powerful, but it is not magic.
+Idexal CoWork is powerful, but it is not magic.
 
 - It can still be wrong. Treat it as a collaborator, not an oracle.
 - It only knows the context you give it or let it access.
@@ -81,13 +81,13 @@ idexal CoWork is powerful, but it is not magic.
 
 The best results come from treating it like a capable operator you supervise, not an all-knowing system you blindly trust.
 
-## What it feels like to work with idexal CoWork
+## What it feels like to work with Idexal CoWork
 
 ### It moves from “AI time” into normal work time
 
 With a normal chatbot, you leave your work, open a model, ask a question, then copy the result back into whatever you were doing.
 
-idexal CoWork reduces that context switching. You can create a task in the desktop app, start from an Ideas prompt, operate through a channel, or run it from a VPS control plane. The task, the outputs, the approvals, and the memory all stay in one operating surface.
+Idexal CoWork reduces that context switching. You can create a task in the desktop app, start from an Ideas prompt, operate through a channel, or run it from a VPS control plane. The task, the outputs, the approvals, and the memory all stay in one operating surface.
 
 ### It is better at workflows than one-shot prompts
 
@@ -100,11 +100,11 @@ The real advantage shows up when the work has multiple steps:
 - ask you for confirmation
 - continue the task with your answer
 
-This is where idexal CoWork starts to feel less like “generate text” and more like “run the job.”
+This is where Idexal CoWork starts to feel less like “generate text” and more like “run the job.”
 
 ### It can become a background operator
 
-Once your setup is stable, idexal CoWork does not have to wait for you to start every task manually.
+Once your setup is stable, Idexal CoWork does not have to wait for you to start every task manually.
 
 You can add:
 
@@ -118,7 +118,7 @@ That changes the relationship. You stop using it only when you remember to ask, 
 
 ### It can become a team surface, not just a personal toy
 
-idexal CoWork is especially strong when work crosses channels, people, and systems.
+Idexal CoWork is especially strong when work crosses channels, people, and systems.
 
 A founder can use it as a company operator shell. A lead can use it for inbox triage, planning, and approvals. A developer can use it for code review, debugging, refactors, and docs. A support or ops team can use it where auditability and governed execution matter more than raw novelty.
 
@@ -137,15 +137,15 @@ Download the latest release from GitHub Releases and install it locally.
 If you want the fastest local setup:
 
 ```bash
-npm install -g idexal-cowork
-idexal-cowork
+npm install -g Idexal CoWork
+Idexal CoWork
 ```
 
 This is a good fit if you already live in the terminal and want a lightweight install path.
 
 ### 3. Run it headless on a VPS
 
-If you want idexal CoWork running continuously without depending on your laptop, use the packaged Linux server release. It is a Linux x64 tarball from GitHub Releases that runs `coworkd-node`, serves the Control Plane Web UI, and can be installed as a systemd service.
+If you want Idexal CoWork running continuously without depending on your laptop, use the packaged Linux server release. It is a Linux x64 tarball from GitHub Releases that runs `coworkd-node`, serves the Control Plane Web UI, and can be installed as a systemd service.
 
 Start with:
 
@@ -171,7 +171,7 @@ Try:
 Organize this folder by file type. Create clear subfolders, avoid duplicates, and ask before deleting anything.
 ```
 
-This teaches you the most important mental model: idexal CoWork is not just replying. It is inspecting, planning, executing, and stopping when approval matters.
+This teaches you the most important mental model: Idexal CoWork is not just replying. It is inspecting, planning, executing, and stopping when approval matters.
 
 ### 2. Ask it to produce a real artifact
 
@@ -193,7 +193,7 @@ If you do not know what to try next, use the Ideas panel. It gives you pre-writt
 
 ### 1. Set up your inbox workflow
 
-Inbox work is where idexal CoWork starts paying rent quickly.
+Inbox work is where Idexal CoWork starts paying rent quickly.
 
 Try:
 
@@ -225,7 +225,7 @@ Try:
 Build a persistent research vault for [topic]. Capture raw sources, create linked notes, and show me the main open questions.
 ```
 
-This is one of the clearest examples of idexal CoWork acting like a durable operating environment rather than a stateless chat window.
+This is one of the clearest examples of Idexal CoWork acting like a durable operating environment rather than a stateless chat window.
 
 ## Advanced
 
@@ -248,7 +248,7 @@ If you want work to run on another machine, use the Devices tab and connect a re
 
 ### 3. Build a governed company loop
 
-If you are a founder or operator, idexal CoWork can go beyond personal assistance into company execution.
+If you are a founder or operator, Idexal CoWork can go beyond personal assistance into company execution.
 
 That usually means combining:
 
@@ -262,7 +262,7 @@ That is not the right starting point for everyone, but it is where the product b
 
 ## The right mindset
 
-People get the most value out of idexal CoWork when they shift from a chatbot mindset to an operator mindset.
+People get the most value out of Idexal CoWork when they shift from a chatbot mindset to an operator mindset.
 
 ### Think in jobs, not prompts
 
@@ -289,7 +289,7 @@ Use approvals, profiles, guardrails, and narrow workspace scope. Expand trust on
 
 ## Staying safe
 
-idexal CoWork is designed with stronger controls than most agent tools, but the controls only help if you use them well.
+Idexal CoWork is designed with stronger controls than most agent tools, but the controls only help if you use them well.
 
 ### Start narrow
 
@@ -324,4 +324,4 @@ Background systems are powerful precisely because they keep running. Make sure S
 
 If you only remember one thing, remember this:
 
-idexal CoWork is best when you use it to operate ongoing work with clear boundaries, not when you use it as a fancier search box.
+Idexal CoWork is best when you use it to operate ongoing work with clear boundaries, not when you use it as a fancier search box.

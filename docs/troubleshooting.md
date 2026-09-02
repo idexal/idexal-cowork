@@ -1,13 +1,13 @@
 # Troubleshooting
 
-## idexal CoWork says this macOS version is unsupported
+## Idexal CoWork says this macOS version is unsupported
 
-idexal CoWork `0.5.52` and later use Electron 44 and require **macOS 13 Ventura or later**. macOS 12 Monterey cannot launch this runtime. `0.5.51` is the final Monterey-compatible idexal CoWork release.
+Idexal CoWork `0.5.52` and later use Electron 44 and require **macOS 13 Ventura or later**. macOS 12 Monterey cannot launch this runtime. `0.5.51` is the final Monterey-compatible Idexal CoWork release.
 
 If you installed through npm and must remain on Monterey, reinstall the compatible release:
 
 ```bash
-npm install -g idexal-cowork@0.5.51
+npm install -g Idexal CoWork@0.5.51
 ```
 
 This changes the installed application version; it does not remove the CoWork database or other app data. Back up your normal app-data directory before any manual data migration, and do not delete it as an installation workaround.
@@ -32,15 +32,15 @@ This is a best-effort WSL/WSLg compatibility path, not a claim of general Linux 
 
 ## macOS app won't launch with "Apple could not verify"
 
-On a supported macOS version, an unsigned idexal CoWork DMG may show **"Apple could not verify idexal CoWork is free of malware"** or **`"idexal CoWork" was blocked to protect your Mac`** on first launch.
+On a supported macOS version, an unsigned Idexal CoWork DMG may show **"Apple could not verify Idexal CoWork is free of malware"** or **`"Idexal CoWork" was blocked to protect your Mac`** on first launch.
 
 Use the macOS Gatekeeper override:
 
-1. Drag **idexal CoWork** from the DMG into **Applications**.
-2. Open **idexal CoWork** once. If macOS blocks it, click **Done**.
+1. Drag **Idexal CoWork** from the DMG into **Applications**.
+2. Open **Idexal CoWork** once. If macOS blocks it, click **Done**.
 3. Open **System Settings > Privacy & Security**.
 4. Scroll to **Security**.
-5. Next to **`"idexal CoWork" was blocked to protect your Mac`**, click **Open Anyway**.
+5. Next to **`"Idexal CoWork" was blocked to protect your Mac`**, click **Open Anyway**.
 6. In the confirmation dialog, click **Open Anyway** again.
 
 Release maintainers can create unsigned macOS DMG/ZIP artifacts with:
@@ -52,13 +52,13 @@ npm run package:mac:unsigned
 Terminal fallback:
 
 ```bash
-xattr -dr com.apple.quarantine "/Applications/idexal CoWork.app"
+xattr -dr com.apple.quarantine "/Applications/Idexal CoWork.app"
 ```
 
 If the app closes immediately with a `dyld` signature error:
 
 ```bash
-codesign --force --deep --sign - "/Applications/idexal CoWork.app"
+codesign --force --deep --sign - "/Applications/Idexal CoWork.app"
 ```
 
 > `spctl --add` / `spctl --enable` are deprecated on newer macOS and may show "This operation is no longer supported".
@@ -68,7 +68,7 @@ codesign --force --deep --sign - "/Applications/idexal CoWork.app"
 If install fails with `SIGKILL` during `node_modules/electron/install.js`, use a two-step install:
 
 ```bash
-npm install --ignore-scripts idexal-cowork@latest --no-audit --no-fund
+npm install --ignore-scripts Idexal CoWork@latest --no-audit --no-fund
 npm run setup
 ```
 
@@ -76,7 +76,7 @@ For local package testing, use the same `--ignore-scripts` flow with the tarball
 
 ```bash
 npm init -y
-npm install --ignore-scripts /path/to/idexal-cowork-<version>.tgz
+npm install --ignore-scripts /path/to/Idexal CoWork-<version>.tgz
 ```
 
 ## `npm run dev` reports `vite: command not found`
@@ -89,7 +89,7 @@ npm run setup
 npm run dev
 ```
 
-The `idexal-cowork` launcher's runtime repair detects Git source checkouts (including linked worktrees) and preserves development dependencies. Normal packaged npm installs still omit development-only packages.
+The `Idexal CoWork` launcher's runtime repair detects Git source checkouts (including linked worktrees) and preserves development dependencies. Normal packaged npm installs still omit development-only packages.
 
 ## CoWork CLI issues
 
@@ -140,7 +140,7 @@ Local one-shot CLI runs prefer a hidden Electron app-entry mode so OS-encrypted 
 
 4. If running from source, rebuild both Electron and CLI artifacts.
 
-See [idexal CoWork CLI](cli.md) for the full local-vs-remote model.
+See [Idexal CoWork CLI](cli.md) for the full local-vs-remote model.
 
 ## Access profile issues
 
@@ -474,7 +474,7 @@ If Studio reports `No handler registered for 'routine:workflowCapabilities'`, th
 
 If the Studio content is misaligned, clipped, or cannot scroll, confirm that `App.tsx` renders `<main className="main-content automation-studio-main">` and that `automation-studio.css` leaves that main element with `overflow-y: auto`. The Studio must not inherit the normal task-content width cap or a fixed-height/hidden-overflow parent. Run the `automation-studio-placement` and `automation-studio-layout` tests after shell or CSS changes.
 
-If `npm run dev` reports an existing development instance, or reaches the OpenAI OAuth startup message and then exits without `did_finish_load` or `app_shell_ready`, quit the existing idexal CoWork app from its menu or Dock and retry. CoWork intentionally permits only one Electron process per user-data directory so two runtimes cannot contend on SQLite or mark each other's work as orphaned. The dev launcher detects an existing process before rebranding the Electron bundle because macOS can abort inside application registration if that same bundle is modified and relaunched while active. Removing `dist` does not stop an already running Electron process.
+If `npm run dev` reports an existing development instance, or reaches the OpenAI OAuth startup message and then exits without `did_finish_load` or `app_shell_ready`, quit the existing Idexal CoWork app from its menu or Dock and retry. CoWork intentionally permits only one Electron process per user-data directory so two runtimes cannot contend on SQLite or mark each other's work as orphaned. The dev launcher detects an existing process before rebranding the Electron bundle because macOS can abort inside application registration if that same bundle is modified and relaunched while active. Removing `dist` does not stop an already running Electron process.
 
 If **Turn on** fails, read the inline validation message and check required fields, graph cycles, preview operations, workflow limits, the selected Google account and scopes, and signed-webhook secret references. Saving a draft is intentionally more permissive than activation.
 
@@ -510,7 +510,7 @@ If Chronicle never seems to help with prompts like `what is this on the right si
 1. **Enable Chronicle** in **Settings > Memory Hub > Chronicle** and accept the consent prompt.
 2. Confirm **Settings > Tools > Built-in tools** still has the **Chronicle** category enabled.
 3. Make sure the per-task **Chronicle ON** toggle was not turned off in the task composer or Devices panel.
-4. Confirm **Screen Recording** is granted for idexal CoWork.
+4. Confirm **Screen Recording** is granted for Idexal CoWork.
 5. If Chronicle is enabled but paused, resume it from the Chronicle settings card or the tray menu.
 6. Restart the app if Screen Recording was just changed.
 7. Leave the target window visible for **15-30 seconds** so Chronicle has recent frames.
@@ -584,7 +584,7 @@ py -3 --version
 ```powershell
 setx GYP_MSVS_VERSION 2022
 setx npm_config_msvs_version 2022
-idexal-cowork
+Idexal CoWork
 ```
 
 Windows ARM64 note:
@@ -596,8 +596,8 @@ Windows ARM64 note:
 If the app opens but shows `vUnknown` or `Error invoking remote method 'app:getVersion'`, you likely connected to an older already-running instance.
 
 ```bash
-pkill -f '/idexal-cowork' || true
-idexal-cowork
+pkill -f '/Idexal CoWork' || true
+Idexal CoWork
 ```
 
 ## Windows opens to a black screen (`ERR_FILE_NOT_FOUND dist/renderer/index.html`)
@@ -613,9 +613,9 @@ the published package is missing renderer build assets.
 For users:
 
 ```powershell
-npm uninstall -g idexal-cowork
+npm uninstall -g Idexal CoWork
 npm cache clean --force
-npm install -g idexal-cowork@latest --no-audit --no-fund
+npm install -g Idexal CoWork@latest --no-audit --no-fund
 ```
 
 For maintainers (before publish), verify tarball contains renderer assets:
@@ -630,10 +630,10 @@ npm pack --json --dry-run | jq -r '.[0].files[].path' | grep '^dist/renderer/ind
 If you see `sh: 1: tsc: not found` right after `npx coworkd-node`, you are on an older broken npm publish. Upgrade and retry:
 
 ```bash
-npm install idexal-cowork@latest --no-audit --no-fund
+npm install Idexal CoWork@latest --no-audit --no-fund
 ```
 
-For production VPS installs, prefer the packaged Linux server release from GitHub Releases instead of the npm quick-start path. The package is named `idexal-cowork-server-linux-x64-v<version>.tar.gz`, includes built daemon assets, resources, connectors, and runtime dependencies, and runs with:
+For production VPS installs, prefer the packaged Linux server release from GitHub Releases instead of the npm quick-start path. The package is named `Idexal CoWork-server-linux-x64-v<version>.tar.gz`, includes built daemon assets, resources, connectors, and runtime dependencies, and runs with:
 
 ```bash
 node bin/coworkd-node.js --print-control-plane-token
@@ -702,7 +702,7 @@ Notes:
 
 ## LaTeX PDF compile fails or only creates `.tex`
 
-The `compile_latex` tool uses a system TeX engine. idexal CoWork does not bundle TeX Live, MacTeX, MikTeX, or Tectonic.
+The `compile_latex` tool uses a system TeX engine. Idexal CoWork does not bundle TeX Live, MacTeX, MikTeX, or Tectonic.
 
 If a LaTeX/TikZ paper task leaves the `.tex` source but does not produce a PDF, check the task timeline for a `compile_latex` diagnostic. The most common message is:
 
@@ -712,7 +712,7 @@ No LaTeX engine found. Install tectonic, latexmk, xelatex, lualatex, or pdflatex
 
 Fix:
 
-1. Install one supported engine on the machine running idexal CoWork.
+1. Install one supported engine on the machine running Idexal CoWork.
 2. Confirm the binary is on `PATH` with one of:
 
 ```bash

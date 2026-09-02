@@ -1,6 +1,6 @@
 # Secure MCP Tunnels
 
-Secure MCP Tunnels let idexal CoWork expose selected local or private MCP tools through an outbound-only relay that you operate. They provide the same basic shape as a hosted secure tunnel service without depending on OpenAI, ngrok, localtunnel, or a public inbound port on the user's machine.
+Secure MCP Tunnels let Idexal CoWork expose selected local or private MCP tools through an outbound-only relay that you operate. They provide the same basic shape as a hosted secure tunnel service without depending on OpenAI, ngrok, localtunnel, or a public inbound port on the user's machine.
 
 This feature is guarded by `COWORK_SECURE_MCP_TUNNELS=1`.
 
@@ -29,7 +29,7 @@ The local CoWork app opens an outbound WebSocket to a CoWork relay. Remote calle
 ```text
 Remote CoWork caller
   -> CoWork secure MCP tunnel relay
-  -> outbound WebSocket held by local idexal CoWork
+  -> outbound WebSocket held by local Idexal CoWork
   -> local/private MCP HTTP endpoint
   -> response returns through the same tunnel
 ```
@@ -96,7 +96,7 @@ The relay is self-hostable. It keeps tunnel records and active sessions in memor
 
 ## Enable The Feature
 
-Set the feature flag before starting idexal CoWork:
+Set the feature flag before starting Idexal CoWork:
 
 ```bash
 export COWORK_SECURE_MCP_TUNNELS=1

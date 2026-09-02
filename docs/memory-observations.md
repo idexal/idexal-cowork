@@ -1,6 +1,6 @@
 # Structured Memory Observations
 
-Structured memory observations are the inspectable metadata layer for idexal CoWork archive memory.
+Structured memory observations are the inspectable metadata layer for Idexal CoWork archive memory.
 They keep the existing local-first `memories` table authoritative, then add a sidecar index that
 makes memory easier to search, audit, redact, suppress, and expand only when the agent needs full
 detail.

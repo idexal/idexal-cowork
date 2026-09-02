@@ -1,10 +1,10 @@
 # Security Guide for End Users
 
-This document explains the security model, permissions, and considerations for users who clone and run idexal CoWork on their machines.
+This document explains the security model, permissions, and considerations for users who clone and run Idexal CoWork on their machines.
 
 ## Overview
 
-idexal CoWork is an AI-powered task automation tool that can execute actions on your behalf. By design, it has capabilities that require careful consideration:
+Idexal CoWork is an AI-powered task automation tool that can execute actions on your behalf. By design, it has capabilities that require careful consideration:
 
 - Execute command tools when the active access profile exposes them
 - Read and write files
@@ -14,7 +14,7 @@ idexal CoWork is an AI-powered task automation tool that can execute actions on 
 All of these capabilities are governed by the active [access profile](access-profiles.md),
 consent rules, and hard guardrails, and are sandboxed where possible.
 
-idexal CoWork can also expose **Chronicle**, an opt-in desktop recent-screen context feature. Chronicle keeps a short local passive screen buffer to resolve vague on-screen references, but it does not send those passive screenshots to external providers by itself. Chronicle is configured from **Settings > Memory Hub > Chronicle**, with pause/resume controls and explicit consent gating. See [Chronicle](chronicle.md).
+Idexal CoWork can also expose **Chronicle**, an opt-in desktop recent-screen context feature. Chronicle keeps a short local passive screen buffer to resolve vague on-screen references, but it does not send those passive screenshots to external providers by itself. Chronicle is configured from **Settings > Memory Hub > Chronicle**, with pause/resume controls and explicit consent gating. See [Chronicle](chronicle.md).
 
 ---
 
@@ -100,7 +100,7 @@ result.
 
 ### Configurable Guardrails
 
-idexal CoWork includes configurable guardrails in **Settings > Guardrails** to limit what the agent can do:
+Idexal CoWork includes configurable guardrails in **Settings > Guardrails** to limit what the agent can do:
 
 | Guardrail | Description | Default |
 |-----------|-------------|---------|
@@ -211,7 +211,7 @@ The app includes Playwright for web automation:
 | Execute JavaScript | Within page context only |
 | Mode | Headless by default |
 
-**User agent**: `idexal CoWork Browser Automation`
+**User agent**: `Idexal CoWork Browser Automation`
 
 ### Chronicle Screen Context
 
@@ -286,7 +286,7 @@ Reverse-proxied dashboards should set `COWORK_CONTROL_PLANE_ALLOWED_ORIGINS` to 
 
 ### Product Analytics and Outbound Data
 
-idexal CoWork has no mandatory product analytics by default. This is distinct from operational network traffic: model providers, compatible gateways, web search, connectors, channels, update checks, and other services can receive requests when you configure or invoke them.
+Idexal CoWork has no mandatory product analytics by default. This is distinct from operational network traffic: model providers, compatible gateways, web search, connectors, channels, update checks, and other services can receive requests when you configure or invoke them.
 
 Task state and application data are persisted locally by default. Prompts, selected memory snippets, files, credentials, and tool payloads leave the machine only when needed for a provider, gateway, connector, channel, browser target, or other external service that you configure or approve. Each service applies its own retention, privacy, and billing terms.
 
@@ -300,14 +300,14 @@ Settings stored through `SecureSettingsRepository` are encrypted inside the loca
 
 | Data | Location | Encryption |
 |------|----------|------------|
-| All Settings | `app.getPath('userData')/idexal-cowork.db` | OS Keychain + AES-256 |
-| Database file | `app.getPath('userData')/idexal-cowork.db` | Plain SQLite file; selected settings and sensitive fields are encrypted per category/feature |
+| All Settings | `app.getPath('userData')/Idexal CoWork.db` | OS Keychain + AES-256 |
+| Database file | `app.getPath('userData')/Idexal CoWork.db` | Plain SQLite file; selected settings and sensitive fields are encrypted per category/feature |
 | Machine ID | `app.getPath('userData')/.cowork-machine-id` | Stable identifier for encryption |
 
 Typical `userData` locations:
 - macOS: `~/Library/Application Support/idexal/`
 - Linux: `~/.config/idexal/`
-- Windows: `%APPDATA%\\idexal-cowork\\`
+- Windows: `%APPDATA%\\Idexal CoWork\\`
 
 ### Encryption Layers
 
@@ -372,7 +372,7 @@ Each stored setting includes:
 - Channel message history (incoming/outgoing message content for configured channels)
 - **All encrypted settings** (API keys, preferences, configurations)
 
-Everything is stored **locally** on your machine. idexal CoWork does not upload your database or message history to any idexal CoWork servers.
+Everything is stored **locally** on your machine. Idexal CoWork does not upload your database or message history to any Idexal CoWork servers.
 
 ### API Key Security
 
@@ -526,7 +526,7 @@ See [Secure MCP Tunnels](secure-mcp-tunnels.md) for the tunnel-specific security
 
 ## Threat Model
 
-### What idexal CoWork Protects Against
+### What Idexal CoWork Protects Against
 
 | Threat | Protection |
 |--------|------------|
@@ -597,7 +597,7 @@ See [SECURITY.md](../SECURITY.md) for full details.
 
 ## Advanced Security Framework (v0.3.8.7+)
 
-idexal CoWork includes a comprehensive security framework inspired by formal verification techniques.
+Idexal CoWork includes a comprehensive security framework inspired by formal verification techniques.
 
 ### Tool Groups & Risk Levels
 
@@ -775,7 +775,7 @@ Test files:
 
 ## Summary
 
-idexal CoWork is designed with security in mind:
+Idexal CoWork is designed with security in mind:
 
 | Aspect | Status |
 |--------|--------|
@@ -797,7 +797,7 @@ idexal CoWork is designed with security in mind:
 ### Guardrails Settings Location
 
 All guardrail settings can be configured at:
-- **Database**: stored as an encrypted `guardrails` category inside `app.getPath('userData')/idexal-cowork.db`
+- **Database**: stored as an encrypted `guardrails` category inside `app.getPath('userData')/Idexal CoWork.db`
 - **UI**: Settings (gear icon) → Guardrails tab
 
 ### Settings Migration

@@ -1,4 +1,4 @@
-# Competitive Landscape Research — idexal CoWork
+# Competitive Landscape Research — Idexal CoWork
 ## Date: February 15, 2026
 
 > **Historical research snapshot.** Competitor features, pricing, and availability in this document are not maintained. Use the [source-backed comparison hub](comparisons/index.md) for current public positioning.
@@ -18,63 +18,63 @@
 
 ### Category A: Open-Source AI Agent Frameworks (Developer-Focused)
 
-| Player | Focus | Strengths | Weaknesses | Relation to idexal CoWork |
+| Player | Focus | Strengths | Weaknesses | Relation to Idexal CoWork |
 |---|---|---|---|---|
-| **LangChain / LangGraph** | General-purpose LLM app framework | Massive ecosystem, graph-based workflows, very flexible | Complex, steep learning curve, no desktop/messaging out of box | idexal CoWork is a *consumer* of frameworks (model-agnostic), not a framework itself |
-| **CrewAI** | Role-based multi-agent collaboration | Easy role/task mental model, fast setup | Sequential only, limited orchestration, truncated outputs | idexal CoWork has sub-agent spawning but is end-user-focused, not dev framework |
+| **LangChain / LangGraph** | General-purpose LLM app framework | Massive ecosystem, graph-based workflows, very flexible | Complex, steep learning curve, no desktop/messaging out of box | Idexal CoWork is a *consumer* of frameworks (model-agnostic), not a framework itself |
+| **CrewAI** | Role-based multi-agent collaboration | Easy role/task mental model, fast setup | Sequential only, limited orchestration, truncated outputs | Idexal CoWork has sub-agent spawning but is end-user-focused, not dev framework |
 | **AutoGen (Microsoft)** | Multi-agent conversations, Azure-centric | Flexible agent behavior, research-grade | Azure lock-in tendency, complex setup | Different audience — AutoGen is for devs/researchers |
-| **LlamaIndex** | RAG-first agents over enterprise data | Deep knowledge retrieval | Narrow focus on data retrieval | idexal CoWork memory system is lighter but action-oriented |
+| **LlamaIndex** | RAG-first agents over enterprise data | Deep knowledge retrieval | Narrow focus on data retrieval | Idexal CoWork memory system is lighter but action-oriented |
 | **SuperAGI** | Open-source autonomous agents | Self-hosting, extensible | Less mature ecosystem | Similar self-hosting philosophy, but SuperAGI lacks messaging gateway |
-| **n8n** | Self-hosted workflow automation | 1,200+ integrations, visual builder, self-hostable | Not conversational/agentic, more ETL-style | Complementary — n8n is workflow plumbing; idexal CoWork is a conversational agent runtime |
+| **n8n** | Self-hosted workflow automation | 1,200+ integrations, visual builder, self-hostable | Not conversational/agentic, more ETL-style | Complementary — n8n is workflow plumbing; Idexal CoWork is a conversational agent runtime |
 
-**Key Insight**: These frameworks are *tools for developers to build agents*. idexal CoWork is a *finished agent runtime* for power users and prosumers. Different layer of the stack.
+**Key Insight**: These frameworks are *tools for developers to build agents*. Idexal CoWork is a *finished agent runtime* for power users and prosumers. Different layer of the stack.
 
 ---
 
 ### Category B: Desktop AI Assistants (Consumer/Prosumer)
 
-| Player | Focus | Strengths | Weaknesses | Relation to idexal CoWork |
+| Player | Focus | Strengths | Weaknesses | Relation to Idexal CoWork |
 |---|---|---|---|---|
 | **Claude Cowork (Anthropic)** | Desktop agent for file/web tasks | Best-in-class reasoning (Claude), polished UX, parallel sub-agents | $20–200/month subscription, cloud-dependent, macOS/Windows only, no messaging gateway, limited integrations, prompt injection risks | **Closest mainstream competitor** — but closed, expensive, no multi-channel messaging |
 | **ChatGPT Desktop (OpenAI)** | Desktop chat + limited agent | Brand recognition, GPT-4o, plugins | Limited agentic capability, cloud-only, no file agent depth | Chat-first, not agent-first. No self-hosting. |
-| **OpenAI Operator** | Web-browsing autonomous agent | Can perform online tasks autonomously | Web-only actions, cloud service, limited local integration | Narrow scope vs idexal CoWork's full local+messaging+web capability |
-| **Microsoft Copilot** | OS/Office integrated assistant | Deep Windows/Office integration | Locked to Microsoft ecosystem, not self-hostable | Enterprise play; idexal CoWork targets independence from vendor lock-in |
+| **OpenAI Operator** | Web-browsing autonomous agent | Can perform online tasks autonomously | Web-only actions, cloud service, limited local integration | Narrow scope vs Idexal CoWork's full local+messaging+web capability |
+| **Microsoft Copilot** | OS/Office integrated assistant | Deep Windows/Office integration | Locked to Microsoft ecosystem, not self-hostable | Enterprise play; Idexal CoWork targets independence from vendor lock-in |
 | **Google Project Mariner** | Gemini-based multitasking agent | Google ecosystem integration | Early stage, Google-dependent | Similar limitations to Copilot — ecosystem lock-in |
-| **LM Studio** | Local LLM inference | Fully offline, model catalog | No agent capabilities, just model serving | idexal CoWork can use local models via Ollama; LM Studio is runtime-only |
+| **LM Studio** | Local LLM inference | Fully offline, model catalog | No agent capabilities, just model serving | Idexal CoWork can use local models via Ollama; LM Studio is runtime-only |
 | **5ire** | Cross-platform desktop AI with MCP | MCP support, multi-provider, clean UI | Smaller community, less agentic depth | Emerging competitor in the MCP desktop space |
 
-**Key Insight**: The big players (Anthropic, OpenAI, Microsoft, Google) offer polished but *closed, cloud-dependent, subscription-heavy* desktop agents. None offer multi-channel messaging integration. idexal CoWork is the open, local-first, messaging-native alternative.
+**Key Insight**: The big players (Anthropic, OpenAI, Microsoft, Google) offer polished but *closed, cloud-dependent, subscription-heavy* desktop agents. None offer multi-channel messaging integration. Idexal CoWork is the open, local-first, messaging-native alternative.
 
 ---
 
 ### Category C: Self-Hosted Personal AI Agents (Closest Competitors)
 
-| Player | Focus | Strengths | Weaknesses | Relation to idexal CoWork |
+| Player | Focus | Strengths | Weaknesses | Relation to Idexal CoWork |
 |---|---|---|---|---|
-| **OpenClaw (Clawdbot → Moltbot → OpenClaw)** | Self-hosted personal AI assistant | 60K+ GitHub stars, viral growth, multi-channel support, skills system, MCP support, CLI-first, Ollama/local LLM support | CLI-first experience can be harder for non-technical users, setup complexity (OAuth/webhooks), desktop UX depends on external tooling, governance controls vary by deployment | **Closest adjacent product in this category.** Similar architecture (gateway + agent + channels + skills). idexal CoWork differentiates with a GUI-first desktop control plane, first-class local `cowork` CLI, visual many-agent management, built-in approval/guardrail model, and local-first governance defaults |
+| **OpenClaw (Clawdbot → Moltbot → OpenClaw)** | Self-hosted personal AI assistant | 60K+ GitHub stars, viral growth, multi-channel support, skills system, MCP support, CLI-first, Ollama/local LLM support | CLI-first experience can be harder for non-technical users, setup complexity (OAuth/webhooks), desktop UX depends on external tooling, governance controls vary by deployment | **Closest adjacent product in this category.** Similar architecture (gateway + agent + channels + skills). Idexal CoWork differentiates with a GUI-first desktop control plane, first-class local `cowork` CLI, visual many-agent management, built-in approval/guardrail model, and local-first governance defaults |
 | **LettaBot (Letta AI)** | Multi-channel AI with memory | Cross-channel memory, Telegram/Slack/WhatsApp/Discord/Signal | Less agentic (more chat-focused), smaller community | Similar multi-channel approach but less action-oriented |
 | **ChatBotKit** | Multi-platform AI chatbot builder | Easy deployment to Slack/Discord/WhatsApp/Messenger/Telegram | More chatbot than agent, not self-hosted, limited automation | Different category — chatbot builder, not personal AI agent |
 
-**Key Insight**: OpenClaw has significant adoption and meaningful capability overlap, and its community momentum is real. The category emphasis differs: OpenClaw leans toward framework/operator workflows, while idexal CoWork emphasizes a GUI-first, CLI-capable personal super app for governed day-to-day operations via desktop, terminal, and channel runtime, with visible agent management, learning progression, unified recall, persistent shell sessions, and live routing observability.
+**Key Insight**: OpenClaw has significant adoption and meaningful capability overlap, and its community momentum is real. The category emphasis differs: OpenClaw leans toward framework/operator workflows, while Idexal CoWork emphasizes a GUI-first, CLI-capable personal super app for governed day-to-day operations via desktop, terminal, and channel runtime, with visible agent management, learning progression, unified recall, persistent shell sessions, and live routing observability.
 
-### idexal CoWork Positioning vs OpenClaw
+### Idexal CoWork Positioning vs OpenClaw
 
-idexal CoWork sits next to a **channel-first hub ecosystem** like OpenClaw, but it packages that runtime into a more governed desktop-plus-daemon operating model.
+Idexal CoWork sits next to a **channel-first hub ecosystem** like OpenClaw, but it packages that runtime into a more governed desktop-plus-daemon operating model.
 
-| Dimension | OpenClaw | idexal CoWork |
+| Dimension | OpenClaw | Idexal CoWork |
 |---|---|---|
 | Core motion | Build and run agent workflows | Operate governed workflows across desktop and channels |
 | Runtime shape | CLI-first self-hosted agent runtime | GUI-first Electron desktop app plus first-class local CLI and headless daemon |
 | Main strength | Broad ecosystem and operator flexibility | Visual agent management, approvals, local-first governance, and multi-channel delivery |
 | Best fit | Developers and operators who want a framework/runtime | Teams that want a production-ready AI operating system |
 
-In short: OpenClaw is closer to a framework/operator layer, while idexal CoWork is the GUI-first, CLI-capable governed super app that productizes those capabilities for day-to-day operations while exposing agent runs, learning progress, recall, and router decisions directly to users.
+In short: OpenClaw is closer to a framework/operator layer, while Idexal CoWork is the GUI-first, CLI-capable governed super app that productizes those capabilities for day-to-day operations while exposing agent runs, learning progress, recall, and router decisions directly to users.
 
 ---
 
-## 3. FEATURE COMPARISON MATRIX — idexal CoWork vs Key Competitors
+## 3. FEATURE COMPARISON MATRIX — Idexal CoWork vs Key Competitors
 
-| Feature | idexal CoWork | OpenClaw | Claude Cowork | ChatGPT Desktop | n8n |
+| Feature | Idexal CoWork | OpenClaw | Claude Cowork | ChatGPT Desktop | n8n |
 |---|---|---|---|---|---|
 | **Self-hosted / Local-first** | ✅ Electron + headless daemon | ✅ Node.js daemon | ❌ Cloud-only | ❌ Cloud-only | ✅ Self-hostable |
 | **Desktop GUI** | ✅ Electron app (macOS + Windows) | ❌ CLI only | ✅ Native app (Mac/Win) | ✅ Native app | ✅ Web UI |
@@ -100,22 +100,22 @@ In short: OpenClaw is closer to a framework/operator layer, while idexal CoWork 
 
 ---
 
-## 4. idexal CoWork's UNIQUE POSITION (COMPETITIVE MOATS)
+## 4. Idexal CoWork's UNIQUE POSITION (COMPETITIVE MOATS)
 
 ### Primary Differentiators:
 
 1. **Desktop App + Messaging Gateway in One Package**
    - Few tools combine an integrated Electron desktop GUI with a 14+ channel messaging gateway
    - OpenClaw has channels but no GUI; Claude Cowork has a GUI but no channels
-   - idexal CoWork currently emphasizes this bridge as a core product identity
+   - Idexal CoWork currently emphasizes this bridge as a core product identity
 
 2. **Broad Tool Suite in a Self-Hosted Runtime**
    - Document creation (DOCX/PDF/PPTX/Excel), image generation, vision, phone calls, Apple Calendar/Reminders, browser automation, shell, MCP — all in one runtime
-   - idexal CoWork concentrates these capabilities inside one runtime with local-first controls
+   - Idexal CoWork concentrates these capabilities inside one runtime with local-first controls
 
 3. **Approval-Gated Autonomy (Trust Architecture)**
    - Destructive operations require explicit approval — a middle ground between "fully autonomous" (scary) and "read-only" (useless)
-   - idexal CoWork's approval model creates stronger operational confidence for production workflows
+   - Idexal CoWork's approval model creates stronger operational confidence for production workflows
 
 4. **Sub-Agent Architecture**
    - spawn_agent with model selection, nesting, and async coordination
@@ -145,7 +145,7 @@ In short: OpenClaw is closer to a framework/operator layer, while idexal CoWork 
     (CLI, self-hosted,    │           (Desktop, cloud,
      multi-channel)       │            single-user)
                           │
-    ─────── idexal CoWork ●───┼──────────────────────────
+    ─────── Idexal CoWork ●───┼──────────────────────────
     (Desktop + channels,  │            
      self-hosted,         │           ● ChatGPT Desktop
      approval-gated)      │           (Cloud, chat-focused)
@@ -159,14 +159,14 @@ In short: OpenClaw is closer to a framework/operator layer, while idexal CoWork 
     SELF-HOSTED ◀─────────┼──────────▶ CLOUD/PROPRIETARY
 ```
 
-**idexal CoWork occupies the center-high position**: highly agentic, self-hosted, with the unique addition of both desktop GUI and multi-channel messaging. It's the convergence point that no competitor fully occupies.
+**Idexal CoWork occupies the center-high position**: highly agentic, self-hosted, with the unique addition of both desktop GUI and multi-channel messaging. It's the convergence point that no competitor fully occupies.
 
 ---
 
 ## 6. THREATS & RISKS
 
 1. **OpenClaw's strong growth** (60K+ stars) gives it substantial mindshare in the self-hosted AI agent space.
-2. **Claude Cowork adding messaging** would erode idexal CoWork's channel advantage (but unlikely given Anthropic's business model).
+2. **Claude Cowork adding messaging** would erode Idexal CoWork's channel advantage (but unlikely given Anthropic's business model).
 3. **OpenClaw could ship a desktop GUI**, which would reduce current differentiation.
 4. **Enterprise players (Microsoft, Google)** could add self-hosting or messaging gateway features.
 5. **MCP ecosystem commoditizes tool integration** — anyone can plug in the same capabilities.
@@ -175,7 +175,7 @@ In short: OpenClaw is closer to a framework/operator layer, while idexal CoWork 
 
 ## 7. MARKET OPPORTUNITY SIGNALS
 
-- The gap between "developer frameworks" and "consumer AI assistants" is where idexal CoWork thrives
+- The gap between "developer frameworks" and "consumer AI assistants" is where Idexal CoWork thrives
 - Power users / prosumers who want agent autonomy WITHOUT giving data to the cloud
 - Messaging-native users (non-US markets especially) who live in WhatsApp/Telegram want AI that meets them where they are
 - Small teams / solo founders who need an AI ops layer without enterprise pricing

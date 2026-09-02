@@ -1,12 +1,12 @@
 # Channel Integration Comparison
 
-How idexal CoWork channel integrations compare to alternative plugin-based implementations.
+How Idexal CoWork channel integrations compare to alternative plugin-based implementations.
 
 ---
 
-## Discord: idexal CoWork vs Plugin-Based Alternatives
+## Discord: Idexal CoWork vs Plugin-Based Alternatives
 
-| Aspect | idexal CoWork | Anthropic Plugin |
+| Aspect | Idexal CoWork | Anthropic Plugin |
 |--------|-----------|------------------|
 | **Library** | discord.js (Node.js) | Custom MCP server (Bun) |
 | **Slash commands** | 15+ (`/task`, `/workspace`, `/approve`, etc.) | None |
@@ -17,7 +17,7 @@ How idexal CoWork channel integrations compare to alternative plugin-based imple
 | **Message history** | `channel_history` (local log) + `channel_fetch_discord_messages` (live API, up to 100) | `fetch_messages` (live API, up to 100) |
 | **Attachments** | Metadata in message context + `channel_download_discord_attachment` (download by message ID) | `download_attachment` (download by message ID) |
 
-**Summary:** idexal CoWork matches the Anthropic plugin for live message history and attachment downloads while offering richer Discord integration (slash commands, embeds, approvals, workspace selection, and profile-governed command/network/file access).
+**Summary:** Idexal CoWork matches the Anthropic plugin for live message history and attachment downloads while offering richer Discord integration (slash commands, embeds, approvals, workspace selection, and profile-governed command/network/file access).
 
 ---
 

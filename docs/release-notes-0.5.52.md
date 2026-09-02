@@ -1,6 +1,6 @@
 # Release Notes 0.5.52
 
-Release `0.5.52` expands idexal CoWork as a free, open-source multi-provider AI super app and upgrades the desktop runtime to Electron 44. It adds OpenRouter image generation, OpenCode Zen and Go routing, guarded SearXNG search, Atlas Cloud transcription, and Browser Use Cloud V4 defaults, while establishing macOS 13 Ventura as the minimum supported Mac operating system.
+Release `0.5.52` expands Idexal CoWork as a free, open-source multi-provider AI super app and upgrades the desktop runtime to Electron 44. It adds OpenRouter image generation, OpenCode Zen and Go routing, guarded SearXNG search, Atlas Cloud transcription, and Browser Use Cloud V4 defaults, while establishing macOS 13 Ventura as the minimum supported Mac operating system.
 
 ## What changed
 
@@ -13,7 +13,7 @@ Release `0.5.52` expands idexal CoWork as a free, open-source multi-provider AI 
 - **Model browsing** now offers richer metadata, responsive picker layouts, and custom model IDs for provider routes.
 - **Electron 44.0.0** is pinned as the desktop runtime, with `@electron/rebuild` `4.2.0` and an Electron 44-aware `node-abi` lock entry for ABI 149.
 - **macOS 13 Ventura or later is required.** The app bundle records `LSMinimumSystemVersion=13.0`; macOS updater metadata records Darwin `22.0.0`.
-- **macOS 12 Monterey support ends with 0.5.51.** Monterey users can keep their existing CoWork data and install the final compatible npm release with `npm install -g idexal-cowork@0.5.51`.
+- **macOS 12 Monterey support ends with 0.5.51.** Monterey users can keep their existing CoWork data and install the final compatible npm release with `npm install -g Idexal CoWork@0.5.51`.
 - **Updates are compatibility-aware.** The UI can show that a newer release exists without offering to install it on an unsupported Mac. npm, Git, and packaged update paths repeat the support check before making changes.
 - **Packaged updates use the complete check/download sequence.** `electron-updater` checks release metadata with automatic download disabled before an explicit download begins.
 - **Notification delivery has a fallback.** If the operating system accepts a native notification object but later reports delivery failure, CoWork shows the in-app notification overlay.
@@ -27,7 +27,7 @@ Release `0.5.52` expands idexal CoWork as a free, open-source multi-provider AI 
 
 The macOS version requirement and Gatekeeper signing state are independent:
 
-- A message saying the operating system is unsupported means the Mac must be upgraded to macOS 13+ or idexal CoWork must remain on `0.5.51`.
+- A message saying the operating system is unsupported means the Mac must be upgraded to macOS 13+ or Idexal CoWork must remain on `0.5.51`.
 - A message saying Apple could not verify the app is a Gatekeeper/signing warning on a supported system. Follow the documented **Privacy & Security > Open Anyway** flow for unsigned builds.
 
 The updater and npm launcher do not delete the local database or app-data directory when they block an unsupported release.

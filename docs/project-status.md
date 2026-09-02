@@ -2,9 +2,9 @@
 
 ## Production-Ready Implementation
 
-idexal CoWork is a **free, open-source, security-first, GUI-first, CLI-capable AI super app and everything app** with an open multi-provider agent harness, multi-channel messaging, visual agent management, a terminal entrypoint, comprehensive guardrails, and extensive test coverage.
+Idexal CoWork is a **free, open-source, security-first, GUI-first, CLI-capable AI super app and everything app** with an open multi-provider agent harness, multi-channel messaging, visual agent management, a terminal entrypoint, comprehensive guardrails, and extensive test coverage.
 
-### What idexal CoWork Is
+### What Idexal CoWork Is
 
 - **Personal AI Super App**: Code, email, research, create documents, work with spreadsheets and decks, test web pages, automate work, and manage agents from the desktop app or the `cowork` CLI
 - **GUI-first Agent Management**: Create reusable agents, spawn many runs, inspect timelines, assign work, and monitor teams through Agents Hub, Mission Control, task boards, and approval dialogs
@@ -13,7 +13,7 @@ idexal CoWork is a **free, open-source, security-first, GUI-first, CLI-capable A
 - **Everything Workbench**: Create, open, review, edit, and revise generated documents, spreadsheets, presentations, web pages, PDFs, and previews from the same local-first task workspace
 - **Managed Devices**: Operate local and remote CoWork machines from a dedicated Devices tab
 - **Automation Studio**: A main-sidebar Discover/Library/Builder/Activity surface for versioned structured flows, dry runs, variables, branches, approvals, signed webhooks, durable activity, cancellation, and restart recovery; advanced queueing, prompt-based routines, schedules, triggers, briefing, and Workflow Intelligence remain grouped in Settings
-- **Renderer Performance**: Sidebar and timeline virtualization in the `idexal/idexal-cowork` repo use `@chenglou/pretext` for text measurement and keep long task feeds responsive
+- **Renderer Performance**: Sidebar and timeline virtualization in the `idexal/Idexal CoWork` repo use `@chenglou/pretext` for text measurement and keep long task feeds responsive
 - **Security-First Design**: Extensive automated test coverage, configurable guardrails, layered permission rules, workspace-local policy files, and approval workflows
 - **Imported Capability Security**: managed skill and pack imports are staged, scanned, reported, and quarantined when blocked instead of being activated directly
 - **Open Multi-Provider Harness**: Supported account connections, APIs, compatible gateways, cloud credentials, and local inference share CoWork tools, skills, memory, agents, approvals, artifacts, and workflows
@@ -451,7 +451,7 @@ unavailable read-only profile. See [Access Profiles](access-profiles.md) and [Pe
 - **Status**: Planned
 - **Spec**: `docs/agent-integrity-and-trap-defense-spec.md`
 - **Why it matters**:
-  - hardens idexal CoWork against hidden-content prompt injection, semantic manipulation, poisoned memory, malicious delegation, and approval-fatigue attacks
+  - hardens Idexal CoWork against hidden-content prompt injection, semantic manipulation, poisoned memory, malicious delegation, and approval-fatigue attacks
   - turns current non-blocking prompt-injection detection into a durable runtime integrity model spanning ingestion, memory, permissions, delegation, and operator review
 - **Planned phases**:
   - Phase 1: content integrity records and task-level risk classification for web, browser, scraping, email, and imported documents
@@ -578,7 +578,7 @@ Expected behavior:
 
 ## Summary
 
-**idexal CoWork is a production-ready, free, open-source, security-first, GUI-first, CLI-capable AI super app and everything app:**
+**Idexal CoWork is a production-ready, free, open-source, security-first, GUI-first, CLI-capable AI super app and everything app:**
 
 ### Core Strengths
 - **Security**: Extensive automated test coverage, configurable guardrails, layered permission rules, approval workflows, and brute-force protection

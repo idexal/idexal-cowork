@@ -1,6 +1,6 @@
 # Security Model
 
-idexal CoWork implements a layered security model with multiple defense mechanisms.
+Idexal CoWork implements a layered security model with multiple defense mechanisms.
 
 ## Architecture Overview
 
@@ -32,7 +32,7 @@ idexal CoWork implements a layered security model with multiple defense mechanis
 
 ### Security Modes
 
-idexal CoWork supports three security modes for external channels (Telegram, Discord, etc.):
+Idexal CoWork supports three security modes for external channels (Telegram, Discord, etc.):
 
 | Mode | Description | Use Case |
 |------|-------------|----------|
@@ -224,7 +224,7 @@ Multiple validation layers prevent `../` escape:
 
 ## Encrypted Settings Storage
 
-Application settings stored through `SecureSettingsRepository` are encrypted inside the local SQLite database. The main `idexal-cowork.db` file is a normal `better-sqlite3` database, not a whole-file SQLCipher database. Treat rows outside encrypted repositories as local plaintext unless their feature explicitly documents per-field encryption.
+Application settings stored through `SecureSettingsRepository` are encrypted inside the local SQLite database. The main `Idexal CoWork.db` file is a normal `better-sqlite3` database, not a whole-file SQLCipher database. Treat rows outside encrypted repositories as local plaintext unless their feature explicitly documents per-field encryption.
 
 ### Encryption Hierarchy
 
@@ -283,7 +283,7 @@ Pending approvals are stored in `pending_memory_writes`. Because this table is i
 
 ## Security Harness
 
-idexal CoWork includes a deterministic security harness for changed high-risk code paths:
+Idexal CoWork includes a deterministic security harness for changed high-risk code paths:
 
 `prepare -> scan -> validate/debate -> dedup -> prove -> eval coverage`
 
@@ -319,7 +319,7 @@ For pairing codes:
 
 ## Prompt Injection Defenses
 
-idexal CoWork implements multiple layers of defense against prompt injection attacks.
+Idexal CoWork implements multiple layers of defense against prompt injection attacks.
 
 ### System Prompt Hardening
 

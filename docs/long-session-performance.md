@@ -1,6 +1,6 @@
 # Long-Session Timeline Performance
 
-This document defines how idexal CoWork loads, renders, resumes, and remotely transports very large task histories without materializing an entire session in the renderer or repeatedly replaying the full event table.
+This document defines how Idexal CoWork loads, renders, resumes, and remotely transports very large task histories without materializing an entire session in the renderer or repeatedly replaying the full event table.
 
 It covers the desktop renderer, Electron database repository, Control Plane transport, task-resume path, compatibility behavior, memory limits, and the required performance checks.
 

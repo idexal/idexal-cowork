@@ -2,7 +2,7 @@
 
 Mixture of Agents is a virtual LLM provider that lets one task consult several configured models before a final aggregator model answers. It is useful when you want model diversity, stronger review, or a cheaper set of advisor models feeding one high-quality final route.
 
-MoA does not replace provider credentials. It orchestrates the providers you already configured in idexal CoWork.
+MoA does not replace provider credentials. It orchestrates the providers you already configured in Idexal CoWork.
 
 ## Where to Configure It
 
@@ -33,7 +33,7 @@ The aggregator is the only model that executes the real task. Advisors are there
 
 ## Runtime Flow
 
-For each MoA request, idexal CoWork runs this sequence:
+For each MoA request, Idexal CoWork runs this sequence:
 
 1. Resolve the selected MoA preset.
 2. Run the reference advisor slots with tools disabled.

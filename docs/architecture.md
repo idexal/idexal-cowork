@@ -1,6 +1,6 @@
-# idexal CoWork Architecture
+# Idexal CoWork Architecture
 
-idexal CoWork is a free, open-source, GUI-first, CLI-capable local AI super app, everything app, and runtime for task execution, many-agent orchestration, generated knowledge-work artifacts, background operator loops, and multi-surface automation. Its open multi-provider harness keeps tools, skills, memory, agents, approvals, artifacts, and workflows above the model-access layer so supported routes can change without replacing the surrounding work environment.
+Idexal CoWork is a free, open-source, GUI-first, CLI-capable local AI super app, everything app, and runtime for task execution, many-agent orchestration, generated knowledge-work artifacts, background operator loops, and multi-surface automation. Its open multi-provider harness keeps tools, skills, memory, agents, approvals, artifacts, and workflows above the model-access layer so supported routes can change without replacing the surrounding work environment.
 
 ## Core Architecture
 
@@ -10,7 +10,7 @@ idexal CoWork is a free, open-source, GUI-first, CLI-capable local AI super app,
 - **Tool and connector layer**: file, shell, browser, web, native integrations, document generation/compilation tools including source-first LaTeX PDF compilation, MCP connectors, remote execution, and **computer use** (`screenshot`, `click`, `type_text`, and related tools) as a governed desktop-GUI lane (platform helper, single-session lock, policy-gated routing). See [Computer use](computer-use.md).
 - **Secure MCP tunnel layer**: outbound-only WebSocket clients can expose selected local/private MCP JSON-RPC endpoints through a CoWork-operated or self-hosted relay, with separate client/caller tokens, relay-side policy, local policy, request limits, and audit events. See [Secure MCP Tunnels](secure-mcp-tunnels.md).
 - **Terminal tab layer**: workspace terminal tabs use xterm.js in the renderer and `node-pty` in Electron so user-visible terminal work flows through native PTYs instead of custom text emulation. macOS launches the user's login shell with zsh prompt/cwd integration; Windows launches `cmd.exe` through node-pty's ConPTY/winpty backend with a cwd-only prompt. See [Terminal Tabs](terminal-tabs.md).
-- **CLI runtime layer**: the `cowork` command provides an interactive terminal UI and local one-shot task runner on top of the same database, settings, providers, workspaces, skills, MCP servers, and agent runtime as the desktop app. Local `cowork run` prefers a hidden Electron app-entry mode (`--cowork-cli-direct-run`) so encrypted desktop settings keep the same app identity. `--remote` is the explicit Control Plane client path. See [idexal CoWork CLI](cli.md).
+- **CLI runtime layer**: the `cowork` command provides an interactive terminal UI and local one-shot task runner on top of the same database, settings, providers, workspaces, skills, MCP servers, and agent runtime as the desktop app. Local `cowork run` prefers a hidden Electron app-entry mode (`--cowork-cli-direct-run`) so encrypted desktop settings keep the same app identity. `--remote` is the explicit Control Plane client path. See [Idexal CoWork CLI](cli.md).
 - **Composer mention layer**: the renderer and Electron preload expose a grouped `@` autocomplete for Agents, configured Integrations, and Files. Integration mentions are resolved locally, render as rich chips, persist in task/session metadata, and inject soft routing guidance into the executor without changing permissions or `allowedTools`. See [Composer Mentions](composer-mentions.md).
 - **Message shortcut layer**: the renderer exposes one `/` picker for deterministic app commands and skill-backed workflow shortcuts. Shared app command parsing handles `/schedule`, `/clear`, `/plan`, `/cost`, `/multitask`, `/compact`, `/doctor`, and `/undo`; plugin-pack aliases resolve to target skill IDs before generic skill slash execution. Skill-backed picker selections insert editable slash tokens before launch, and Claude-for-Legal workflows can surface structured main-view matter intake cards. See [Message Box Shortcuts](message-box-shortcuts.md) and [Claude-for-Legal Workflows](claude-for-legal.md).
 - **Chronicle screen-context lane**: desktop-only passive recent-screen capture, local ranking/OCR enrichment, source resolution, provenance-aware `screen_context_resolve` tool exposure, and promotion of task-used observations into workspace-backed `screen_context` evidence plus optional linked background memory generation. See [Chronicle](chronicle.md).
@@ -169,7 +169,7 @@ Terminal tabs are implemented with a renderer/main split:
 The design keeps profile-gated structured command tools available for agent-run commands while
 giving humans a real terminal work surface in the same task workspace. This is the terminal
 counterpart to the Everything Workbench and Browser Workbench: direct CLI work no longer has to
-leave idexal CoWork. Product behavior and QA guidance are documented in [Terminal Tabs](terminal-tabs.md)
+leave Idexal CoWork. Product behavior and QA guidance are documented in [Terminal Tabs](terminal-tabs.md)
 and [Access Profiles](access-profiles.md#network-and-command-behavior).
 
 ## CoWork CLI
@@ -187,7 +187,7 @@ then resolves the selected access profile before creating and waiting on a task.
 started with startup recovery disabled in CLI direct-run mode so a short-lived terminal process
 does not recover or rewrite GUI-owned tasks.
 
-Use `cowork run ... --remote` for the token-gated Control Plane client path. Product behavior and first-run guidance are documented in [idexal CoWork CLI](cli.md).
+Use `cowork run ... --remote` for the token-gated Control Plane client path. Product behavior and first-run guidance are documented in [Idexal CoWork CLI](cli.md).
 
 ## Chronicle
 

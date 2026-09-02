@@ -1,6 +1,6 @@
-# Contributing to idexal CoWork
+# Contributing to Idexal CoWork
 
-Thank you for your interest in contributing to idexal CoWork! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to Idexal CoWork! This document provides guidelines and instructions for contributing.
 
 ## Table of Contents
 
@@ -83,7 +83,7 @@ curl -sSfL https://raw.githubusercontent.com/gitleaks/gitleaks/master/install.sh
 
 ## Releasing (Maintainers Only)
 
-idexal CoWork is published to npm for easy global installation. To release a new version:
+Idexal CoWork is published to npm for easy global installation. To release a new version:
 
 ### Release Workflow
 
@@ -276,4 +276,4 @@ Feel free to:
 - Open a [Discussion](https://github.com/idexal/idexal-cowork/discussions) for questions
 - Tag maintainers in issues for guidance
 
-Thank you for contributing to idexal CoWork!
+Thank you for contributing to Idexal CoWork!

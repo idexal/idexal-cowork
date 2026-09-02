@@ -1,6 +1,6 @@
 # Unbroker Skill
 
-`unbroker` is a bundled idexal CoWork global skill for authorized personal-data cleanup across data brokers and people-search sites.
+`unbroker` is a bundled Idexal CoWork global skill for authorized personal-data cleanup across data brokers and people-search sites.
 
 It is designed for:
 

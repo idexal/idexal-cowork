@@ -2,7 +2,7 @@
   "name": "idexal-cowork",
   "version": "0.5.52",
   "private": false,
-  "description": "idexal CoWork — free, open-source AI super app and multi-provider agent harness for coding, knowledge work, documents, communication, automation, and everyday tasks",
+  "description": "Idexal CoWork \u2014 free, open-source AI super app and multi-provider agent harness for coding, knowledge work, documents, communication, automation, and everyday tasks",
   "keywords": [
     "agentic-os",
     "agent-harness",
@@ -272,7 +272,7 @@
   },
   "build": {
     "appId": "com.idexal.cowork",
-    "productName": "idexal CoWork",
+    "productName": "Idexal CoWork",
     "directories": {
       "output": "release"
     },
@@ -358,7 +358,7 @@
       ],
       "protocols": [
         {
-          "name": "idexal CoWork Task Link",
+          "name": "Idexal CoWork Task Link",
           "schemes": [
             "cowork"
           ]
@@ -372,14 +372,14 @@
       "entitlementsInherit": "build/entitlements.mac.plist",
       "icon": "build/icon.icns",
       "extendInfo": {
-        "NSLocationWhenInUseUsageDescription": "idexal CoWork uses your current location once to answer nearby places and walking route requests.",
-        "NSLocationUsageDescription": "idexal CoWork uses your current location once to answer nearby places and walking route requests.",
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "idexal CoWork uses your current location once to answer nearby places and walking route requests."
+        "NSLocationWhenInUseUsageDescription": "Idexal CoWork uses your current location once to answer nearby places and walking route requests.",
+        "NSLocationUsageDescription": "Idexal CoWork uses your current location once to answer nearby places and walking route requests.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Idexal CoWork uses your current location once to answer nearby places and walking route requests."
       },
       "notarize": true
     },
     "dmg": {
-      "title": "idexal CoWork ${version} — macOS 13+"
+      "title": "Idexal CoWork ${version} \u2014 macOS 13+"
     },
     "win": {
       "target": [
@@ -387,7 +387,7 @@
       ],
       "protocols": [
         {
-          "name": "idexal CoWork Task Link",
+          "name": "Idexal CoWork Task Link",
           "schemes": [
             "cowork"
           ]
@@ -400,6 +400,22 @@
       "owner": "idexal-cowork",
       "repo": "idexal-cowork",
       "releaseType": "draft"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Idexal CoWork",
+      "perMachine": true,
+      "runAfterFinish": true
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Office"
     }
   }
 }

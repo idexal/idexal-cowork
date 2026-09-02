@@ -1,6 +1,6 @@
 # Linux VPS (Headless) Guide
 
-idexal CoWork can run on Linux as a long-running daemon through three supported install paths:
+Idexal CoWork can run on Linux as a long-running daemon through three supported install paths:
 
 1. **Packaged server release (recommended for production VPS)**: a Linux x64 tarball from GitHub Releases with built daemon assets, runtime dependencies, systemd templates, bundled resources, and connectors.
 2. **Node-only daemon from source/npm**: run `coworkd-node` under Node.js, with no desktop window and no Xvfb.
@@ -28,7 +28,7 @@ If you want an overview (what the interface is, which runtime to pick, what work
 
 ## Start Here (First-Time VPS Install)
 
-If you just want to get idexal CoWork running and open the web UI, use this path first.
+If you just want to get Idexal CoWork running and open the web UI, use this path first.
 
 What you need:
 
@@ -49,7 +49,7 @@ node -v
 npm -v
 ```
 
-`idexal-cowork` requires Node `>=24.0.0`.
+`Idexal CoWork` requires Node `>=24.0.0`.
 
 If either command is missing, or you see `v22`/`v23`, install Node.js 24:
 
@@ -59,13 +59,13 @@ sudo apt-get install -y nodejs
 node -v
 ```
 
-3. Install and start idexal CoWork (Node-only daemon, no sudo/global npm required):
+3. Install and start Idexal CoWork (Node-only daemon, no sudo/global npm required):
 
 ```bash
 mkdir -p ~/cowork-run
 cd ~/cowork-run
 npm init -y >/dev/null
-npm install idexal-cowork@latest --no-audit --no-fund
+npm install Idexal CoWork@latest --no-audit --no-fund
 
 export COWORK_IMPORT_ENV_SETTINGS=1
 export OPENAI_API_KEY=your_key_here   # or: export ANTHROPIC_API_KEY=your_key_here
@@ -101,7 +101,7 @@ This quick start is great for first run/testing. For always-on production, conti
   This guide intentionally uses local install (`npm install` + `npx coworkd-node`) so you do not need global npm permissions.
 - `sh: 1: tsc: not found` after `npx coworkd-node`:
   You are likely on an older broken npm publish that missed daemon build artifacts. Upgrade and retry:
-  `npm install idexal-cowork@latest --no-audit --no-fund`
+  `npm install Idexal CoWork@latest --no-audit --no-fund`
 
 ## Option A: Packaged Server Release (Recommended)
 
@@ -128,46 +128,46 @@ node -v
 
 ```bash
 version=0.5.43
-curl -LO "https://github.com/idexal/idexal-cowork/releases/download/v${version}/idexal-cowork-server-linux-x64-v${version}.tar.gz"
-curl -LO "https://github.com/idexal/idexal-cowork/releases/download/v${version}/idexal-cowork-server-linux-x64-v${version}.tar.gz.sha256"
-sha256sum --check "idexal-cowork-server-linux-x64-v${version}.tar.gz.sha256"
+curl -LO "https://github.com/idexal/Idexal CoWork/releases/download/v${version}/Idexal CoWork-server-linux-x64-v${version}.tar.gz"
+curl -LO "https://github.com/idexal/Idexal CoWork/releases/download/v${version}/Idexal CoWork-server-linux-x64-v${version}.tar.gz.sha256"
+sha256sum --check "Idexal CoWork-server-linux-x64-v${version}.tar.gz.sha256"
 ```
 
 Replace `0.5.43` with the version you are installing.
 
-4. Install under `/opt/idexal-cowork`:
+4. Install under `/opt/Idexal CoWork`:
 
 ```bash
-sudo mkdir -p /opt/idexal-cowork
-sudo tar -xzf "idexal-cowork-server-linux-x64-v${version}.tar.gz" -C /opt/idexal-cowork --strip-components=1
+sudo mkdir -p /opt/Idexal CoWork
+sudo tar -xzf "Idexal CoWork-server-linux-x64-v${version}.tar.gz" -C /opt/Idexal CoWork --strip-components=1
 ```
 
 5. Create a dedicated user + data dir:
 
 ```bash
 sudo useradd -r -m -s /usr/sbin/nologin cowork || true
-sudo mkdir -p /var/lib/idexal-cowork /srv/cowork/workspace
-sudo chown -R cowork:cowork /var/lib/idexal-cowork /srv/cowork/workspace /opt/idexal-cowork
+sudo mkdir -p /var/lib/Idexal CoWork /srv/cowork/workspace
+sudo chown -R cowork:cowork /var/lib/Idexal CoWork /srv/cowork/workspace /opt/Idexal CoWork
 ```
 
 6. Install the systemd unit + env file templates:
 
 ```bash
-sudo cp /opt/idexal/deploy/systemd/idexal-cowork.env.example /etc/idexal-cowork.env
-sudo $EDITOR /etc/idexal-cowork.env
+sudo cp /opt/idexal/deploy/systemd/Idexal CoWork.env.example /etc/Idexal CoWork.env
+sudo $EDITOR /etc/Idexal CoWork.env
 
-sudo cp /opt/idexal/deploy/systemd/idexal-cowork-node.service /etc/systemd/system/idexal-cowork-node.service
+sudo cp /opt/idexal/deploy/systemd/Idexal CoWork-node.service /etc/systemd/system/Idexal CoWork-node.service
 sudo systemctl daemon-reload
-sudo systemctl enable --now idexal-cowork-node
+sudo systemctl enable --now Idexal CoWork-node
 
-sudo journalctl -u idexal-cowork-node -f
+sudo journalctl -u Idexal CoWork-node -f
 ```
 
 The packaged release uses `bin/coworkd-node.js` by default. It does not launch the desktop UI or require Xvfb. Keep Node.js 24 installed; the package is built and smoke-tested on Linux x64 and includes runtime dependencies, but `coworkd-node` can still attempt a native dependency rebuild if the local Node ABI is incompatible.
 
 ## Option B: Docker (Headless Electron)
 
-This repo includes a headless Docker image that runs idexal CoWork as a daemon.
+This repo includes a headless Docker image that runs Idexal CoWork as a daemon.
 
 ### How You Use It (After It’s Running)
 
@@ -206,13 +206,13 @@ docker compose up --build -d
 If you prefer the **Node daemon** container with no desktop window or Xvfb, use the compose profile:
 
 ```bash
-docker compose --profile node up --build -d idexal-cowork-node
+docker compose --profile node up --build -d Idexal CoWork-node
 ```
 
 Defaults in `docker-compose.yml`:
 
 - Persistent data volume mounted at `/data`
-- A persistent workspace volume mounted at `/workspace` (bootstrapped automatically). You can swap this for a host bind mount if you want idexal CoWork to operate on files on the VPS.
+- A persistent workspace volume mounted at `/workspace` (bootstrapped automatically). You can swap this for a host bind mount if you want Idexal CoWork to operate on files on the VPS.
 - Control Plane published on host loopback: `127.0.0.1:18789` (safe default)
 - The container binds the Control Plane to `0.0.0.0` only inside the container and sets `COWORK_CONTROL_PLANE_BIND_CONTEXT=container`; keep host port publishing loopback/private.
 - Compose enables `init: true`, drops Linux capabilities, and sets `no-new-privileges`.
@@ -220,7 +220,7 @@ Defaults in `docker-compose.yml`:
 2. View the Control Plane token (printed on first startup when it’s generated):
 
 ```bash
-docker compose logs -f idexal-cowork
+docker compose logs -f Idexal CoWork
 ```
 
 If you need to print it again later, restart with:
@@ -241,11 +241,11 @@ sudo apt-get install -y --no-install-recommends \
   python3 make g++
 ```
 
-2. Install Node.js 24 and build idexal CoWork:
+2. Install Node.js 24 and build Idexal CoWork:
 
 ```bash
-git clone https://github.com/idexal/idexal-cowork.git /opt/idexal-cowork
-cd /opt/idexal-cowork
+git clone https://github.com/idexal/Idexal CoWork.git /opt/Idexal CoWork
+cd /opt/Idexal CoWork
 npm run setup:server
 npm run build:daemon
 npm run build:connectors
@@ -257,40 +257,40 @@ On first start, `bin/coworkd-node.js` may rebuild `better-sqlite3` for your Node
 
 ```bash
 sudo useradd -r -m -s /usr/sbin/nologin cowork || true
-sudo mkdir -p /var/lib/idexal-cowork
-sudo chown -R cowork:cowork /var/lib/idexal-cowork
+sudo mkdir -p /var/lib/Idexal CoWork
+sudo chown -R cowork:cowork /var/lib/Idexal CoWork
 ```
 
 If you cloned/built as `root`, ensure the service user can read (and rebuild native deps if needed):
 
 ```bash
-sudo chown -R cowork:cowork /opt/idexal-cowork
+sudo chown -R cowork:cowork /opt/Idexal CoWork
 ```
 
 4. Install the systemd unit + env file templates:
 
-- Unit: `deploy/systemd/idexal-cowork-node.service`
-- Env example: `deploy/systemd/idexal-cowork.env.example`
+- Unit: `deploy/systemd/Idexal CoWork-node.service`
+- Env example: `deploy/systemd/Idexal CoWork.env.example`
 
 ```bash
-sudo cp /opt/idexal/deploy/systemd/idexal-cowork.env.example /etc/idexal-cowork.env
-sudo $EDITOR /etc/idexal-cowork.env
+sudo cp /opt/idexal/deploy/systemd/Idexal CoWork.env.example /etc/Idexal CoWork.env
+sudo $EDITOR /etc/Idexal CoWork.env
 
-sudo cp /opt/idexal/deploy/systemd/idexal-cowork-node.service /etc/systemd/system/idexal-cowork-node.service
+sudo cp /opt/idexal/deploy/systemd/Idexal CoWork-node.service /etc/systemd/system/Idexal CoWork-node.service
 sudo systemctl daemon-reload
-sudo systemctl enable --now idexal-cowork-node
+sudo systemctl enable --now Idexal CoWork-node
 
-sudo journalctl -u idexal-cowork-node -f
+sudo journalctl -u Idexal CoWork-node -f
 ```
 
 ## Optional: Browser Automation (Browser V2 Fallback)
 
-idexal CoWork desktop uses the visible Browser V2 Workbench by default. Headless Linux/VPS installs do not have that renderer-owned workbench, so browser tools use the Playwright-local fallback when browser automation is explicitly needed. On minimal Linux VPS images (and especially slim Docker images), Chromium may fail to launch until OS dependencies are installed.
+Idexal CoWork desktop uses the visible Browser V2 Workbench by default. Headless Linux/VPS installs do not have that renderer-owned workbench, so browser tools use the Playwright-local fallback when browser automation is explicitly needed. On minimal Linux VPS images (and especially slim Docker images), Chromium may fail to launch until OS dependencies are installed.
 
 If you want fallback browser tools on Debian/Ubuntu, install Playwright’s Chromium + dependencies:
 
 ```bash
-cd /opt/idexal-cowork
+cd /opt/Idexal CoWork
 sudo npx playwright install --with-deps chromium
 ```
 
@@ -324,11 +324,11 @@ sudo apt-get install -y --no-install-recommends \
   libexpat1 libglib2.0-0 libsecret-1-0
 ```
 
-2. Install Node.js 24 and build idexal CoWork:
+2. Install Node.js 24 and build Idexal CoWork:
 
 ```bash
-git clone https://github.com/idexal/idexal-cowork.git /opt/idexal-cowork
-cd /opt/idexal-cowork
+git clone https://github.com/idexal/Idexal CoWork.git /opt/Idexal CoWork
+cd /opt/Idexal CoWork
 npm run setup:server
 npm run build:electron
 npm run build:connectors
@@ -338,26 +338,26 @@ npm run build:connectors
 
 ```bash
 sudo useradd -r -m -s /usr/sbin/nologin cowork || true
-sudo mkdir -p /var/lib/idexal-cowork
-sudo chown -R cowork:cowork /var/lib/idexal-cowork
+sudo mkdir -p /var/lib/Idexal CoWork
+sudo chown -R cowork:cowork /var/lib/Idexal CoWork
 ```
 
 4. Install the systemd unit + env file templates:
 
-- Unit: `deploy/systemd/idexal-cowork.service`
-- Env example: `deploy/systemd/idexal-cowork.env.example`
+- Unit: `deploy/systemd/Idexal CoWork.service`
+- Env example: `deploy/systemd/Idexal CoWork.env.example`
 
 Example install commands:
 
 ```bash
-sudo cp /opt/idexal/deploy/systemd/idexal-cowork.env.example /etc/idexal-cowork.env
-sudo $EDITOR /etc/idexal-cowork.env
+sudo cp /opt/idexal/deploy/systemd/Idexal CoWork.env.example /etc/Idexal CoWork.env
+sudo $EDITOR /etc/Idexal CoWork.env
 
-sudo cp /opt/idexal/deploy/systemd/idexal-cowork.service /etc/systemd/system/idexal-cowork.service
+sudo cp /opt/idexal/deploy/systemd/Idexal CoWork.service /etc/systemd/system/Idexal CoWork.service
 sudo systemctl daemon-reload
-sudo systemctl enable --now idexal-cowork
+sudo systemctl enable --now Idexal CoWork
 
-sudo journalctl -u idexal-cowork -f
+sudo journalctl -u Idexal CoWork -f
 ```
 
 ## Recommended: Persistent Data Directory
@@ -365,14 +365,14 @@ sudo journalctl -u idexal-cowork -f
 On VPS you usually want the DB/settings under a known path (for backups and container volumes).
 
 ```bash
-export COWORK_USER_DATA_DIR=/var/lib/idexal-cowork
+export COWORK_USER_DATA_DIR=/var/lib/Idexal CoWork
 node bin/coworkd-node.js
 ```
 
 Or via CLI flag:
 
 ```bash
-node bin/coworkd-node.js --user-data-dir /var/lib/idexal-cowork
+node bin/coworkd-node.js --user-data-dir /var/lib/Idexal CoWork
 ```
 
 ## Bootstrapping a Workspace (Important)
@@ -491,7 +491,7 @@ Secrets are redacted from normal `account.list` and `account.get` responses. Wit
 
 ### Option 2: Configure via env import
 
-idexal CoWork supports an explicit, opt-in import path:
+Idexal CoWork supports an explicit, opt-in import path:
 
 - `COWORK_IMPORT_ENV_SETTINGS=1` (or `--import-env-settings`)
 - Optional: `COWORK_IMPORT_ENV_SETTINGS_MODE=merge|overwrite`
@@ -621,17 +621,17 @@ cd /path/to/cowork-vps
 docker compose down
 
 # If running via systemd
-sudo systemctl stop idexal-cowork idexal-cowork-node
-sudo systemctl disable idexal-cowork idexal-cowork-node
-sudo rm -f /etc/systemd/system/idexal-cowork.service
-sudo rm -f /etc/systemd/system/idexal-cowork-node.service
+sudo systemctl stop Idexal CoWork Idexal CoWork-node
+sudo systemctl disable Idexal CoWork Idexal CoWork-node
+sudo rm -f /etc/systemd/system/Idexal CoWork.service
+sudo rm -f /etc/systemd/system/Idexal CoWork-node.service
 sudo systemctl daemon-reload
 ```
 
 Keep data directories/volumes intact to preserve state:
 
 - Docker: named volume `cowork_data` (and workspace volume `cowork_workspace` unless bound to host)
-- systemd example: `/var/lib/idexal-cowork`
+- systemd example: `/var/lib/Idexal CoWork`
 - Custom env path: value passed in `COWORK_USER_DATA_DIR` or `--user-data-dir`
 
 ### Option 2: Full uninstall + data deletion (irreversible)
@@ -644,7 +644,7 @@ cd /path/to/cowork-vps
 docker compose down -v
 
 # systemd (remove user-data store)
-sudo rm -rf /var/lib/idexal-cowork
+sudo rm -rf /var/lib/Idexal CoWork
 ```
 
 If you configured a custom user-data directory, also remove it:

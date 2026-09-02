@@ -1,6 +1,6 @@
 # Workspace Memory Flow
 
-This document describes how idexal CoWork stores, curates, retrieves, and injects workspace memory after the layered-memory upgrade.
+This document describes how Idexal CoWork stores, curates, retrieves, and injects workspace memory after the layered-memory upgrade.
 
 The foundation is still the hybrid memory system, but the runtime now makes it explicit as a four-layer wake-up model built on top of those storage lanes:
 

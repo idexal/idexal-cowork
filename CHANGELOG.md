@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to idexal CoWork will be documented in this file.
+All notable changes to Idexal CoWork will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -240,7 +240,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Agent and gateway routing**: tightened gateway/skill command routing, parallel batch execution coverage, temporary workspace handling, ambient monitoring updates, and shared channel-message behavior across Slack, Discord, email, Telegram, WhatsApp, and the channel registry.
 - **Release packaging and smoke coverage**: refined the Electron builder runner, mac packaging environment loading, desktop artifact smoke checks, unsigned mac entitlements, release artifact-name verification, and the mac unsigned release smoke path used by CI.
 - **Documentation refresh**: updated README, docs home, feature overview, capabilities, architecture, getting started, troubleshooting, web artifact, Linux VPS, self-hosting, status, showcase, development, and message-box guidance to reflect Browser V2, channel guides, gateway behavior, and current release packaging.
-- **Branding assets**: refreshed app/logo assets and related docs for the current idexal CoWork branding set.
+- **Branding assets**: refreshed app/logo assets and related docs for the current Idexal CoWork branding set.
 
 ### Fixed
 - **Agents Hub active agents**: Mission Control active agents now appear in Agents Hub counts and panel state instead of being hidden from the hub summary.
@@ -282,13 +282,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.5.42] - 2026-04-30
 
 ### Fixed
-- **Windows installer architecture**: rebuilt the Windows installer as an x64 app package so standard Windows PCs install `idexal CoWork.exe` correctly. The 0.5.41 GitHub release asset was built with an ARM64 Windows payload and GitHub immutable releases prevented replacing that asset in place.
+- **Windows installer architecture**: rebuilt the Windows installer as an x64 app package so standard Windows PCs install `Idexal CoWork.exe` correctly. The 0.5.41 GitHub release asset was built with an ARM64 Windows payload and GitHub immutable releases prevented replacing that asset in place.
 
 ## [0.5.41] - 2026-04-29
 
 ### Added
 - **Release notes for 0.5.41**: see [Release Notes 0.5.41](docs/release-notes-0.5.41.md).
-- **Everything Workbench positioning docs**: added the canonical [Everything Workbench](docs/everything-workbench.md) page and refreshed product copy around idexal CoWork as a local-first AI workbench for generated docs, sheets, decks, web pages, PDFs, previews, tasks, and automations.
+- **Everything Workbench positioning docs**: added the canonical [Everything Workbench](docs/everything-workbench.md) page and refreshed product copy around Idexal CoWork as a local-first AI workbench for generated docs, sheets, decks, web pages, PDFs, previews, tasks, and automations.
 - **Document artifact workbench**: Word-style document artifact cards now recognize DOCX, DOCM, DOTX, DOTM, DOC, RTF, ODT, OTT, and Pages outputs. DOCX opens directly into an editable sidebar/fullscreen document surface with Google Docs-style controls, save/copy actions, external app actions, functional follow-up composer controls, and automatic preview refresh after follow-up edits. See [Document Artifacts](docs/document-artifacts.md).
 - **Spreadsheet artifact format support**: spreadsheet artifact cards now recognize Excel workbooks, CSV/TSV, Numbers, Google Sheets shortcut files, ODS, and XLSB. Editable in-app mode supports workbook and delimited formats; native/app-owned formats keep the same artifact card and external-app/folder actions. See [Spreadsheet Artifacts](docs/spreadsheet-artifacts.md).
 - **Presentation artifact workbench**: PPTX outputs now render as compact artifact cards and open by default in a resizable sidebar/fullscreen presentation viewer with thumbnails, navigation, zoom, speaker notes, fast text-first loading, cached rendered slide images, external actions, and functional follow-up composer controls. Legacy PowerPoint formats are recognized with external-app/folder actions. See [Presentation Artifacts and PPTX Preview](docs/pptx-generation-and-preview.md).
@@ -315,7 +315,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Multi-provider image generation**: image settings now cover OpenAI, OpenAI Codex/OAuth, Azure, OpenRouter, and Gemini providers with default/backup routing, model selection, timeouts, and provider-attempt progress.
 - **LaTeX/PDF artifact workflow docs**: documented the new `compile_latex` source-first workflow across README, feature, use-case, architecture, runtime, troubleshooting, development, showcase, status, ideas, changelog, and docs index surfaces.
 - **Bundled `kami` skill**: added a new editorial-document workflow for resumes, one-pagers, white papers, letters, portfolios, diagrams, and slide decks, with workspace-local scaffolding, PDF/PPTX render helpers, and related docs.
-- **Bundled `taste-skill` frontend workflow**: idexal CoWork now ships `taste-skill` as a global bundled skill for high-agency frontend design with stricter anti-slop layout, typography, motion, dependency, and responsive-implementation rules.
+- **Bundled `taste-skill` frontend workflow**: Idexal CoWork now ships `taste-skill` as a global bundled skill for high-agency frontend design with stricter anti-slop layout, typography, motion, dependency, and responsive-implementation rules.
 - **Rich PPTX artifact previews**: PowerPoint outputs now open in an in-app presentation viewer with slide thumbnails, navigation, zoom, extracted slide text, and speaker notes. Visual slide images are cached when local `soffice` + `pdftoppm` are available and fall back to text-only previews otherwise.
 
 ### Changed
@@ -687,7 +687,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Zero-human company ops guide.
 - Behavior adaptation guide.
 - Workspace memory flow architecture guide.
-- OpenClaw vs idexal CoWork feature comparison.
+- OpenClaw vs Idexal CoWork feature comparison.
 - Troubleshooting steps for connectors and improvement runs.
 - Timezone configuration guidance for self-hosting.
 - Managed Devices and Automations control center docs.
@@ -815,7 +815,7 @@ This release is the first recommended Windows install baseline for normal users 
 ## [0.4.0] - 2026-02-26
 
 ### Added
-- **Windows support**: idexal CoWork now runs natively on Windows with an NSIS installer (.exe), custom frameless title bar with minimize/maximize/close controls, and full feature parity with the macOS version
+- **Windows support**: Idexal CoWork now runs natively on Windows with an NSIS installer (.exe), custom frameless title bar with minimize/maximize/close controls, and full feature parity with the macOS version
 - **Windows build target**: electron-builder config produces Windows NSIS installer alongside existing macOS DMG
 - **Windows app icon**: .ico icon with 16x16, 32x32, 48x48, and 256x256 sizes
 - **Custom window controls**: frameless window on Windows with styled minimize, maximize, and close buttons matching the macOS aesthetic
@@ -906,7 +906,7 @@ This release is the first recommended Windows install baseline for normal users 
 - **Document Generation Tools**: three LLM-callable tools (`generate_document` → PDF, `generate_presentation` → PPTX, `generate_spreadsheet` → XLSX) registered as native agent tools with artifact registration and MIME type metadata.
 - **Event Trigger Service**: condition-based automation engine that fires actions (`create_task`, `send_message`, `wake_agent`) in response to channel gateway messages, cron events, or webhooks. Supports AND condition logic, configurable cooldowns (default 1 min), event variable substitution, and history tracking (last 50 fires per trigger). Configure in Settings > Event Triggers.
 - **File Hub Service**: unified file aggregation combining local workspace files, task artifacts, and cloud storage into a single searchable interface. Includes filename-based search, recent files tracking, and MIME type detection for 20+ formats.
-- **Web Access Server**: serves idexal CoWork as a web application over HTTP/WebSocket with bearer token authentication (timing-safe comparison), CORS origin whitelisting, REST endpoints mapped to IPC channels, static file serving with SPA fallback, and a health check endpoint.
+- **Web Access Server**: serves Idexal CoWork as a web application over HTTP/WebSocket with bearer token authentication (timing-safe comparison), CORS origin whitelisting, REST endpoints mapped to IPC channels, static file serving with SPA fallback, and a health check endpoint.
 - **OAuth connectors (Google, DocuSign, Outreach, Slack)**: enterprise OAuth 2.0 authentication flows for Google Workspace (Calendar, Drive, Gmail with PKCE and scope mapping), DocuSign (signature scope), Outreach (sales intelligence scopes), and Slack (team-domain support). Uses local callback server on port 18765 with CSRF state validation.
 - **Vision tools improvements**: SHA1-keyed result cache (128 entries) preventing redundant vision API calls, automatic image downscaling for images >2MB (1600×1200 at 80% quality), multi-provider fallback chain (OpenAI → Anthropic → Gemini → Bedrock), retry logic for transient errors (429, 5xx, timeouts), and PDF page conversion via `pdftoppm` at 72 DPI.
 - **5 Financial plugin packs**: Equity Research (earnings analysis, sector analysis, coverage initiation, price target, catalyst tracking), Financial Analysis (DCF modeling, ratio analysis, financial statement analysis, peer benchmarking, valuation summary), Investment Banking (deal screening, pitch book, M&A analysis, due diligence, comps analysis), Private Equity (deal sourcing, LBO modeling, portfolio monitoring, exit analysis, fund reporting), Wealth Management (portfolio construction, asset allocation, client reporting, risk assessment, tax optimization). Each pack includes a dedicated agent role and 5 "Try Asking" prompts.
@@ -1593,7 +1593,7 @@ This release is the first recommended Windows install baseline for normal users 
 - Ollama support for local LLM inference
 
 ### Changed
-- Updated branding to idexal CoWork
+- Updated branding to Idexal CoWork
 - Improved workspace selector with terminal aesthetic
 
 ## [0.1.0] - 2025-01-24

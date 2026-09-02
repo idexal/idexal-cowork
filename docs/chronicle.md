@@ -1,6 +1,6 @@
 # Chronicle (Desktop Research Preview)
 
-Chronicle is idexal CoWork's opt-in desktop screen-context feature for vague, on-screen references such as:
+Chronicle is Idexal CoWork's opt-in desktop screen-context feature for vague, on-screen references such as:
 
 - `what is this?`
 - `what's on the right side?`
@@ -51,7 +51,7 @@ Every `screen_context_resolve` result is marked as screen-derived, untrusted con
 
 1. Open **Settings > Memory Hub > Chronicle**.
 2. Turn on **Chronicle (Research Preview)** and accept the consent prompt.
-3. Confirm **Screen Recording** is granted for idexal CoWork.
+3. Confirm **Screen Recording** is granted for Idexal CoWork.
 4. Optionally grant **Accessibility** for stronger frontmost app/window/source metadata.
 5. If you changed Screen Recording, quit and restart the app.
 6. Optionally choose:

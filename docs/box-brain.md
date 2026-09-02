@@ -1,6 +1,6 @@
 # Box Brain
 
-Box Brain is idexal CoWork's opt-in bridge between live Box retrieval and the local
+Box Brain is Idexal CoWork's opt-in bridge between live Box retrieval and the local
 memory system. It supports the useful part of a company-brain workflow without
 turning Box into an opaque, always-running second agent:
 
@@ -19,7 +19,7 @@ training, or a hidden company-wide crawler.
 ## Current capability
 
 The setup pattern described in the Box/Hermes-style workflow is supported in
-idexal CoWork in a deliberately bounded form. The current runtime supports:
+Idexal CoWork in a deliberately bounded form. The current runtime supports:
 
 1. OAuth or an existing Box access token.
 2. The hosted Box MCP endpoint at `https://mcp.box.com` over
@@ -41,7 +41,7 @@ ingestion or self-improving memory loop.
 When comparing the two setups, separate capability parity from implementation
 parity:
 
-| Question | idexal CoWork support |
+| Question | Idexal CoWork support |
 | --- | --- |
 | Can the agent access Box on demand? | Yes, through the hosted Box MCP server and its available tools. |
 | Can Box provide workflow guidance? | Yes, through the bundled Box skill and source-boundary rules. |

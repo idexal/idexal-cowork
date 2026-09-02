@@ -2,7 +2,7 @@
 
 Generated at: 2026-08-31T09:41:36.401Z
 
-These numbers are acquisition and download-intent signals for idexal CoWork. They do **not** measure active users, first launch, successful task completion, model configuration, retention, prompts, files, emails, or any in-app content.
+These numbers are acquisition and download-intent signals for Idexal CoWork. They do **not** measure active users, first launch, successful task completion, model configuration, retention, prompts, files, emails, or any in-app content.
 
 ## Snapshot
 
@@ -36,26 +36,26 @@ These numbers are acquisition and download-intent signals for idexal CoWork. The
 
 | Release | Asset | Platform | Downloads | Delta |
 |---|---|---|---:|---:|
-| v0.5.52 | idexal-cowork-0.5.52-arm64-mac.zip | macos | 4 | +1 |
-| v0.5.52 | idexal-cowork-0.5.52-arm64.dmg | macos | 6 | +2 |
-| v0.5.52 | idexal-cowork-server-linux-x64-v0.5.52.tar.gz | server | 2 | +0 |
-| v0.5.52 | idexal-cowork-Setup-0.5.52.exe | windows | 33 | +6 |
-| v0.5.51 | idexal-cowork-0.5.51-arm64-mac.zip | macos | 6 | +0 |
-| v0.5.51 | idexal-cowork-0.5.51-arm64.dmg | macos | 22 | +0 |
-| v0.5.51 | idexal-cowork-server-linux-x64-v0.5.51.tar.gz | server | 4 | +0 |
-| v0.5.51 | idexal-cowork-Setup-0.5.51.exe | windows | 42 | +0 |
-| v0.5.50 | idexal-cowork-0.5.50-arm64-mac.zip | macos | 11 | +0 |
-| v0.5.50 | idexal-cowork-0.5.50-arm64.dmg | macos | 35 | +0 |
-| v0.5.50 | idexal-cowork-server-linux-x64-v0.5.50.tar.gz | server | 6 | +0 |
-| v0.5.50 | idexal-cowork-Setup-0.5.50.exe | windows | 115 | +0 |
-| v0.5.49 | idexal-cowork-0.5.49-arm64-mac.zip | macos | 23 | +0 |
-| v0.5.49 | idexal-cowork-0.5.49-arm64.dmg | macos | 59 | +0 |
-| v0.5.49 | idexal-cowork-server-linux-x64-v0.5.49.tar.gz | server | 16 | +0 |
-| v0.5.49 | idexal-cowork-Setup-0.5.49.exe | windows | 144 | +0 |
-| v0.5.48 | idexal-cowork-0.5.48-arm64-mac.zip | macos | 6 | +0 |
-| v0.5.48 | idexal-cowork-0.5.48-arm64.dmg | macos | 28 | +0 |
-| v0.5.48 | idexal-cowork-server-linux-x64-v0.5.48.tar.gz | server | 5 | +0 |
-| v0.5.48 | idexal-cowork-Setup-0.5.48.exe | windows | 40 | +0 |
+| v0.5.52 | Idexal CoWork-0.5.52-arm64-mac.zip | macos | 4 | +1 |
+| v0.5.52 | Idexal CoWork-0.5.52-arm64.dmg | macos | 6 | +2 |
+| v0.5.52 | Idexal CoWork-server-linux-x64-v0.5.52.tar.gz | server | 2 | +0 |
+| v0.5.52 | Idexal CoWork-Setup-0.5.52.exe | windows | 33 | +6 |
+| v0.5.51 | Idexal CoWork-0.5.51-arm64-mac.zip | macos | 6 | +0 |
+| v0.5.51 | Idexal CoWork-0.5.51-arm64.dmg | macos | 22 | +0 |
+| v0.5.51 | Idexal CoWork-server-linux-x64-v0.5.51.tar.gz | server | 4 | +0 |
+| v0.5.51 | Idexal CoWork-Setup-0.5.51.exe | windows | 42 | +0 |
+| v0.5.50 | Idexal CoWork-0.5.50-arm64-mac.zip | macos | 11 | +0 |
+| v0.5.50 | Idexal CoWork-0.5.50-arm64.dmg | macos | 35 | +0 |
+| v0.5.50 | Idexal CoWork-server-linux-x64-v0.5.50.tar.gz | server | 6 | +0 |
+| v0.5.50 | Idexal CoWork-Setup-0.5.50.exe | windows | 115 | +0 |
+| v0.5.49 | Idexal CoWork-0.5.49-arm64-mac.zip | macos | 23 | +0 |
+| v0.5.49 | Idexal CoWork-0.5.49-arm64.dmg | macos | 59 | +0 |
+| v0.5.49 | Idexal CoWork-server-linux-x64-v0.5.49.tar.gz | server | 16 | +0 |
+| v0.5.49 | Idexal CoWork-Setup-0.5.49.exe | windows | 144 | +0 |
+| v0.5.48 | Idexal CoWork-0.5.48-arm64-mac.zip | macos | 6 | +0 |
+| v0.5.48 | Idexal CoWork-0.5.48-arm64.dmg | macos | 28 | +0 |
+| v0.5.48 | Idexal CoWork-server-linux-x64-v0.5.48.tar.gz | server | 5 | +0 |
+| v0.5.48 | Idexal CoWork-Setup-0.5.48.exe | windows | 40 | +0 |
 
 ## Top GitHub Referrers
 
@@ -76,16 +76,16 @@ These numbers are acquisition and download-intent signals for idexal CoWork. The
 
 | Rank | Item | Count | Uniques |
 |---:|---|---:|---:|
-| 1 | /idexal/idexal-cowork | 383 | 228 |
-| 2 | /idexal/idexal-cowork | 308 | 201 |
-| 3 | /idexal/idexal-cowork/blob/main/resources/branding/images/idexal-cowork-1.webp | 92 | 55 |
-| 4 | /idexal/idexal-cowork/releases/tag/v0.5.51 | 61 | 46 |
-| 5 | /idexal/idexal-cowork/issues | 49 | 25 |
-| 6 | /idexal/idexal-cowork/discussions | 46 | 11 |
-| 7 | /idexal/idexal-cowork/pulls | 42 | 14 |
-| 8 | /idexal/idexal-cowork/releases | 28 | 17 |
-| 9 | /idexal/idexal-cowork/releases/tag/v0.5.52 | 22 | 16 |
-| 10 | /idexal/idexal-cowork/blob/main/resources/branding/images/idexal-cowork-7.webp | 19 | 4 |
+| 1 | /idexal/Idexal CoWork | 383 | 228 |
+| 2 | /idexal/Idexal CoWork | 308 | 201 |
+| 3 | /idexal/Idexal CoWork/blob/main/resources/branding/images/Idexal CoWork-1.webp | 92 | 55 |
+| 4 | /idexal/Idexal CoWork/releases/tag/v0.5.51 | 61 | 46 |
+| 5 | /idexal/Idexal CoWork/issues | 49 | 25 |
+| 6 | /idexal/Idexal CoWork/discussions | 46 | 11 |
+| 7 | /idexal/Idexal CoWork/pulls | 42 | 14 |
+| 8 | /idexal/Idexal CoWork/releases | 28 | 17 |
+| 9 | /idexal/Idexal CoWork/releases/tag/v0.5.52 | 22 | 16 |
+| 10 | /idexal/Idexal CoWork/blob/main/resources/branding/images/Idexal CoWork-7.webp | 19 | 4 |
 
 ## Data Policy
 

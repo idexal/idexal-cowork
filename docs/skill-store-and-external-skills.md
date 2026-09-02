@@ -1,10 +1,10 @@
 # Skill Store & External Skills
 
-idexal CoWork supports both its own curated skill surfaces and external skill sources.
+Idexal CoWork supports both its own curated skill surfaces and external skill sources.
 
 This is an important capability because it means users are not limited to bundled skills or CoWork-managed packs. They can install third-party skills directly from ClawHub, import skill bundles from Git repositories, and bring in raw manifests or `SKILL.md` bundles from other ecosystems without leaving the desktop app.
 
-## What idexal CoWork Supports
+## What Idexal CoWork Supports
 
 There are two different concepts in the product:
 
@@ -30,7 +30,7 @@ Use this when:
 
 ### 2. ClawHub
 
-idexal CoWork has first-class ClawHub support in the GUI.
+Idexal CoWork has first-class ClawHub support in the GUI.
 
 Supported ClawHub flows:
 - Search ClawHub skills directly from the **ClawHub** tab.
@@ -55,7 +55,7 @@ ClawHub installs are treated as managed skills after import, not as a separate r
 
 ### 3. Git Repositories
 
-idexal CoWork can install a skill from a Git repository through the external import field.
+Idexal CoWork can install a skill from a Git repository through the external import field.
 
 Supported Git-style inputs:
 - `https://github.com/org/repo`
@@ -73,13 +73,13 @@ For multi-file bundles such as the upstream [Kami](https://github.com/tw93/Kami)
 
 ### 4. Raw JSON Skill Manifests
 
-idexal CoWork can import a raw skill manifest from a direct URL when the URL serves JSON.
+Idexal CoWork can import a raw skill manifest from a direct URL when the URL serves JSON.
 
 Use this when an external store or repo exposes a single downloadable skill manifest file.
 
 ### 5. Raw `SKILL.md` Bundle Entry Points
 
-idexal CoWork can import a raw `SKILL.md` URL directly.
+Idexal CoWork can import a raw `SKILL.md` URL directly.
 
 This is useful when:
 - a skill is published as documentation-first bundle content
@@ -90,7 +90,7 @@ This path is weaker for multi-file bundles because it stages the markdown entry 
 
 ## “Other External Skill Stores”
 
-idexal CoWork does support other external skill stores, but usually through **generic import paths** rather than a first-class browse/search integration.
+Idexal CoWork does support other external skill stores, but usually through **generic import paths** rather than a first-class browse/search integration.
 
 Today, first-class marketplace search/install exists for:
 - CoWork Registry
@@ -138,7 +138,7 @@ Each managed import keeps a sidecar security report so CoWork can:
 
 ## Optional External Skill Directories
 
-idexal CoWork can also load additional skill folders without importing them into the managed directory.
+Idexal CoWork can also load additional skill folders without importing them into the managed directory.
 
 Use this when:
 - your team already keeps shared skills in a Git checkout or synced folder
@@ -160,7 +160,7 @@ This means a local workspace override or a managed install can replace a shared 
 
 Default locations:
 - macOS: `~/Library/Application Support/idexal/skills/`
-- Windows: `%APPDATA%\\idexal-cowork\\skills\\`
+- Windows: `%APPDATA%\\Idexal CoWork\\skills\\`
 
 Each managed skill typically includes:
 - a JSON manifest in the managed skills root
@@ -249,7 +249,7 @@ Current limits:
 
 ## Why This Capability Matters
 
-This gives idexal CoWork an important ecosystem advantage:
+This gives Idexal CoWork an important ecosystem advantage:
 - users can start with bundled skills
 - bundled examples now include workflows such as `llm-wiki`, `kami`, `react-best-practices`, `unbroker`, and `taste-skill`
 - adopt curated CoWork registry skills

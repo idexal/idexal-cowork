@@ -1,19 +1,19 @@
 # Best-Fit Operational Workflows
 
-> This page explains where idexal CoWork delivers the strongest return for teams running governed, intelligence-heavy operational lanes. It is a secondary narrative layer for the same category: idexal CoWork remains a **free, open-source, security-hardened, GUI-first, CLI-capable AI super app, everything app, and personal agentic operating system**, powered by an open multi-provider harness.
+> This page explains where Idexal CoWork delivers the strongest return for teams running governed, intelligence-heavy operational lanes. It is a secondary narrative layer for the same category: Idexal CoWork remains a **free, open-source, security-hardened, GUI-first, CLI-capable AI super app, everything app, and personal agentic operating system**, powered by an open multi-provider harness.
 
 ---
 
 ## Why Operational Workflows Are a Strong Fit
 
-idexal CoWork is built for production use: approval gates, guardrail budgets, local-first data ownership, and a runtime that governance teams can audit. Those same properties make it well-suited for outsourced or contractor-delivered operational lanes where the buyer cares about:
+Idexal CoWork is built for production use: approval gates, guardrail budgets, local-first data ownership, and a runtime that governance teams can audit. Those same properties make it well-suited for outsourced or contractor-delivered operational lanes where the buyer cares about:
 
 - **Outcome consistency** — the same quality of triage, escalation, or outreach regardless of who runs the shift.
-- **Vendor-swap flexibility** — workflows defined in idexal CoWork are not locked to a specific BPO or staffing provider.
+- **Vendor-swap flexibility** — workflows defined in Idexal CoWork are not locked to a specific BPO or staffing provider.
 - **Managed oversight** — approval workflows, policy enforcement, and usage insights are on by default, not bolted on later.
 - **Local-first control** — Local persistence, configurable provider routes, visible approvals, and no mandatory product analytics by default give teams a strong governance baseline. Each deployment still needs its own security, privacy, procurement, and provider review.
 
-These are the same reasons teams pick idexal CoWork for daily governed operations. The outsourced-workflow fit is additive, not a repositioning.
+These are the same reasons teams pick Idexal CoWork for daily governed operations. The outsourced-workflow fit is additive, not a repositioning.
 
 CoWork is also GUI-first and CLI-capable: operators can create agents, spawn parallel work, assign tasks, inspect live timelines, and review outcomes through Agents Hub, Mission Control, boards, and approval dialogs, while terminal-native users can start local tasks with `cowork`. This matters for operational lanes because supervision, approvals, and review still live in visible operator surfaces.
 
@@ -28,13 +28,13 @@ can reduce interruption only within that profile's boundary.
 
 ## Three Best-Fit Workflow Lanes
 
-idexal CoWork ships purpose-built packs for three operational lanes. Each lane maps to an existing bundled pack and a set of Tier-1 connectors.
+Idexal CoWork ships purpose-built packs for three operational lanes. Each lane maps to an existing bundled pack and a set of Tier-1 connectors.
 
 ### Support Ops — Customer Support Pack
 
 **Who already buys this outcome:** BPOs, CX outsourcers, managed-services providers, in-house support teams that operate like a managed lane.
 
-**What idexal CoWork contributes:**
+**What Idexal CoWork contributes:**
 
 - Ticket triage with priority, category, and sentiment analysis
 - Empathetic, tone-matched response drafting
@@ -52,7 +52,7 @@ idexal CoWork ships purpose-built packs for three operational lanes. Each lane m
 
 **Who already buys this outcome:** Managed infrastructure providers, IT outsourcers, SRE-as-a-service teams, and internal platform teams operating under SLAs.
 
-**What idexal CoWork contributes:**
+**What Idexal CoWork contributes:**
 
 - Incident response plans with triage steps, comms templates, and post-mortem outlines
 - Deployment checklists with pre/post-deploy verification and rollback procedures
@@ -70,7 +70,7 @@ idexal CoWork ships purpose-built packs for three operational lanes. Each lane m
 
 **Who already buys this outcome:** Outsourced SDR/BDR providers, sales development agencies, in-house sales teams running a managed outbound lane.
 
-**What idexal CoWork contributes:**
+**What Idexal CoWork contributes:**
 
 - Prospect research briefings with company context, pain points, and talking points
 - Personalized follow-up email drafts referencing specific call details

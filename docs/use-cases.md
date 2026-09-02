@@ -37,7 +37,7 @@ Use cases:
 - "Figure it out" fallback orchestration for hard tasks
 - Location-aware local errands, nearby services, and walking route planning
 
-idexal CoWork supports these via:
+Idexal CoWork supports these via:
 - Channels: Slack, iMessage, WhatsApp, Telegram, Email, etc.
 - Scheduling: `/schedule ...`, `/schedule here ...`, `schedule_task`, and task view `... > Add automation...`
 - Inbox + briefing commands: `/inbox`, `/brief [morning|today|tomorrow|week]`
@@ -384,7 +384,7 @@ Command variants:
 ```
 /simplify review this plan for clarity and edge-case coverage.
 /batch migrate markdown architecture docs to the new naming standard --parallel 4 --domain writing --external confirm
-/llm-wiki build a research vault for idexal CoWork competitors --mode ingest --path research/wiki/competitors
+/llm-wiki build a research vault for Idexal CoWork competitors --mode ingest --path research/wiki/competitors
 ```
 
 ### 13) Legal Deal Defense (Contract + Demand Letter + Counterpositions)

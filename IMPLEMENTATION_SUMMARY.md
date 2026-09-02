@@ -1,4 +1,4 @@
-# idexal CoWork Implementation Summary
+# Idexal CoWork Implementation Summary
 
 ## What You Have Now
 
@@ -686,7 +686,7 @@ npm run type-check       # Check TypeScript types
 
 ## Summary
 
-idexal CoWork is a production-ready agentic task automation app with:
+Idexal CoWork is a production-ready agentic task automation app with:
 
 - **5 LLM providers** (cloud and local)
 - **5 search providers** with fallback (including DuckDuckGo free built-in)

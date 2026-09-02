@@ -1,6 +1,6 @@
 # React Best Practices Skill
 
-`react-best-practices` is a bundled idexal CoWork skill for React and Next.js implementation work.
+`react-best-practices` is a bundled Idexal CoWork skill for React and Next.js implementation work.
 
 It is designed for:
 

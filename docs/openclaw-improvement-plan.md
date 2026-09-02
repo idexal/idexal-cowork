@@ -1,4 +1,4 @@
-# idexal CoWork vs OpenClaw: Improvement Plan
+# Idexal CoWork vs OpenClaw: Improvement Plan
 
 **Last updated:** After the layered-memory refactor, session recall tooling, curated hot memory, and edge-case hardening changes.
 
@@ -15,13 +15,13 @@ The earlier OpenClaw-inspired memory gaps are mostly closed now:
 - behavior-adaptation toggles are exposed in `GuardrailSettings`
 - task/message feedback UI already exists and feeds the learning loop
 
-The remaining differences versus OpenClaw are now mostly product-shape choices rather than missing primitives. OpenClaw still has the simpler plain-markdown mental model; idexal CoWork now favors a layered system with a small always-visible curated lane and explicit recall tools for broader history.
+The remaining differences versus OpenClaw are now mostly product-shape choices rather than missing primitives. OpenClaw still has the simpler plain-markdown mental model; Idexal CoWork now favors a layered system with a small always-visible curated lane and explicit recall tools for broader history.
 
 ---
 
 ## Current Comparison Matrix
 
-| Aspect | OpenClaw | idexal CoWork | Current status |
+| Aspect | OpenClaw | Idexal CoWork | Current status |
 |--------|----------|-----------|----------------|
 | **Personalization** | `USER.md`, `IDENTITY.md`, `SOUL.md` in workspace | `UserProfileService`, `RelationshipMemoryService`, `.cowork/USER.md`, curated hot memory, adaptive style | CoWork has both file-based and structured personalization |
 | **Always-visible memory** | Plain markdown memory files | Curated hot memory in `<cowork_hot_memory>` plus auto-managed blocks in `.cowork/USER.md` and `.cowork/MEMORY.md` | CoWork now has a dedicated hot-memory lane |

@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to idexal CoWork will be documented in this file.
+All notable changes to Idexal CoWork will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -65,7 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- **Linked source-checkout dependency repair**: the `idexal-cowork` launcher and native SQLite recovery now preserve lockfile-defined versions and development dependencies when a global command is linked to a Git checkout, preventing runtime self-healing from upgrading Electron or removing Vite, Vitest, TypeScript, and other local development tools. Packaged npm installs continue to repair runtime dependencies without installing the development toolchain.
+- **Linked source-checkout dependency repair**: the `Idexal CoWork` launcher and native SQLite recovery now preserve lockfile-defined versions and development dependencies when a global command is linked to a Git checkout, preventing runtime self-healing from upgrading Electron or removing Vite, Vitest, TypeScript, and other local development tools. Packaged npm installs continue to repair runtime dependencies without installing the development toolchain.
 - **Timeline completion ordering**: preserve the final task completion event, suppress stage chatter emitted after completion, retain relevant tool output, and sanitize namespaced tool tags before rendering.
 - **Planning and document-analysis reliability**: hardened document source discovery and extraction, chunk retries, evidence reduction, local Ollama budget selection, and recovery from incomplete planner output.
 - **Timeline final-response coalescing**: prevent duplicate final responses and preserve the intended completion/tool-output ordering during replay and live rendering.
@@ -216,7 +216,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Agent and gateway routing**: tightened gateway/skill command routing, parallel batch execution coverage, temporary workspace handling, ambient monitoring updates, and shared channel-message behavior across Slack, Discord, email, Telegram, WhatsApp, and the channel registry.
 - **Release packaging and smoke coverage**: refined the Electron builder runner, mac packaging environment loading, desktop artifact smoke checks, unsigned mac entitlements, release artifact-name verification, and the mac unsigned release smoke path used by CI.
 - **Documentation refresh**: updated README, docs home, feature overview, capabilities, architecture, getting started, troubleshooting, web artifact, Linux VPS, self-hosting, status, showcase, development, and message-box guidance to reflect Browser V2, channel guides, gateway behavior, and current release packaging.
-- **Branding assets**: refreshed app/logo assets and related docs for the current idexal CoWork branding set.
+- **Branding assets**: refreshed app/logo assets and related docs for the current Idexal CoWork branding set.
 
 ### Fixed
 - **Agents Hub Heartbeat agents**: Mission Control Heartbeat-enabled agents now appear in Agents Hub counts and panel state instead of being hidden from the hub summary.
@@ -236,7 +236,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.5.43] - 2026-05-02
 
 ### Added
-- **Linux server release package**: GitHub Releases can now publish `idexal-cowork-server-linux-x64-v<version>.tar.gz` plus a `.sha256` checksum for production VPS/systemd deployments. The package includes built daemon assets, full resources, connector runtimes, runtime dependencies, systemd templates, and a Linux smoke test that boots `coworkd-node` and checks `/health`. See [Linux VPS](vps-linux.md).
+- **Linux server release package**: GitHub Releases can now publish `Idexal CoWork-server-linux-x64-v<version>.tar.gz` plus a `.sha256` checksum for production VPS/systemd deployments. The package includes built daemon assets, full resources, connector runtimes, runtime dependencies, systemd templates, and a Linux smoke test that boots `coworkd-node` and checks `/health`. See [Linux VPS](vps-linux.md).
 - **Task-sourced scheduled automations**: task view now has `... > Add automation...`, which opens a Codex-style modal prefilled from the current task and creates a real cron scheduled task through the existing scheduler API. The saved job keeps the source task title, task ID, and `cowork://tasks/<taskId>` deeplink for traceability. See [Task Automations](task-automations.md).
 - **Composer `@` mentions for integrations**: added a grouped autocomplete above the message box with Agents, configured Integrations, and Files. Integration mentions render as icon+name chips in prompts and user message bubbles, restore from task/session history, and submit `integrationMentions` as soft runtime guidance. See [Composer Mentions](composer-mentions.md).
 - **`@Inbox` main-composer routing**: `@Inbox` / `@inbox ...` now opens Inbox Agent and runs the remaining query through the Ask Inbox module instead of starting a normal task run.
@@ -264,14 +264,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.5.42] - 2026-04-30
 
 ### Fixed
-- **Windows installer architecture**: rebuilt the Windows installer as an x64 app package so standard Windows PCs install `idexal CoWork.exe` correctly. The 0.5.41 GitHub release asset was built with an ARM64 Windows payload and GitHub immutable releases prevented replacing that asset in place.
+- **Windows installer architecture**: rebuilt the Windows installer as an x64 app package so standard Windows PCs install `Idexal CoWork.exe` correctly. The 0.5.41 GitHub release asset was built with an ARM64 Windows payload and GitHub immutable releases prevented replacing that asset in place.
 
 ## [0.5.41] - 2026-04-29
 
 ### Added
 - **Smart PDF attachment reading**: uploaded PDFs now carry compact attachment metadata, a safe excerpt, page/extraction/OCR status, and workspace-relative path guidance. Deeper PDF summaries, Q&A, extraction, comparison, and transformation use `parse_document` on demand instead of inlining the whole PDF; explicit chat PDF turns can auto-promote to read-only analysis for that document read.
 - **Release notes for 0.5.41**: see [Release Notes 0.5.41](release-notes-0.5.41.md).
-- **Everything Workbench positioning docs**: added the canonical [Everything Workbench](everything-workbench.md) page and refreshed product copy around idexal CoWork as a GUI-first local AI super app and everything app for coding, email, web design, research, generated docs, sheets, decks, web pages, PDFs, previews, agents, tasks, channels, devices, and automations.
+- **Everything Workbench positioning docs**: added the canonical [Everything Workbench](everything-workbench.md) page and refreshed product copy around Idexal CoWork as a GUI-first local AI super app and everything app for coding, email, web design, research, generated docs, sheets, decks, web pages, PDFs, previews, agents, tasks, channels, devices, and automations.
 - **Document artifact workbench**: Word-style document artifact cards now recognize DOCX, DOCM, DOTX, DOTM, DOC, RTF, ODT, OTT, and Pages outputs. DOCX opens directly into an editable sidebar/fullscreen document surface with Google Docs-style controls, save/copy actions, external app actions, functional follow-up composer controls, and automatic preview refresh after follow-up edits. See [Document Artifacts](document-artifacts.md).
 - **Spreadsheet artifact format support**: spreadsheet artifact cards now recognize Excel workbooks, CSV/TSV, Numbers, Google Sheets shortcut files, ODS, and XLSB. Editable in-app mode supports workbook and delimited formats; native/app-owned formats keep the same artifact card and external-app/folder actions. See [Spreadsheet Artifacts](spreadsheet-artifacts.md).
 - **Presentation artifact workbench**: PPTX outputs now render as compact artifact cards and open by default in a resizable sidebar/fullscreen presentation viewer with thumbnails, navigation, zoom, speaker notes, fast text-first loading, cached rendered slide images, external actions, and functional follow-up composer controls. Legacy PowerPoint formats are recognized with external-app/folder actions. See [Presentation Artifacts and PPTX Preview](pptx-generation-and-preview.md).
@@ -306,7 +306,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Multi-provider image generation**: image settings now cover OpenAI, OpenAI Codex/OAuth, Azure, OpenRouter, and Gemini providers with default/backup routing, model selection, timeouts, and provider-attempt progress.
 - **LaTeX/PDF artifact workflow docs**: documented the new `compile_latex` source-first workflow across README, feature, use-case, architecture, runtime, troubleshooting, development, showcase, status, ideas, changelog, and docs index surfaces.
 - **Bundled `kami` skill**: added a new editorial-document workflow for resumes, one-pagers, white papers, letters, portfolios, diagrams, and slide decks, with workspace-local scaffolding, PDF/PPTX render helpers, and related docs.
-- **Bundled `taste-skill` frontend workflow**: idexal CoWork now ships `taste-skill` as a global bundled skill for high-agency frontend design with stricter anti-slop layout, typography, motion, dependency, and responsive-implementation rules.
+- **Bundled `taste-skill` frontend workflow**: Idexal CoWork now ships `taste-skill` as a global bundled skill for high-agency frontend design with stricter anti-slop layout, typography, motion, dependency, and responsive-implementation rules.
 - **Rich PPTX artifact previews**: PowerPoint outputs now open in an in-app presentation viewer with slide thumbnails, navigation, zoom, extracted slide text, and speaker notes. Visual slide images are cached when local `soffice` + `pdftoppm` are available and fall back to text-only previews otherwise.
 
 ### Changed
@@ -475,7 +475,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Devices and dispatch surfaces**: Dispatch onboarding now lives inside the Devices panel, the standalone Dispatch panel/sidebar entry were removed, Home Dashboard workspace naming now resolves from visible workspaces, and Inbox Agent filter/pulse controls were compacted.
 - **Security hardening**: channel configs are encrypted at rest when available, mailbox bodies/summaries/excerpts are encrypted locally, database/user-data permissions are restricted during setup, mailbox IPC is limited to the main app window, and OAuth secrets are sanitized from renderer-visible channel configs.
 - **Documentation and positioning**: README, features, channels, mission control, architecture, project status, and new comparison/reference pages were refreshed to reflect runtime visibility, supervisor mode, and external skill support.
-- **Renderer performance**: in the `idexal/idexal-cowork` repo, sidebar rows now flatten before virtualization, timeline cards use `@chenglou/pretext` estimates with `ResizeObserver` reconciliation, and the main transcript cap stays conservative until the transcript surface is virtualized.
+- **Renderer performance**: in the `idexal/Idexal CoWork` repo, sidebar rows now flatten before virtualization, timeline cards use `@chenglou/pretext` estimates with `ResizeObserver` reconciliation, and the main transcript cap stays conservative until the transcript surface is virtualized.
 
 ### Fixed
 - **Release hardening gate**: deterministic eval runs against fresh CI/release databases can now be explicitly configured to allow an empty regression corpus instead of failing every tag-triggered release before packaging starts.
@@ -658,14 +658,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - **Hoisted Electron detection in setup**: `npm run setup` now treats `../electron` as valid in npm-hoisted installs, so first-time setup no longer triggers unnecessary full dependency bootstrap.
-- **Native setup install scope**: missing `better-sqlite3` recovery and rebuild now run from the actual install root (not inside `node_modules/idexal-cowork`), reducing first-run reify pressure that caused frequent macOS `SIGKILL`.
+- **Native setup install scope**: missing `better-sqlite3` recovery and rebuild now run from the actual install root (not inside `node_modules/Idexal CoWork`), reducing first-run reify pressure that caused frequent macOS `SIGKILL`.
 - **Release publish gating**: npm/GitHub package publish jobs now depend on the release validation job, and smoke tests fail if setup unexpectedly falls back to dependency bootstrap.
-- **Install docs hardening**: README now includes a direct native retry-wrapper fallback when `npm run --prefix node_modules/idexal-cowork setup` is terminated by `zsh: killed`, and recommends local bin launch over `npx` for first run.
+- **Install docs hardening**: README now includes a direct native retry-wrapper fallback when `npm run --prefix node_modules/Idexal CoWork setup` is terminated by `zsh: killed`, and recommends local bin launch over `npx` for first run.
 
 ## [0.3.84] - 2026-02-14
 
 ### Fixed
-- **Release smoke-test module resolution**: installability validation now runs Electron with `cwd` set to the installed `idexal-cowork` package directory so `require('better-sqlite3')` resolves correctly after setup.
+- **Release smoke-test module resolution**: installability validation now runs Electron with `cwd` set to the installed `Idexal CoWork` package directory so `require('better-sqlite3')` resolves correctly after setup.
 - **Release continuity**: keeps the 0.3.82 npm SIGKILL regression fix while restoring end-to-end GitHub release packaging path after CI validation.
 
 ## [0.3.83] - 2026-02-14
@@ -695,7 +695,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.79] - 2026-02-14
 
 ### Fixed
-- **macOS install reliability carry-forward**: retained the 0.3.71 SIGKILL workaround for first-time users by documenting and reinforcing the `npm install --ignore-scripts` + `npm run --prefix node_modules/idexal-cowork setup` flow.
+- **macOS install reliability carry-forward**: retained the 0.3.71 SIGKILL workaround for first-time users by documenting and reinforcing the `npm install --ignore-scripts` + `npm run --prefix node_modules/Idexal CoWork setup` flow.
 - **Release workflow hardening**: ensured the macOS release job always creates or reopens the GitHub release as a draft before packaging so `electron-builder` can attach DMG/zip assets without immutable-release failures.
 - **Version alignment**: published metadata now identifies this release as `0.3.79` with the same installability and packaging reliability changes.
 
@@ -762,29 +762,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.69] - 2026-02-11
 
 ### Fixed
-- `npm install -g idexal-cowork` could fail on macOS with `fsevents` (`binding.gyp not found`) due an npm 11 rebuild edge case triggered by `playwright`.
+- `npm install -g Idexal CoWork` could fail on macOS with `fsevents` (`binding.gyp not found`) due an npm 11 rebuild edge case triggered by `playwright`.
 - Switched runtime browser dependency to `playwright-core` via npm alias (`playwright` package name preserved in code) to avoid the failing `fsevents` install path.
-- Added launcher self-heal: on first run, `idexal-cowork` now verifies direct runtime dependencies and repairs missing packages with a script-free npm install pass before boot.
+- Added launcher self-heal: on first run, `Idexal CoWork` now verifies direct runtime dependencies and repairs missing packages with a script-free npm install pass before boot.
 - Moved `@types/jszip` to `devDependencies` and excluded `@types/*` from runtime dependency checks to avoid unnecessary first-run repair installs.
 - Moved `@electron/rebuild` to runtime dependencies so native fallback rebuild works in npm-installed environments.
 - Fixed native setup fallback to locate `@electron/rebuild` via package exports (instead of resolving blocked subpaths), so fallback rebuild actually runs when needed.
-- `idexal-cowork` first run now uses the shell retry wrapper for native setup, reducing one-shot startup failures when macOS kills a setup attempt under memory pressure.
+- `Idexal CoWork` first run now uses the shell retry wrapper for native setup, reducing one-shot startup failures when macOS kills a setup attempt under memory pressure.
 
 ## [0.3.68] - 2026-02-11
 
 ### Fixed
-- `idexal-cowork` CLI startup could still fail with `better-sqlite3` ABI mismatch on first launch.
+- `Idexal CoWork` CLI startup could still fail with `better-sqlite3` ABI mismatch on first launch.
 - Launcher now validates `better-sqlite3` by opening an in-memory database (not just requiring the module) and runs native setup when needed.
 - Native setup script now resolves hoisted dependencies correctly (Electron and `better-sqlite3`) so it works in npm-installed layouts.
 
 ## [0.3.67] - 2026-02-11
 
 ### Added
-- Added npm CLI command support: `idexal-cowork`, `coworkctl`, `coworkd`, and `coworkd-node`.
+- Added npm CLI command support: `Idexal CoWork`, `coworkctl`, `coworkd`, and `coworkd-node`.
 
 ### Fixed
 - Fixed launcher script to resolve the Electron binary correctly (`require('electron')` instead of `require.resolve`).
-- Included `dist/` in published npm files so the `idexal-cowork` command can start without requiring a local build step.
+- Included `dist/` in published npm files so the `Idexal CoWork` command can start without requiring a local build step.
 - Moved `electron` to runtime dependencies so CLI launch works after normal npm install.
 
 ## [0.3.66] - 2026-02-11
@@ -817,7 +817,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - npm installs could still fail when the package `postinstall` script itself was SIGKILL'd by macOS memory pressure.
-- Removed `postinstall` from the published npm package so `npm install idexal-cowork@latest` no longer depends on any CoWork lifecycle hook.
+- Removed `postinstall` from the published npm package so `npm install Idexal CoWork@latest` no longer depends on any CoWork lifecycle hook.
 
 ## [0.3.61] - 2026-02-11
 
@@ -924,7 +924,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **Task Export** - Moved from `telemetry/` to `reports/` to better reflect purpose (structured task summaries, not telemetry)
 - **Skill Metadata** - Added `requires.bins` and `invocation.disableModelInvocation` to gog and himalaya skills
-- **Local Websearch Skill** - Updated branding (moltbot → cowork) and paths to `Application Support/idexal-cowork`
+- **Local Websearch Skill** - Updated branding (moltbot → cowork) and paths to `Application Support/Idexal CoWork`
 - **Agent Executor** - Improved email fallback logic: prefers `email_imap_unread` when Google Workspace tools are unavailable
 - **Agent Executor** - Fixed missing `tool_result` entries on pause/cancel to keep API message history valid
 - **Channel Tools** - Added channel status and warning metadata to `channel_list_chats` and `channel_history` results
@@ -1167,7 +1167,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ollama support for local LLM inference
 
 ### Changed
-- Updated branding to idexal CoWork
+- Updated branding to Idexal CoWork
 - Improved workspace selector with terminal aesthetic
 
 ## [0.1.0] - 2025-01-24
@@ -1262,60 +1262,60 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 | 0.1.0 | 2025-01-24 | First public release with core features |
 | 0.0.1 | 2025-01-20 | Initial development setup |
 
-[Unreleased]: https://github.com/idexal/idexal-cowork/compare/v0.5.52...HEAD
-[0.5.52]: https://github.com/idexal/idexal-cowork/compare/v0.5.51...v0.5.52
-[0.5.51]: https://github.com/idexal/idexal-cowork/compare/v0.5.50...v0.5.51
-[0.5.50]: https://github.com/idexal/idexal-cowork/compare/v0.5.49...v0.5.50
-[0.5.49]: https://github.com/idexal/idexal-cowork/compare/v0.5.48...v0.5.49
-[0.5.48]: https://github.com/idexal/idexal-cowork/compare/v0.5.47...v0.5.48
-[0.5.47]: https://github.com/idexal/idexal-cowork/compare/v0.5.45...v0.5.47
-[0.5.45]: https://github.com/idexal/idexal-cowork/compare/v0.5.44...v0.5.45
-[0.5.44]: https://github.com/idexal/idexal-cowork/compare/v0.5.43...v0.5.44
-[0.5.43]: https://github.com/idexal/idexal-cowork/compare/v0.5.42...v0.5.43
-[0.5.42]: https://github.com/idexal/idexal-cowork/compare/v0.5.41...v0.5.42
-[0.5.41]: https://github.com/idexal/idexal-cowork/compare/v0.5.40...v0.5.41
-[0.5.40]: https://github.com/idexal/idexal-cowork/compare/v0.5.35...v0.5.40
-[0.5.35]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.35
-[0.5.34]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.34
-[0.5.23]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.23
-[0.5.19]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.19
-[0.5.18]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.18
-[0.5.17]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.17
-[0.5.16]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.16
-[0.5.15]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.15
-[0.5.14]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.14
-[0.5.13]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.13
-[0.5.11]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.11
-[0.5.1]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.1
-[0.5.0]: https://github.com/idexal/idexal-cowork/releases/tag/v0.5.0
-[0.4.13]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.13
-[0.4.12]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.12
-[0.4.11]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.11
-[0.4.10]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.10
-[0.4.9]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.9
-[0.4.8]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.8
-[0.4.7]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.7
-[0.4.6]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.6
-[0.4.1]: https://github.com/idexal/idexal-cowork/releases/tag/v0.4.1
-[0.3.90]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.90
-[0.3.84]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.84
-[0.3.83]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.83
-[0.3.82]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.82
-[0.3.81]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.81
-[0.3.80]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.80
-[0.3.79]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.79
-[0.3.78]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.78
-[0.3.77]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.77
-[0.3.76]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.76
-[0.3.75]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.75
-[0.3.73]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.73
-[0.3.72]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.72
-[0.3.71]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.71
-[0.3.29]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.29
-[0.3.25]: https://github.com/idexal/idexal-cowork/releases/tag/v0.3.25
-[0.1.6]: https://github.com/idexal/idexal-cowork/releases/tag/v0.1.6
-[0.1.5]: https://github.com/idexal/idexal-cowork/releases/tag/v0.1.5
-[0.1.4]: https://github.com/idexal/idexal-cowork/releases/tag/v0.1.4
-[0.1.3]: https://github.com/idexal/idexal-cowork/releases/tag/v0.1.3
-[0.1.0]: https://github.com/idexal/idexal-cowork/releases/tag/v0.1.0
-[0.0.1]: https://github.com/idexal/idexal-cowork/releases/tag/v0.0.1
+[Unreleased]: https://github.com/idexal/Idexal CoWork/compare/v0.5.52...HEAD
+[0.5.52]: https://github.com/idexal/Idexal CoWork/compare/v0.5.51...v0.5.52
+[0.5.51]: https://github.com/idexal/Idexal CoWork/compare/v0.5.50...v0.5.51
+[0.5.50]: https://github.com/idexal/Idexal CoWork/compare/v0.5.49...v0.5.50
+[0.5.49]: https://github.com/idexal/Idexal CoWork/compare/v0.5.48...v0.5.49
+[0.5.48]: https://github.com/idexal/Idexal CoWork/compare/v0.5.47...v0.5.48
+[0.5.47]: https://github.com/idexal/Idexal CoWork/compare/v0.5.45...v0.5.47
+[0.5.45]: https://github.com/idexal/Idexal CoWork/compare/v0.5.44...v0.5.45
+[0.5.44]: https://github.com/idexal/Idexal CoWork/compare/v0.5.43...v0.5.44
+[0.5.43]: https://github.com/idexal/Idexal CoWork/compare/v0.5.42...v0.5.43
+[0.5.42]: https://github.com/idexal/Idexal CoWork/compare/v0.5.41...v0.5.42
+[0.5.41]: https://github.com/idexal/Idexal CoWork/compare/v0.5.40...v0.5.41
+[0.5.40]: https://github.com/idexal/Idexal CoWork/compare/v0.5.35...v0.5.40
+[0.5.35]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.35
+[0.5.34]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.34
+[0.5.23]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.23
+[0.5.19]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.19
+[0.5.18]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.18
+[0.5.17]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.17
+[0.5.16]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.16
+[0.5.15]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.15
+[0.5.14]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.14
+[0.5.13]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.13
+[0.5.11]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.11
+[0.5.1]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.1
+[0.5.0]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.5.0
+[0.4.13]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.13
+[0.4.12]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.12
+[0.4.11]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.11
+[0.4.10]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.10
+[0.4.9]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.9
+[0.4.8]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.8
+[0.4.7]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.7
+[0.4.6]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.6
+[0.4.1]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.4.1
+[0.3.90]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.90
+[0.3.84]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.84
+[0.3.83]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.83
+[0.3.82]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.82
+[0.3.81]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.81
+[0.3.80]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.80
+[0.3.79]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.79
+[0.3.78]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.78
+[0.3.77]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.77
+[0.3.76]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.76
+[0.3.75]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.75
+[0.3.73]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.73
+[0.3.72]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.72
+[0.3.71]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.71
+[0.3.29]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.29
+[0.3.25]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.3.25
+[0.1.6]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.1.6
+[0.1.5]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.1.5
+[0.1.4]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.1.4
+[0.1.3]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.1.3
+[0.1.0]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.1.0
+[0.0.1]: https://github.com/idexal/Idexal CoWork/releases/tag/v0.0.1

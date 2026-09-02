@@ -1,12 +1,12 @@
-# idexal CoWork — Use Case Showcase
+# Idexal CoWork — Use Case Showcase
 
-A comprehensive guide to what you can build, automate, and manage with idexal CoWork. Each section includes the capabilities involved, example prompts, and which skills/connectors/packs power the workflow.
+A comprehensive guide to what you can build, automate, and manage with Idexal CoWork. Each section includes the capabilities involved, example prompts, and which skills/connectors/packs power the workflow.
 
 ## AI Super App For Everyday Work
 
-idexal CoWork is the free, open-source, GUI-first, CLI-capable local AI super app and everything app: one place for coding, email, research, web design, documents, spreadsheets, presentations, agent spawning and management, automations, channels, devices, terminal starts, and long-running work. The product is broader than an office artifact viewer; artifacts are one part of the larger agentic workspace.
+Idexal CoWork is the free, open-source, GUI-first, CLI-capable local AI super app and everything app: one place for coding, email, research, web design, documents, spreadsheets, presentations, agent spawning and management, automations, channels, devices, terminal starts, and long-running work. The product is broader than an office artifact viewer; artifacts are one part of the larger agentic workspace.
 
-Its open multi-provider harness lets supported provider accounts, APIs, compatible gateways, cloud credentials, and local models use the same tools, skills, memory, agents, approvals, artifacts, and workflows. CoWork itself is free and MIT-licensed; provider eligibility, limits, and charges remain separate. See [Model Providers](providers.md) and [Compare idexal CoWork](comparisons/index.md).
+Its open multi-provider harness lets supported provider accounts, APIs, compatible gateways, cloud credentials, and local models use the same tools, skills, memory, agents, approvals, artifacts, and workflows. CoWork itself is free and MIT-licensed; provider eligibility, limits, and charges remain separate. See [Model Providers](providers.md) and [Compare Idexal CoWork](comparisons/index.md).
 
 The [access profile](access-profiles.md) is the task-level boundary for every
 showcase workflow. Examples that use commands, files, browsers, connectors,
@@ -162,7 +162,7 @@ packages that conflict with our MIT license.
 > **Best-fit workflow: IT Ops**
 > **Why this is a strong fit:** Incident and release workflows have clear triggers, defined completion criteria, and high cost of error — conditions where approval gates, local audit trails, and governed execution outperform ad-hoc tooling.
 > **Who already buys this outcome:** Managed infrastructure providers, SRE-as-a-service teams, IT outsourcers operating under SLAs.
-> **What idexal CoWork contributes:** Incident response with comms templates, deployment checklists with rollback procedures, IaC generation from plain language, and blameless post-mortems with structured action items. Enable the DevOps Pack and connect ServiceNow or Jira.
+> **What Idexal CoWork contributes:** Incident response with comms templates, deployment checklists with rollback procedures, IaC generation from plain language, and blameless post-mortems with structured action items. Enable the DevOps Pack and connect ServiceNow or Jira.
 
 ### Kubernetes Cluster Operations
 
@@ -453,7 +453,7 @@ optimization plan to hit 30fps stable.
 > **Best-fit workflow: Sales Ops**
 > **Why this is a strong fit:** Outbound sales workflows are high-volume and repetitive but require personalization at scale — the balance where governed AI delivery performs best.
 > **Who already buys this outcome:** Outsourced SDR/BDR providers, sales development agencies, in-house sales teams running a managed outbound lane.
-> **What idexal CoWork contributes:** Prospect research briefings, personalized follow-up drafts, pipeline health reviews, and objection-handling scripts. Enable the Sales CRM Pack and connect HubSpot or Salesforce.
+> **What Idexal CoWork contributes:** Prospect research briefings, personalized follow-up drafts, pipeline health reviews, and objection-handling scripts. Enable the Sales CRM Pack and connect HubSpot or Salesforce.
 
 Connect to Salesforce and HubSpot to automate pipeline management, prospect research, and follow-up sequences.
 
@@ -532,7 +532,7 @@ Set up a Discord server structure for our open-source project:
 > **Best-fit workflow: Support Ops**
 > **Why this is a strong fit:** Support volume is predictable, quality criteria are measurable, and the workflow is well-defined — exactly the conditions where governed AI delivery outperforms ad-hoc tooling.
 > **Who already buys this outcome:** BPOs, CX outsourcers, managed-services providers, in-house support teams that operate like a managed lane.
-> **What idexal CoWork contributes:** Ticket triage with priority and sentiment analysis, tone-matched response drafting, one-step KB article generation, and escalation summaries engineering can act on immediately. Enable the Customer Support Pack and connect Zendesk or ServiceNow.
+> **What Idexal CoWork contributes:** Ticket triage with priority and sentiment analysis, tone-matched response drafting, one-step KB article generation, and escalation summaries engineering can act on immediately. Enable the Customer Support Pack and connect Zendesk or ServiceNow.
 
 Connect to Zendesk and ServiceNow to automate ticket triage, response drafting, and escalation management.
 
@@ -951,7 +951,7 @@ Send me a summary when done.
 
 ### Headless & Server Deployment
 
-Run idexal CoWork as a headless daemon on Linux servers with remote access via Tailscale, SSH, or WebSocket. The recommended production path is the packaged Linux x64 server release tarball, which includes built daemon assets, bundled resources, connector runtimes, and systemd templates.
+Run Idexal CoWork as a headless daemon on Linux servers with remote access via Tailscale, SSH, or WebSocket. The recommended production path is the packaged Linux x64 server release tarball, which includes built daemon assets, bundled resources, connector runtimes, and systemd templates.
 
 **What it handles:**
 - Packaged Linux x64 VPS installs via systemd

@@ -19,7 +19,7 @@ Release `0.5.44` is a broad reliability and platform release. It expands Browser
 - **Browser Workbench polish**: refined Browser Workbench navigation, styles, sidebar approval UX, mention icon rendering, browser tool prompting, runtime browser tool definitions, and storage-secret redaction.
 - **Messaging channel behavior**: tightened shared channel-message handling across Slack, Discord, email, Telegram, WhatsApp, and the channel registry.
 - **Workspace status labels**: improved renderer labels around active workspace/task status, especially for OpenAI-compatible provider flows.
-- **Branding refresh**: updated app/logo assets and the related documentation references for the current idexal CoWork brand set.
+- **Branding refresh**: updated app/logo assets and the related documentation references for the current Idexal CoWork brand set.
 
 ## Fixes
 
@@ -42,9 +42,9 @@ Release `0.5.44` is a broad reliability and platform release. It expands Browser
 - **macOS artifact smoke**: validated the unsigned macOS DMG/zip release path with the explicit unsigned-smoke allowance used by CI.
 - **Windows installer smoke**: built and smoke-tested the Windows x64 installer artifact in CI.
 - **Linux server smoke**: built the Linux x64 server tarball, verified checksum metadata, and smoke-tested the server package.
-- **npm package smoke**: published and verified `idexal-cowork@0.5.44`, including registry propagation and tarball metadata.
+- **npm package smoke**: published and verified `Idexal CoWork@0.5.44`, including registry propagation and tarball metadata.
 - **GitHub release assets**: published the macOS, Windows, Linux server, updater metadata, checksum, and blockmap assets under the `v0.5.44` GitHub release.
 
 ## macOS First Launch
 
-- **Unsigned DMG Gatekeeper prompt**: idexal CoWork macOS DMGs are currently unsigned. After dragging the app to Applications, open it once. If macOS blocks it, go to **System Settings > Privacy & Security**, scroll to **Security**, click **Open Anyway** next to `"idexal CoWork" was blocked to protect your Mac`, then click **Open Anyway** in the confirmation dialog.
+- **Unsigned DMG Gatekeeper prompt**: Idexal CoWork macOS DMGs are currently unsigned. After dragging the app to Applications, open it once. If macOS blocks it, go to **System Settings > Privacy & Security**, scroll to **Security**, click **Open Anyway** next to `"Idexal CoWork" was blocked to protect your Mac`, then click **Open Anyway** in the confirmation dialog.

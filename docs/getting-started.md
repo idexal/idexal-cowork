@@ -1,21 +1,21 @@
-# Getting Started with idexal CoWork
+# Getting Started with Idexal CoWork
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-1.webp" alt="idexal CoWork home screen" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-1.webp" alt="Idexal CoWork home screen" width="700">
   <br><em>The home screen is the fastest way to start tasks, reopen recent work, and launch common workflows.</em>
 </p>
 
-idexal CoWork is the free, open-source AI super app for real work. Its open multi-provider harness lets supported provider accounts, APIs, compatible gateways, cloud credentials, and local models share the same tools, skills, memory, agents, approvals, artifacts, and workflows. CoWork itself is free and MIT-licensed; providers and connected services keep their own eligibility, limits, and charges. See [Model Providers](providers.md) and [Compare idexal CoWork](comparisons/index.md).
+Idexal CoWork is the free, open-source AI super app for real work. Its open multi-provider harness lets supported provider accounts, APIs, compatible gateways, cloud credentials, and local models share the same tools, skills, memory, agents, approvals, artifacts, and workflows. CoWork itself is free and MIT-licensed; providers and connected services keep their own eligibility, limits, and charges. See [Model Providers](providers.md) and [Compare Idexal CoWork](comparisons/index.md).
 
 ## Quick Start
 
-The desktop app requires **macOS 13 Ventura or later** or Windows 10/11. idexal CoWork `0.5.51` is the final release compatible with macOS 12 Monterey.
+The desktop app requires **macOS 13 Ventura or later** or Windows 10/11. Idexal CoWork `0.5.51` is the final release compatible with macOS 12 Monterey.
 
 ### Step 1: Install Dependencies
 
 ```bash
-git clone https://github.com/idexal/idexal-cowork.git
-cd idexal-cowork
+git clone https://github.com/idexal/Idexal CoWork.git
+cd Idexal CoWork
 npm run setup
 ```
 
@@ -53,7 +53,7 @@ Use remote mode only when intentionally calling a remote Control Plane endpoint:
 cowork run "check the remote workspace status" --remote
 ```
 
-See [idexal CoWork CLI](cli.md) for command syntax, local-vs-remote behavior, JSON output, and troubleshooting.
+See [Idexal CoWork CLI](cli.md) for command syntax, local-vs-remote behavior, JSON output, and troubleshooting.
 
 ### Step 3: Choose How CoWork Runs AI
 
@@ -91,7 +91,7 @@ If you use the API-key path, open **Settings > AI & Models > Model Access** and 
 After you have at least two working model routes, you can optionally create a [Mixture of Agents](mixture-of-agents.md) preset in **Settings > AI & Models > AI Model > Mixture of Agents**. Choose one aggregator model and one or more advisor models, save the preset, then select **Mixture of Agents** as the active provider and the preset as the model for tasks that benefit from model diversity.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-10.webp" alt="AI model provider settings" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-10.webp" alt="AI model provider settings" width="700">
   <br><em>Settings centralizes provider credentials, fallback routing, and model selection.</em>
 </p>
 
@@ -102,11 +102,11 @@ After your primary provider works, open:
 - **Settings > AI & Models** to set ordered fallback providers/models
 - **Settings > Web Search** to set primary and fallback search providers such as Tavily, Exa, Brave, SerpAPI, or Google
 
-idexal CoWork uses those ordered chains when a provider is unavailable, rate-limited, or lacks the needed capability for a task.
+Idexal CoWork uses those ordered chains when a provider is unavailable, rate-limited, or lacks the needed capability for a task.
 
 Mixture of Agents uses the same underlying provider routes for its slots. Slot providers keep their own fallback chains, while MoA provider failover is configured separately when you want the whole preset to fall back after MoA fails.
 
-For LLM providers, retryable failures such as `429` rate limits immediately advance to the next configured fallback provider/model. In **Settings > AI & Models > Provider Failover**, `Retry primary after (seconds)` controls when idexal CoWork should probe the primary route again after failover:
+For LLM providers, retryable failures such as `429` rate limits immediately advance to the next configured fallback provider/model. In **Settings > AI & Models > Provider Failover**, `Retry primary after (seconds)` controls when Idexal CoWork should probe the primary route again after failover:
 
 - blank uses the default 60-second cooldown
 - `0` retries the primary on the next route refresh
@@ -153,7 +153,7 @@ Supermemory does not replace CoWork's local memory system. It adds an external p
 
 1. **Start in the private starter workspace**
    - CoWork creates a private starter workspace automatically, so you can run a safe first task without choosing a real folder.
-   - Click **Choose folder** when you want idexal CoWork to work with your own files.
+   - Click **Choose folder** when you want Idexal CoWork to work with your own files.
    - That folder becomes your workspace (e.g., `~/Documents/test-workspace`).
 
 2. **Initialize the Workspace Kit (Optional, Recommended)**
@@ -161,7 +161,7 @@ Supermemory does not replace CoWork's local memory system. It adds an external p
    - Under **Workspace Kit**, click **Initialize**
    - This creates a `.cowork/` directory in your workspace for durable context, prompt injection, and project scaffolding
    - The root kit can include shared workspace files such as `AGENTS.md`, `USER.md`, `MEMORY.md`, `TOOLS.md`, `IDENTITY.md`, `RULES.md`, `SOUL.md`, `VIBES.md`, and `LORE.md`
-   - `BOOTSTRAP.md` is a one-time onboarding checklist; once you complete onboarding, removing it marks onboarding complete and idexal CoWork tracks that state in `.cowork/workspace-state.json`
+   - `BOOTSTRAP.md` is a one-time onboarding checklist; once you complete onboarding, removing it marks onboarding complete and Idexal CoWork tracks that state in `.cowork/workspace-state.json`
    - `HEARTBEAT.md` is reserved for recurring heartbeat-only checks rather than general task context
    - Project-specific context lives under `.cowork/projects/<projectId>/`, where `CONTEXT.md` captures project notes and `ACCESS.md` captures project access boundaries
 
@@ -199,7 +199,7 @@ Generated documents, spreadsheets, presentations, and web pages appear as artifa
    - Request approval before destructive changes
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-4.webp" alt="Task execution timeline" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-4.webp" alt="Task execution timeline" width="700">
   <br><em>Task runs show live progress, intermediate work, approvals, and outputs in one view.</em>
 </p>
 
@@ -233,11 +233,11 @@ If you are just getting started, do not configure everything at once. Set up an 
 
 ## Optional: Try Chronicle
 
-Use this if you want idexal CoWork to understand vague on-screen references from the desktop app.
+Use this if you want Idexal CoWork to understand vague on-screen references from the desktop app.
 
 1. Open **Settings > Memory Hub > Chronicle**.
 2. Turn on **Chronicle (Research Preview)** and accept the consent prompt.
-3. Grant **Screen Recording** for idexal CoWork if macOS prompts for it.
+3. Grant **Screen Recording** for Idexal CoWork if macOS prompts for it.
 4. Optional but useful: grant **Accessibility** so Chronicle can attach better frontmost app/window metadata.
 5. Confirm **Settings > Tools > Built-in tools** still has **Chronicle** enabled.
 6. Restart the app if you changed Screen Recording.
@@ -254,7 +254,7 @@ See [Chronicle](chronicle.md) for the full guide and [Troubleshooting](troublesh
 
 ## Optional: Add A Remote Device
 
-Use this when you want idexal CoWork to run tasks on another machine, such as a Mac mini or remote workstation.
+Use this when you want Idexal CoWork to run tasks on another machine, such as a Mac mini or remote workstation.
 
 1. Start CoWork on the remote machine and enable the Control Plane.
 2. Decide how you will reach it:
@@ -310,7 +310,7 @@ Rule of thumb:
 
 ## Zero-Human Company Quick Start
 
-If you want to use idexal CoWork as a founder-operated autonomous company shell:
+If you want to use Idexal CoWork as a founder-operated autonomous company shell:
 
 1. Choose a real git-backed workspace.
 2. Open **Settings** > **Memory Hub**.
@@ -639,25 +639,25 @@ src/
 - Use `console.log()` - shows in terminal
 - Check logs:
   - macOS: `~/Library/Application Support/idexal/`
-  - Windows: `%APPDATA%\\idexal-cowork\\`
+  - Windows: `%APPDATA%\\Idexal CoWork\\`
 
 ### Database
 
 SQLite database location:
-- macOS: `~/Library/Application Support/idexal/idexal-cowork.db`
-- Windows: `%APPDATA%\\idexal-cowork\\idexal-cowork.db`
+- macOS: `~/Library/Application Support/idexal/Idexal CoWork.db`
+- Windows: `%APPDATA%\\Idexal CoWork\\Idexal CoWork.db`
 
 View it with any SQLite browser or:
 ```bash
 # macOS
-sqlite3 ~/Library/Application\ Support/idexal/idexal-cowork.db
+sqlite3 ~/Library/Application\ Support/idexal/Idexal CoWork.db
 .tables
 SELECT * FROM tasks;
 ```
 
 ```powershell
 # Windows (PowerShell)
-sqlite3 "$env:APPDATA\idexal-cowork\idexal-cowork.db"
+sqlite3 "$env:APPDATA\Idexal CoWork\Idexal CoWork.db"
 .tables
 SELECT * FROM tasks;
 ```
@@ -749,4 +749,4 @@ Don't use system folders like `/System` or `/Applications`.
 - Check console output for errors
 - Review the task timeline for clues
 - Read error messages in the UI
-- Report issues at [GitHub Issues](https://github.com/idexal/idexal-cowork/issues)
+- Report issues at [GitHub Issues](https://github.com/idexal/Idexal CoWork/issues)

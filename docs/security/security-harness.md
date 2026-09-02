@@ -1,6 +1,6 @@
 # Security Harness
 
-The security harness is the first local implementation of the idexal CoWork security-discovery loop:
+The security harness is the first local implementation of the Idexal CoWork security-discovery loop:
 
 `prepare -> scan -> validate/debate -> dedup -> prove -> eval coverage`
 

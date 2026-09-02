@@ -1,6 +1,6 @@
 # Models & Access
 
-idexal CoWork is a **free, open-source AI super app powered by a multi-provider agent harness**.
+Idexal CoWork is a **free, open-source AI super app powered by a multi-provider agent harness**.
 The app itself does not require a CoWork subscription. To run AI tasks, connect a supported
 provider account, API key, compatible gateway, cloud credential, or local model.
 
@@ -20,7 +20,7 @@ filesystem, network, domain, connector, or device access, and changing models
 does not widen the active profile.
 
 <p align="center">
-  <img src="../resources/branding/images/idexal-cowork-10.webp" alt="LLM provider settings" width="700">
+  <img src="../resources/branding/images/Idexal CoWork-10.webp" alt="LLM provider settings" width="700">
   <br><em>Provider settings centralize built-in models, compatible gateways, authentication, and fallback routing.</em>
 </p>
 
@@ -91,14 +91,14 @@ prompts and authentication data to the configured provider as required to comple
 | OpenAI-Compatible (Custom) | API key + base URL in Settings | Provider billing |
 | Anthropic-Compatible (Custom) | API key + base URL in Settings | Provider billing |
 
-**Your usage is billed directly by your provider.** idexal CoWork does not proxy or resell model
+**Your usage is billed directly by your provider.** Idexal CoWork does not proxy or resell model
 access or promise that a commercial provider includes third-party-harness usage in a plan.
 
 ---
 
 ## Ordered LLM Fallback Chains
 
-idexal CoWork can route a task through an explicit provider/model fallback chain instead of relying on a single primary provider.
+Idexal CoWork can route a task through an explicit provider/model fallback chain instead of relying on a single primary provider.
 
 Configure this in **Settings > AI & Models**:
 
@@ -108,7 +108,7 @@ Configure this in **Settings > AI & Models**:
 
 Fallback chains are used when a provider is unavailable, rate-limited, rejected by policy, or lacks the required capability for the task. Runtime surfaces in the app and Mission Control show the active provider, routing reason, and whether a fallback occurred.
 
-For LLM chains, retryable provider failures such as `429` rate limits and transient upstream errors move execution to the next configured provider/model in the ordered list. Once a fallback route is active, idexal CoWork preserves that working route briefly so retries do not immediately bounce back to the primary provider.
+For LLM chains, retryable provider failures such as `429` rate limits and transient upstream errors move execution to the next configured provider/model in the ordered list. Once a fallback route is active, Idexal CoWork preserves that working route briefly so retries do not immediately bounce back to the primary provider.
 
 You can control when the primary route is tried again in **Settings > AI & Models > Provider Failover > Retry primary after (seconds)**:
 
@@ -145,7 +145,7 @@ See [Mixture of Agents](mixture-of-agents.md) for preset design, runtime behavio
 
 ## Prompt Caching
 
-idexal CoWork enables prompt caching by default in `auto` mode for supported model routes. The cacheable prefix is built from session-scoped prompt sections, while volatile turn context stays outside the stable prefix so follow-ups and routed turns can keep reusing the same provider-side foundation.
+Idexal CoWork enables prompt caching by default in `auto` mode for supported model routes. The cacheable prefix is built from session-scoped prompt sections, while volatile turn context stays outside the stable prefix so follow-ups and routed turns can keep reusing the same provider-side foundation.
 
 ### Strategy by provider family
 
@@ -187,7 +187,7 @@ These values flow into Usage Insights and cost accounting.
 
 ## Adaptive Output Budgeting
 
-When `COWORK_LLM_OUTPUT_POLICY=adaptive` is enabled, idexal CoWork applies a shared output-budget policy for agentic execution turns across the main provider families instead of relying on provider defaults.
+When `COWORK_LLM_OUTPUT_POLICY=adaptive` is enabled, Idexal CoWork applies a shared output-budget policy for agentic execution turns across the main provider families instead of relying on provider defaults.
 
 ### What it covers
 
@@ -355,14 +355,14 @@ The Pareto Router itself adds no extra fee. Billing follows whichever underlying
 
 Reference: [OpenRouter Pareto Router docs](https://openrouter.ai/docs/guides/routing/routers/pareto-router) and [Pareto Code Router model page](https://openrouter.ai/openrouter/pareto-code).
 
-idexal CoWork also sends OpenRouter app attribution headers by default so usage is associated with the app in OpenRouter analytics and rankings. The current defaults are:
+Idexal CoWork also sends OpenRouter app attribution headers by default so usage is associated with the app in OpenRouter analytics and rankings. The current defaults are:
 
-- `HTTP-Referer: https://github.com/idexal/idexal-cowork`
-- `X-OpenRouter-Title: idexal CoWork`
-- `X-Title: idexal CoWork`
+- `HTTP-Referer: https://github.com/idexal/Idexal CoWork`
+- `X-OpenRouter-Title: Idexal CoWork`
+- `X-Title: Idexal CoWork`
 - `X-OpenRouter-Categories: personal-agent,programming-app`
 
-The category pairing is intentional: idexal CoWork is positioned primarily as a personal AI agent, with programming workflows as a secondary fit.
+The category pairing is intentional: Idexal CoWork is positioned primarily as a personal AI agent, with programming workflows as a secondary fit.
 
 For prompt caching, OpenRouter Claude routes use explicit Anthropic-style cache breakpoints, while GPT-style OpenRouter routes participate in the shared stable-prefix prompt-cache pipeline.
 
@@ -412,7 +412,7 @@ model/effort combination.
 
 ## xAI / Grok
 
-idexal CoWork supports Grok through either direct xAI API billing or a browser OAuth account connection. Account eligibility, model access, limits, and charges remain controlled by xAI.
+Idexal CoWork supports Grok through either direct xAI API billing or a browser OAuth account connection. Account eligibility, model access, limits, and charges remain controlled by xAI.
 
 ### Option 1: Grok Account Connection
 

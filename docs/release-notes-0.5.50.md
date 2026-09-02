@@ -1,6 +1,6 @@
 # Release Notes 0.5.50
 
-Release `0.5.50` brings idexal CoWork's largest post-`0.5.49` capability update: a main-screen Automation Studio and deterministic workflow runtime, GPT-5.6 subscription controls, Mixture of Agents orchestration, browser annotations, inline email review, video understanding, stronger browser/computer-use approvals, new Calendar and architecture connectors, governed memory writes, session retention controls, and a bundled privacy-cleanup workflow.
+Release `0.5.50` brings Idexal CoWork's largest post-`0.5.49` capability update: a main-screen Automation Studio and deterministic workflow runtime, GPT-5.6 subscription controls, Mixture of Agents orchestration, browser annotations, inline email review, video understanding, stronger browser/computer-use approvals, new Calendar and architecture connectors, governed memory writes, session retention controls, and a bundled privacy-cleanup workflow.
 
 ## Highlights
 
@@ -73,19 +73,19 @@ For npm publication, use a clean checkout or release worktree. Explicitly run `n
 
 ## Pull Requests
 
-- [#184 Fix ChatGPT OAuth token exchange](https://github.com/idexal/idexal-cowork/pull/184)
-- [#185 Implement Browser Workbench annotations](https://github.com/idexal/idexal-cowork/pull/185)
-- [#186 Add architecture orchestration connectors](https://github.com/idexal/idexal-cowork/pull/186)
-- [#187 Harden build-health routine evidence checks](https://github.com/idexal/idexal-cowork/pull/187)
-- [#188 Add memory write governance and approval controls](https://github.com/idexal/idexal-cowork/pull/188)
-- [#189 Add Google Calendar MCP tools](https://github.com/idexal/idexal-cowork/pull/189)
-- [#190 Add video attachment analysis](https://github.com/idexal/idexal-cowork/pull/190)
-- [#191 Add inline mail compose frames](https://github.com/idexal/idexal-cowork/pull/191)
-- [#192 Add approval gates for visible browser and computer use](https://github.com/idexal/idexal-cowork/pull/192)
-- [#194 Add Mixture of Agents provider](https://github.com/idexal/idexal-cowork/pull/194)
-- [#195 Reorder LLM provider tabs](https://github.com/idexal/idexal-cowork/pull/195)
-- [#197 Add bundled `unbroker` skill and session archive support](https://github.com/idexal/idexal-cowork/pull/197)
-- [#198 Add main-screen Automation Studio workflows](https://github.com/idexal/idexal-cowork/pull/198)
+- [#184 Fix ChatGPT OAuth token exchange](https://github.com/idexal/Idexal CoWork/pull/184)
+- [#185 Implement Browser Workbench annotations](https://github.com/idexal/Idexal CoWork/pull/185)
+- [#186 Add architecture orchestration connectors](https://github.com/idexal/Idexal CoWork/pull/186)
+- [#187 Harden build-health routine evidence checks](https://github.com/idexal/Idexal CoWork/pull/187)
+- [#188 Add memory write governance and approval controls](https://github.com/idexal/Idexal CoWork/pull/188)
+- [#189 Add Google Calendar MCP tools](https://github.com/idexal/Idexal CoWork/pull/189)
+- [#190 Add video attachment analysis](https://github.com/idexal/Idexal CoWork/pull/190)
+- [#191 Add inline mail compose frames](https://github.com/idexal/Idexal CoWork/pull/191)
+- [#192 Add approval gates for visible browser and computer use](https://github.com/idexal/Idexal CoWork/pull/192)
+- [#194 Add Mixture of Agents provider](https://github.com/idexal/Idexal CoWork/pull/194)
+- [#195 Reorder LLM provider tabs](https://github.com/idexal/Idexal CoWork/pull/195)
+- [#197 Add bundled `unbroker` skill and session archive support](https://github.com/idexal/Idexal CoWork/pull/197)
+- [#198 Add main-screen Automation Studio workflows](https://github.com/idexal/Idexal CoWork/pull/198)
 
 ## Additional Direct Commits
 

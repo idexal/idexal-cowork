@@ -1,6 +1,6 @@
 # HubSpot MCP Connector (MVP)
 
-This connector exposes HubSpot CRM APIs to idexal CoWork through MCP tools.
+This connector exposes HubSpot CRM APIs to Idexal CoWork through MCP tools.
 
 ## Requirements
 

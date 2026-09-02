@@ -1,6 +1,6 @@
 # Context Compaction
 
-idexal CoWork automatically manages conversation context to prevent token overflow during long-running tasks. When the context window fills up, the system generates a comprehensive structured summary of earlier work — preserving user messages, decisions, file changes, errors, and pending tasks — so the agent can continue seamlessly without losing critical context.
+Idexal CoWork automatically manages conversation context to prevent token overflow during long-running tasks. When the context window fills up, the system generates a comprehensive structured summary of earlier work — preserving user messages, decisions, file changes, errors, and pending tasks — so the agent can continue seamlessly without losing critical context.
 
 ## How It Works
 
@@ -45,7 +45,7 @@ The summary LLM call is allocated up to **6,144 output tokens** (~24 KB of struc
 
 ### Chat Mode History Strategy
 
-Explicit chat sessions use a different history strategy from task execution. Instead of letting the task pipeline grow with every follow-up, idexal CoWork compacts long chat sessions into a cached summary plus a recent-message window, then reuses that summary on later turns.
+Explicit chat sessions use a different history strategy from task execution. Instead of letting the task pipeline grow with every follow-up, Idexal CoWork compacts long chat sessions into a cached summary plus a recent-message window, then reuses that summary on later turns.
 
 This keeps follow-up questions in the same conversation thread while still preserving enough older context for ChatGPT-style back-and-forth.
 
@@ -99,7 +99,7 @@ When compaction occurs, the task timeline shows a **"Session context compacted"*
 
 ### Overflow Guard
 
-After the summary is generated, idexal CoWork checks whether inserting it would push context back above 95% utilization. If so, the summary is progressively truncated while preserving the handoff preamble and tag structure.
+After the summary is generated, Idexal CoWork checks whether inserting it would push context back above 95% utilization. If so, the summary is progressively truncated while preserving the handoff preamble and tag structure.
 
 ### Reactive Fallback
 
@@ -169,7 +169,7 @@ Compaction behavior is controlled by constants in `src/electron/agent/executor-h
 
 ## Comparison with Other Tools
 
-| Feature | idexal CoWork | Codex CLI | Higher-threshold CLI |
+| Feature | Idexal CoWork | Codex CLI | Higher-threshold CLI |
 |---|---|---|---|
 | Trigger threshold | 90% | 90% | ~95% |
 | Summary budget | 6,144 tokens | Unlimited | Undisclosed (~3-5K observed) |
