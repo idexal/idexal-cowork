@@ -123,15 +123,7 @@ jobs:
         run: |
           npm_version="$(node -p "require('./package.json').version")"
 
-          if [ "${GITHUB_REF_NAME}" != "${npm_version}" ] && [ "${GITHUB_REF_NAME}" != "v${npm_version}" ]; then
-            echo "Tag mismatch: GITHUB_REF_NAME=${GITHUB_REF_NAME} but package.json is ${npm_version}" >&2
-            exit 1
-          fi
-
           release_tag="v${npm_version}"
-          if [ "${GITHUB_REF_NAME}" = "${npm_version}" ]; then
-            release_tag="v${npm_version}"
-          fi
 
           echo "npm_version=${npm_version}" >> "$GITHUB_OUTPUT"
           echo "release_tag=${release_tag}" >> "$GITHUB_OUTPUT"
@@ -327,15 +319,7 @@ jobs:
         run: |
           npm_version="$(node -p "require('./package.json').version")"
 
-          if [ "${GITHUB_REF_NAME}" != "${npm_version}" ] && [ "${GITHUB_REF_NAME}" != "v${npm_version}" ]; then
-            echo "Tag mismatch: GITHUB_REF_NAME=${GITHUB_REF_NAME} but package.json is ${npm_version}" >&2
-            exit 1
-          fi
-
           release_tag="v${npm_version}"
-          if [ "${GITHUB_REF_NAME}" = "${npm_version}" ]; then
-            release_tag="v${npm_version}"
-          fi
 
           echo "npm_version=${npm_version}" >> "$GITHUB_OUTPUT"
           echo "release_tag=${release_tag}" >> "$GITHUB_OUTPUT"
