@@ -1,0 +1,192 @@
+# Migrating to idexal CoWork
+
+This guide helps users transition from other AI assistant platforms or set up idexal CoWork alongside existing tools.
+
+## Overview
+
+idexal CoWork is a security-first, GUI-first local AI super app and everything app that runs on macOS and Windows. If you're coming from another multi-channel AI platform, CLI-first agent runner, or self-hosted assistant, this guide will help you move into one app for coding, email, documents, spreadsheets, presentations, browser work, agents, and automations.
+
+---
+
+## From Other AI Assistants
+
+### Channel Migration
+
+If you're already using messaging channels with another AI platform, you can reuse most of your existing setup:
+
+#### WhatsApp
+- **Same phone**: idexal CoWork uses Web WhatsApp (Baileys library), just like other platforms
+- **New QR scan**: You'll need to scan a new QR code in idexal CoWork Settings
+- **Note**: WhatsApp allows multiple linked devices, so you can run both platforms during transition
+
+#### Telegram
+- **Same bot or new**: You can create a new bot via @BotFather, or reuse your existing bot token
+- **If reusing token**: Make sure to disable the old platform first to avoid conflicts
+- **Recommendation**: Create a new bot for cleaner separation
+
+#### Discord
+- **Same application**: You can reuse your Discord application and bot token
+- **Guild commands**: If using guild-specific commands, update the Guild IDs in idexal CoWork
+- **Note**: Only one client can connect with the same token at a time
+
+#### Slack
+- **Same app tokens**: You can reuse your Slack app's Bot Token and App-Level Token
+- **Socket Mode**: idexal CoWork uses Socket Mode, same as most other platforms
+- **Note**: Only one connection per token is allowed
+
+#### iMessage
+- **macOS only**: iMessage integration requires macOS and the `imsg` CLI tool
+- **Setup**: Install via `brew install steipete/tap/imsg`
+- **Unique to idexal CoWork**: Most platforms don't support iMessage
+
+---
+
+## What You'll Gain
+
+Moving to idexal CoWork provides several advantages:
+
+### Security Features
+
+| Feature | Benefit |
+|---------|---------|
+| **Configurable guardrails** | Set token/cost budgets, iteration limits |
+| **Dangerous command blocking** | Built-in + custom patterns to block risky commands |
+| **Approval workflows** | Human-in-the-loop for destructive operations |
+| **Brute-force protection** | Lockout after failed pairing attempts |
+| **Context-aware isolation** | Different tool access for local vs remote use |
+
+### Additional Capabilities
+
+| Feature | Benefit |
+|---------|---------|
+| **30+ LLM providers** | Built-in + compatible gateways with BYOK flexibility |
+| **Local LLM support** | Run completely free and offline with Ollama |
+| **Native desktop app** | Full desktop UX on macOS and Windows (menu bar on macOS, system tray on Windows) |
+| **GUI-first agent management** | Create reusable agents, spawn many runs, inspect timelines, assign work, and monitor teams through Agents Hub and Mission Control |
+| **Real-time timeline** | See exactly what the agent is doing |
+| **Document creation** | Excel, Word, PDF, PowerPoint built-in |
+| **Personality system** | Customize how your AI communicates |
+| **MCP support** | Extend with external tool servers |
+
+---
+
+## What's Different
+
+### Architecture
+
+| Aspect | idexal CoWork | Typical CLI Platform |
+|--------|-----------|---------------------|
+| **Form factor** | Desktop app (Electron) | CLI + daemon |
+| **Primary platform** | macOS + Windows | Cross-platform |
+| **Installation** | `npm install` + `npm run dev` | `npm install -g` |
+| **Configuration** | GUI Settings panel | Config files / CLI flags |
+
+### Security Model
+
+| Aspect | idexal CoWork |
+|--------|-----------|
+| **Default mode** | Pairing (most restrictive) |
+| **Sandbox** | Workspace boundaries (VM planned) |
+| **Approval** | GUI dialogs |
+| **Guardrails** | Configurable in Settings UI |
+
+---
+
+## Setup Steps
+
+### 1. Install idexal CoWork
+
+```bash
+git clone https://github.com/idexal/idexal-cowork.git
+cd idexal-cowork
+npm install
+npm run dev
+```
+
+### 2. Configure LLM Provider
+
+1. Open Settings (gear icon)
+2. Select your LLM provider tab
+3. Enter your API credentials
+4. Test connection
+5. Save
+
+Available providers include Anthropic, OpenAI, Gemini, OpenRouter, Bedrock, Ollama, Groq, xAI (Grok), Kimi, plus compatible gateways such as OpenCode Zen, Google Vertex, Google Antigravity, Google Gemini CLI, Z.AI, GLM, Vercel AI Gateway, Cerebras, Mistral, GitHub Copilot, Qwen Portal, MiniMax, Xiaomi MiMo, Venice AI, Synthetic, Kimi Code, and custom OpenAI- or Anthropic-compatible endpoints.
+
+### 3. Set Up Messaging Channels
+
+For each channel you want to use:
+
+1. Go to Settings > Channels
+2. Select the channel type
+3. Enter credentials (tokens, keys)
+4. Configure security mode (Pairing recommended)
+5. Test and enable
+
+### 4. Configure Guardrails
+
+1. Go to Settings > Guardrails
+2. Set appropriate budgets:
+   - Token budget (e.g., 100,000)
+   - Cost budget (e.g., $1.00)
+   - Iteration limit (e.g., 50)
+3. Enable dangerous command blocking
+4. Add custom blocked patterns if needed
+
+### 5. Add Workspaces
+
+1. Click "Select Workspace" in the main window
+2. Choose folders you want the agent to access
+3. Avoid sensitive folders (documents, system files)
+
+---
+
+## Running Both Platforms
+
+During transition, you may want to run both platforms:
+
+### Recommendations
+
+1. **Use different bots**: Create separate Telegram/Discord bots for each platform
+2. **Stagger channels**: Migrate one channel at a time
+3. **Test thoroughly**: Verify each channel works before migrating the next
+4. **Keep backups**: Ensure you have backups before any major changes
+
+### Avoiding Conflicts
+
+- **Same bot token**: Only one platform can use a token at a time
+- **WhatsApp**: Can have multiple linked devices, but messages route to all
+- **Webhooks**: Make sure only one platform receives webhook events
+
+---
+
+## Common Questions
+
+### Can I import my skills/prompts from another platform?
+
+idexal CoWork uses a JSON-based skill format. If your existing platform exports skills, you may need to convert them. Skills are stored in:
+```
+macOS: ~/Library/Application Support/idexal/skills/
+Windows: %APPDATA%\idexal-cowork\skills\
+```
+
+### Do I need to re-pair users?
+
+Yes. idexal CoWork maintains its own pairing database. Users will need to pair again using the pairing code flow.
+
+### Can I use the same API keys?
+
+Yes. Your LLM provider API keys (Anthropic, OpenAI, etc.) work with any client. Just enter them in idexal CoWork Settings.
+
+### Is my data migrated?
+
+No. Task history, conversations, and artifacts are stored locally per platform. You'll start fresh with idexal CoWork.
+
+---
+
+## Getting Help
+
+- **Documentation**: See [README.md](README.md) for full feature documentation
+- **Security**: See [SECURITY_GUIDE.md](SECURITY_GUIDE.md) for security best practices
+- **Issues**: Report bugs at [GitHub Issues](https://github.com/idexal/idexal-cowork/issues)
+- **Contributing**: See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines

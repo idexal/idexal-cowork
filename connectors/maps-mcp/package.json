@@ -1,0 +1,14 @@
+{
+  "name": "@idexal/maps-mcp",
+  "version": "0.1.0",
+  "description": "Maps and nearby places MCP connector for idexal CoWork.",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

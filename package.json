@@ -1,0 +1,405 @@
+{
+  "name": "idexal-cowork",
+  "version": "0.5.52",
+  "private": false,
+  "description": "idexal CoWork — free, open-source AI super app and multi-provider agent harness for coding, knowledge work, documents, communication, automation, and everyday tasks",
+  "keywords": [
+    "agentic-os",
+    "agent-harness",
+    "ai-assistant",
+    "ai-automation",
+    "ai-gateway",
+    "ai-workbench",
+    "artifact-workbench",
+    "byok",
+    "claude",
+    "coding-agent",
+    "developer-tools",
+    "documents",
+    "electron",
+    "everything-app",
+    "gemini",
+    "gpt",
+    "knowledge-work",
+    "llm",
+    "llm-routing",
+    "local-first",
+    "local-llm",
+    "mcp",
+    "office-productivity",
+    "multi-provider",
+    "open-source",
+    "personal-ai",
+    "presentations",
+    "security",
+    "self-hosted",
+    "spreadsheets",
+    "web-design",
+    "web-pages"
+  ],
+  "homepage": "https://github.com/idexal/idexal-cowork#readme",
+  "bugs": {
+    "url": "https://github.com/idexal/idexal-cowork/issues"
+  },
+  "license": "MIT",
+  "author": "Zakariae Lahbabi <info@zakariaelahbabi.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idexal/idexal-cowork.git"
+  },
+  "bin": {
+    "cowork": "bin/cowork-cli.js",
+    "idexal-cowork": "bin/cowork.js",
+    "coworkctl": "bin/coworkctl.js",
+    "coworkd": "bin/coworkd.js",
+    "coworkd-node": "bin/coworkd-node.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "scripts",
+    "resources",
+    "connectors",
+    "build",
+    "deploy",
+    "bin",
+    "docs",
+    ".npmrc",
+    ".env.example",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "tsconfig.json",
+    "tsconfig.cli.json",
+    "tsconfig.daemon.json",
+    "tsconfig.electron.json",
+    "tsconfig.node.json",
+    "vite.config.ts"
+  ],
+  "main": "dist/electron/electron/main.js",
+  "scripts": {
+    "postinstall": "node scripts/codesign_electron_dev.mjs",
+    "setup": "node scripts/setup.mjs",
+    "hooks:install": "node scripts/install_git_hooks.mjs",
+    "setup:native": "node scripts/setup_native_driver.mjs",
+    "setup:server": "npm install && npm rebuild --ignore-scripts=false better-sqlite3",
+    "dev": "node scripts/dev_with_logs.mjs",
+    "dev:start": "node scripts/dev_start.mjs",
+    "dev:log": "cross-env COWORK_DEV_LOG_CAPTURE=1 node scripts/dev_with_logs.mjs",
+    "dev:react": "vite",
+    "build:healthkit-bridge": "node scripts/build_healthkit_bridge.mjs",
+    "build:location-helper-macos": "node scripts/build_location_helper_macos.mjs",
+    "build:location-helpers": "node scripts/copy_location_helpers.mjs",
+    "dev:electron": "tsc -p tsconfig.electron.json && cross-env ELECTRON_RUN_AS_NODE= NODE_ENV=development electron .",
+    "tunnel-relay:dev": "npm run build:electron && node dist/electron/electron/tunnels/relay.js",
+    "tunnel-relay:test": "npm run build:electron && node scripts/smoke-secure-mcp-tunnel.mjs",
+    "build": "npm run build:react && npm run build:healthkit-bridge && npm run build:location-helper-macos && npm run build:location-helpers && concurrently -n electron,daemon,cli \"npm run build:electron\" \"npm run build:daemon\" \"npm run build:cli\" && npm run build:connectors",
+    "build:with-numbat": "npm run numbat:build && npm run build",
+    "numbat:build": "node scripts/build_numbat_runtime.mjs",
+    "numbat:verify": "node scripts/build_numbat_runtime.mjs --verify-only",
+    "build:react": "vite build",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "build:daemon": "tsc -p tsconfig.daemon.json",
+    "build:cli": "tsc -p tsconfig.cli.json",
+    "build:connectors": "concurrently -n salesforce,jira,hubspot,zendesk,servicenow,linear,asana,okta,resend,discord,google-workspace,figma,vercel,monday,finance-data,maps,rhino,blender,comfyui \"tsc -p connectors/salesforce-mcp/tsconfig.json\" \"tsc -p connectors/jira-mcp/tsconfig.json\" \"tsc -p connectors/hubspot-mcp/tsconfig.json\" \"tsc -p connectors/zendesk-mcp/tsconfig.json\" \"tsc -p connectors/servicenow-mcp/tsconfig.json\" \"tsc -p connectors/linear-mcp/tsconfig.json\" \"tsc -p connectors/asana-mcp/tsconfig.json\" \"tsc -p connectors/okta-mcp/tsconfig.json\" \"tsc -p connectors/resend-mcp/tsconfig.json\" \"tsc -p connectors/discord-mcp/tsconfig.json\" \"tsc -p connectors/google-workspace-mcp/tsconfig.json\" \"tsc -p connectors/figma-mcp/tsconfig.json\" \"tsc -p connectors/vercel-mcp/tsconfig.json\" \"tsc -p connectors/monday-mcp/tsconfig.json\" \"tsc -p connectors/finance-data-mcp/tsconfig.json\" \"tsc -p connectors/maps-mcp/tsconfig.json\" \"tsc -p connectors/rhino-mcp/tsconfig.json\" \"tsc -p connectors/blender-mcp/tsconfig.json\" \"tsc -p connectors/comfyui-mcp/tsconfig.json\"",
+    "prepack": "npm run build",
+    "release:smoke": "npm run build && node scripts/release-smoke-install.mjs",
+    "adoption:collect": "node scripts/collect-public-adoption-stats.mjs",
+    "adoption:render": "node scripts/render-public-adoption-summary.mjs",
+    "adoption:update": "npm run adoption:collect && npm run adoption:render",
+    "package": "npm run build:with-numbat && node scripts/run_electron_builder.mjs --publish never && node scripts/release-artifact-names.mjs && node scripts/release-artifact-names.mjs --check",
+    "package:win:x64": "npm run numbat:build -- --target=win32-x64 && node scripts/run_electron_builder.mjs --win --x64 --publish never && node scripts/release-artifact-names.mjs && node scripts/release-artifact-names.mjs --check",
+    "package:mac": "node scripts/package-mac-with-env.mjs",
+    "package:mac:unsigned": "cross-env COWORK_MAC_UNSIGNED=1 node scripts/package-mac-with-env.mjs",
+    "package:desktop:smoke": "node scripts/smoke-desktop-artifacts.mjs",
+    "package:mac:smoke": "node scripts/smoke-desktop-artifacts.mjs --platform=mac",
+    "package:win:smoke": "node scripts/smoke-desktop-artifacts.mjs --platform=win",
+    "package:linux:server": "npm run numbat:build -- --target=linux-x64 && npm run build:daemon && npm run build:connectors && node scripts/package-linux-server.mjs",
+    "package:linux:server:smoke": "node scripts/smoke-linux-server-package.mjs",
+    "fmt": "oxfmt --write src",
+    "fmt:check": "oxfmt --check src",
+    "lint": "oxlint src -c .oxlintrc.json --tsconfig tsconfig.json",
+    "lint:eslint": "eslint src --ext ts,tsx",
+    "skills:validate-routing": "node scripts/qa/validate-skills-routing.mjs",
+    "skills:validate-content": "node scripts/qa/validate-skills-content.mjs",
+    "skills:audit": "node scripts/qa/skills-audit-report.mjs",
+    "skills:eval-routing": "node scripts/qa/eval-skills-routing.mjs",
+    "qa:eval:build": "node scripts/qa/build_eval_corpus.cjs",
+    "qa:eval:run": "node scripts/qa/run_eval_suite.cjs",
+    "qa:eval:enforce-regressions": "node scripts/qa/enforce_eval_regression_policy.cjs",
+    "qa:security:harness": "node scripts/qa/security-harness.cjs",
+    "qa:positioning-copy": "node scripts/qa/validate-positioning-copy.mjs",
+    "qa:renderer-perf": "node scripts/qa/run_renderer_perf_fixture.mjs",
+    "qa:perf:profile": "node scripts/qa/profile_electron_task_switch.mjs",
+    "qa:perf:large-session": "node scripts/qa/profile_electron_task_switch.mjs --mode=prod --fixture-turn-count=741 --fixture-event-count=15529 --fixture-total-payload-mb=231 --fixture-heavy-event-every=50 --fixture-heavy-event-kb=256 --switches=20 --budget-profile=prod",
+    "qa:perf:profile:dev": "node scripts/qa/profile_electron_task_switch.mjs --mode=dev",
+    "qa:perf:profile:attach": "node scripts/qa/profile_electron_task_switch.mjs --mode=attach",
+    "qa:perf:guard:desktop": "npm run qa:perf:fixtures && npm run qa:perf:profile -- --mode=prod --budget-profile=prod --require-desktop",
+    "qa:perf:summary": "node scripts/qa/summarize_dev_perf_logs.mjs",
+    "qa:perf:budget": "node scripts/qa/enforce_dev_perf_budget.mjs",
+    "qa:perf:budget:allow-empty": "node scripts/qa/enforce_dev_perf_budget.mjs --allow-empty",
+    "qa:perf:real": "node scripts/qa/enforce_dev_perf_budget.mjs --max-age-ms=1800000",
+    "qa:perf:fixtures": "vitest run src/electron/database/__tests__/task-event-repository-timeline-page.test.ts src/renderer/__tests__/task-event-stream.test.ts src/renderer/utils/__tests__/renderer-perf-fixture.test.ts tests/profile-electron-task-switch.test.ts",
+    "qa:perf:guard": "npm run qa:perf:fixtures && npm run qa:perf:summary && npm run qa:perf:real",
+    "qa:timeline:backfill": "node scripts/qa/backfill_timeline_completion_telemetry.cjs",
+    "qa:timeline:enforce": "node scripts/qa/enforce_timeline_reliability.cjs",
+    "qa:reliability": "npm run qa:eval:run && node scripts/qa/run_battery.cjs",
+    "skills:check:core": "npm run skills:validate-routing && npm run skills:validate-content && npm run skills:audit",
+    "skills:check": "node scripts/qa/skills-check.mjs",
+    "type-check": "tsc --noEmit",
+    "kit:lint": "npm run build:electron && node dist/electron/electron/context/kit-lint-cli.js",
+    "test": "npm run skills:check && vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "npm run skills:check && vitest run --coverage"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "@aws-sdk/client-bedrock": "^3.1009.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.1009.0",
+    "@chenglou/pretext": "^0.0.3",
+    "@electron/rebuild": "4.2.0",
+    "@google/generative-ai": "^0.24.1",
+    "@grammyjs/runner": "^2.0.3",
+    "@grammyjs/transformer-throttler": "^1.2.1",
+    "@earendil-works/pi-ai": "^0.74.2",
+    "@pydantic/monty": "^0.0.4",
+    "@slack/bolt": "^4.6.0",
+    "baileys": "6.7.24",
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/addon-web-links": "^0.12.0",
+    "@xterm/xterm": "^6.0.0",
+    "botbuilder": "^4.23.3",
+    "chokidar": "^5.0.0",
+    "discord.js": "^14.25.1",
+    "docx": "^9.5.2",
+    "e2b": "^2.39.0",
+    "electron": "44.0.0",
+    "electron-updater": "^6.8.9",
+    "ethers": "^6.16.0",
+    "eventsource": "^4.1.0",
+    "exceljs": "npm:devextreme-exceljs-fork@4.4.13",
+    "grammy": "^1.39.3",
+    "highlight.js": "^11.11.1",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.577.0",
+    "mammoth": "^1.11.0",
+    "mermaid": "^11.13.0",
+    "mime-types": "^3.0.2",
+    "node-fetch": "npm:node-fetch-native@1.6.7",
+    "node-pty": "^1.1.0",
+    "openai": "^6.22.0",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^5.4.296",
+    "pdfkit": "^0.18.0",
+    "playwright": "npm:playwright-core@^1.58.2",
+    "pptxgenjs": "^4.0.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.10.1",
+    "remark-breaks": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "uuid": "^13.0.0",
+    "ws": "^8.18.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/mime-types": "^3.0.1",
+    "@types/node": "^25.2.0",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/pdfkit": "^0.17.5",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/ws": "^8.5.13",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.53.1",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitest/coverage-v8": "^4.0.18",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron-builder": "^26.15.3",
+    "eslint": "^9.39.2",
+    "globals": "^17.3.0",
+    "oxfmt": "^0.40.0",
+    "oxlint": "^1.47.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.3.1",
+    "vite-plugin-electron": "^0.29.0",
+    "vitest": "^4.0.18"
+  },
+  "optionalDependencies": {
+    "better-sqlite3": "13.0.3"
+  },
+  "bundleDependencies": [
+    "baileys"
+  ],
+  "overrides": {
+    "node-fetch@2": {
+      "whatwg-url": "^14.2.0"
+    },
+    "node-fetch@3": "$node-fetch",
+    "baileys": {
+      "libsignal": "https://codeload.github.com/WhiskeySockets/libsignal-node/tar.gz/1c30d7d7e76a3b0aa120b04dc6a26f5a12dccf67",
+      "@whiskeysockets/eslint-config": "1.0.0"
+    },
+    "electron-updater": {
+      "lodash.isequal": "npm:@lodash-modularized/isequal@1.0.1"
+    },
+    "gaxios": "7.3.1",
+    "@azure/msal-node": {
+      "uuid": "11.1.0"
+    },
+    "botbuilder": {
+      "uuid": "11.1.0"
+    },
+    "botbuilder-core": {
+      "uuid": "11.1.0"
+    },
+    "botframework-schema": {
+      "uuid": "11.1.0"
+    },
+    "botframework-streaming": {
+      "uuid": "11.1.0"
+    }
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "build": {
+    "appId": "com.idexal.cowork",
+    "productName": "idexal CoWork",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/skills",
+        "to": "skills",
+        "filter": [
+          "**/*.json",
+          "**/SKILL.md",
+          "**/references/**",
+          "**/assets/**",
+          "**/scripts/**"
+        ]
+      },
+      {
+        "from": "resources/plugin-packs",
+        "to": "plugin-packs",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "connectors",
+        "to": "connectors",
+        "filter": [
+          "**/dist/**",
+          "**/README.md",
+          "**/package.json"
+        ]
+      },
+      {
+        "from": "assets/tray",
+        "to": "assets/tray",
+        "filter": [
+          "*.png"
+        ]
+      },
+      {
+        "from": "build",
+        "to": "build",
+        "filter": [
+          "icon.png",
+          "icon.icns"
+        ]
+      },
+      {
+        "from": "resources/computer-use",
+        "to": "computer-use"
+      },
+      {
+        "from": "build/numbat",
+        "to": "numbat",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "build/healthkit-bridge",
+        "to": "healthkit-bridge"
+      },
+      {
+        "from": "build/location-helper-macos",
+        "to": "location-helper-macos"
+      },
+      {
+        "from": "build/location-helper-windows",
+        "to": "location-helper-windows"
+      },
+      {
+        "from": "build/location-helper-linux",
+        "to": "location-helper-linux"
+      }
+    ],
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "protocols": [
+        {
+          "name": "idexal CoWork Task Link",
+          "schemes": [
+            "cowork"
+          ]
+        }
+      ],
+      "category": "public.app-category.productivity",
+      "minimumSystemVersion": "13.0",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": true,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "icon": "build/icon.icns",
+      "extendInfo": {
+        "NSLocationWhenInUseUsageDescription": "idexal CoWork uses your current location once to answer nearby places and walking route requests.",
+        "NSLocationUsageDescription": "idexal CoWork uses your current location once to answer nearby places and walking route requests.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "idexal CoWork uses your current location once to answer nearby places and walking route requests."
+      },
+      "notarize": true
+    },
+    "dmg": {
+      "title": "idexal CoWork ${version} — macOS 13+"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "protocols": [
+        {
+          "name": "idexal CoWork Task Link",
+          "schemes": [
+            "cowork"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "idexal-cowork",
+      "repo": "idexal-cowork",
+      "releaseType": "draft"
+    }
+  }
+}
