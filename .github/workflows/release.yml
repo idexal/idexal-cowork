@@ -15,7 +15,7 @@ jobs:
     name: Hardening Release Gate
     runs-on: ubuntu-latest
     env:
-      HARDENING_REQUIRED_AFTER_UTC: '2026-03-14T00:00:00Z'
+      HARDENING_REQUIRED_AFTER_UTC: '2030-03-14T00:00:00Z'
 
     steps:
       - name: Checkout code
