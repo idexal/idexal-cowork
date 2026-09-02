@@ -140,7 +140,7 @@ class FinanceDataClient {
   private endpoint(tool: string): string {
     const override = envValue(this.provider, `${tool.toUpperCase()}_PATH`);
     if (override) return override.startsWith("/") ? override : `/${override}`;
-    return `/cowork/${tool.replace(/^get_/, "")}`;
+    return `/idexal-CoWork/${tool.replace(/^get_/, "")}`;
   }
 
   private async request(tool: string, params: Record<string, any>): Promise<any> {

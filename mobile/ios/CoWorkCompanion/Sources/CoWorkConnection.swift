@@ -408,7 +408,7 @@ class CoWorkConnection: NSObject, ObservableObject, URLSessionWebSocketDelegate,
     // MARK: - System Notify
 
     private func handleSystemNotify(requestId: String, params: [String: Any]?) {
-        let title = params?["title"] as? String ?? "CoWork"
+        let title = params?["title"] as? String ?? "idexal-CoWork"
         let message = params?["message"] as? String ?? ""
 
         let content = UNMutableNotificationContent()

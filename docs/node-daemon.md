@@ -79,7 +79,7 @@ export COWORK_CONTROL_PLANE_TOKEN=... # printed on first token generation or via
 node bin/coworkctl.js call config.get
 node bin/coworkctl.js call llm.configure '{"providerType":"openai","apiKey":"sk-...","model":"gpt-4o-mini"}'
 node bin/coworkctl.js call llm.configure '{"providerType":"openrouter","apiKey":"sk-or-...","model":"openrouter/pareto-code","settings":{"paretoMinCodingScore":0.8}}'
-node bin/coworkctl.js call workspace.create '{"name":"main","path":"/srv/cowork/workspace"}'
+node bin/coworkctl.js call workspace.create '{"name":"main","path":"/srv/idexal-CoWork/workspace"}'
 node bin/coworkctl.js call task.create '{"workspaceId":"...","title":"Test","prompt":"Say hi","agentConfig":{"accessProfileId":"ask_for_approval"}}'
 node bin/coworkctl.js watch --event task.event
 ```

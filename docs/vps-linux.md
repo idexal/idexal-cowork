@@ -146,8 +146,8 @@ sudo tar -xzf "Idexal CoWork-server-linux-x64-v${version}.tar.gz" -C /opt/Idexal
 
 ```bash
 sudo useradd -r -m -s /usr/sbin/nologin cowork || true
-sudo mkdir -p /var/lib/Idexal CoWork /srv/cowork/workspace
-sudo chown -R cowork:cowork /var/lib/Idexal CoWork /srv/cowork/workspace /opt/Idexal CoWork
+sudo mkdir -p /var/lib/Idexal CoWork /srv/idexal-CoWork/workspace
+sudo chown -R cowork:cowork /var/lib/Idexal CoWork /srv/idexal-CoWork/workspace /opt/Idexal CoWork
 ```
 
 6. Install the systemd unit + env file templates:
@@ -382,7 +382,7 @@ Headless instances can’t “Select Folder” via UI, so you must either:
 1. Bootstrap a default workspace at startup:
 
 ```bash
-export COWORK_BOOTSTRAP_WORKSPACE_PATH=/srv/cowork/workspace
+export COWORK_BOOTSTRAP_WORKSPACE_PATH=/srv/idexal-CoWork/workspace
 export COWORK_BOOTSTRAP_WORKSPACE_NAME=main
 ```
 
@@ -397,7 +397,7 @@ export COWORK_CONTROL_PLANE_URL=ws://127.0.0.1:18789
 export COWORK_CONTROL_PLANE_TOKEN=... # from startup logs
 
 node bin/coworkctl.js call workspace.list
-node bin/coworkctl.js call workspace.create '{"name":"main","path":"/srv/cowork/workspace"}'
+node bin/coworkctl.js call workspace.create '{"name":"main","path":"/srv/idexal-CoWork/workspace"}'
 node bin/coworkctl.js call config.get
 node bin/coworkctl.js watch --event task.event
 node bin/coworkctl.js tail '<taskId>' --limit 200

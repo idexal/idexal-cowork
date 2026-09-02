@@ -333,7 +333,7 @@ class CoWorkConnection(private val context: Context) {
     // MARK: - System Notify
 
     private fun handleSystemNotify(requestId: String, params: JSONObject?) {
-        val title = params?.optString("title") ?: "CoWork"
+        val title = params?.optString("title") ?: "idexal-CoWork"
         val message = params?.optString("message") ?: ""
 
         // Send notification using Android NotificationManager
