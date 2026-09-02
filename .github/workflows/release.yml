@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -92,7 +93,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, windows-latest]
+        os: [macos-latest, windows-latest, ubuntu-latest]
 
     steps:
       - name: Checkout code
@@ -248,6 +249,15 @@ jobs:
             printf 'Windows artifacts:\n'
             printf '  %s\n' "${windows_artifacts[@]}"
           fi
+          if [ "${RUNNER_OS}" = "Linux" ]; then
+            linux_artifacts=(release/*.AppImage release/*.deb)
+            if [ "${#linux_artifacts[@]}" -eq 0 ]; then
+              echo "No Linux installer found in release/." >&2
+              exit 1
+            fi
+            printf 'Linux artifacts:\n'
+            printf '  %s\n' "${linux_artifacts[@]}"
+          fi
           if [ "${RUNNER_OS}" = "macOS" ]; then
             mac_artifacts=(release/*.dmg)
             if [ "${#mac_artifacts[@]}" -eq 0 ]; then
@@ -276,7 +286,7 @@ jobs:
           set -euo pipefail
           shopt -s nullglob
           release_tag="${{ steps.release_metadata.outputs.release_tag }}"
-          artifacts=(release/*.exe release/*.dmg release/*.zip release/*.yml release/*.blockmap)
+          artifacts=(release/*.exe release/*.dmg release/*.zip release/*.yml release/*.blockmap release/*.AppImage release/*.deb)
           if [ "${#artifacts[@]}" -eq 0 ]; then
             echo "No release artifacts found to upload." >&2
             exit 1
